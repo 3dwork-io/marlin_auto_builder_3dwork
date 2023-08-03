@@ -24,7 +24,7 @@ jobs:
             -u root:root \
             -e BOARD \
             -e UPDATE_FORCE=true \
-            -e USE_TAG=2.1.2 \
+            -e USE_BRANCH=2.1.x \
             -v $(pwd)/Firmware/Builds:/home/platformio/build \
             -v $(pwd)/Firmware/Configuration:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
