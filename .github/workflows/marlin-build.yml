@@ -36,5 +36,5 @@ jobs:
           git pull origin master --ff-only
           git add .
           git commit -m "Compiled firmware"
-          git push --force https://${{ secrets.TOKEN }}@github.com/${{ github.repository }}.git
+          git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git"
 
