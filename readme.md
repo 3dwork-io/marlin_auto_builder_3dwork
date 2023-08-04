@@ -40,4 +40,8 @@ Artillery
 
 ![Artillery_Genius_Pro](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Genius_Pro.yml/badge.svg) Config - Firmware - default_envs = Artillery_Ruby
 
+![Artillery_Genius_V1](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Genius_V1.yml/badge.svg) Config - Firmware - default_envs = mega2560
+
+![Artillery_Genius_V1_BLTouch](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Genius_V1_BLTouch.yml/badge.svg) Config - Firmware - default_envs = mega2560
+
 ![Artillery_Hornet](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Hornet.yml/badge.svg) Config - Firmware - default_envs = Artillery_Ruby
