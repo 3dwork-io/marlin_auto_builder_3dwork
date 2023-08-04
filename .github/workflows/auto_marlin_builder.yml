@@ -1,0 +1,37 @@
+name: Build Marlin Firmware
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'Firmware/Configuration/**.h'
+
+jobs:
+  build_and_push:
+    name: Compile and Push Firmware
+    runs-on: ubuntu-latest
+    env:
+      BOARD: STM32F103RC_btt_512K
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+
+      - name: Compile firmware
+        run: |
+          docker run \
+            -u root:root \
+            -e BOARD \
+            -v $(pwd)/Firmware/Builds:/home/platformio/build \
+            -v $(pwd)/Firmware/Configuration:/home/platformio/CustomConfiguration \
+            frealmyr/marlin-build:latest
+
+      - name: Push firmware
+        run: |
+          git config --global user.name "alienboyxp"
+          git config --global user.email "jrodriguez@qitec.net"
+          git pull origin master --ff-only
+          git add .
+          git commit -m "Compiled firmware"
+          git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git"
