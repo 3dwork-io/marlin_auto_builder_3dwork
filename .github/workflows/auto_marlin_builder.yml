@@ -27,7 +27,7 @@ jobs:
           docker run \
             -u root:root \
             -e BOARD \
-            -e USE_BRANCH=2.1.x \
+            -e USE_TAG=2.1.1 \
             -v $(pwd)/Firmware/Builds:/home/platformio/build \
             -v $(pwd)/Firmware/Configuration:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
