@@ -34,7 +34,9 @@ BIQU
 Artillery
 ---------
 
-![Artillery_Sidewinder_X2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Sidewinder_X2.yml/badge.svg)  Config - Firmware - default_envs = Artillery_Ruby
+![Artillery_Sidewinder_X2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Sidewinder_X2.yml/badge.svg) Config - Firmware - default_envs = Artillery_Ruby
+
+![Artillery_Sidewinder_X1_V1](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Sidewinder_X1_V1.yml/badge.svg) Config - Firmware - default_envs = mega2560
 
 ![Artillery_Genius_Pro](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Genius_Pro.yml/badge.svg) Config - Firmware - default_envs = Artillery_Ruby
 
