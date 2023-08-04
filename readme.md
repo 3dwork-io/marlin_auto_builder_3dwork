@@ -19,6 +19,10 @@ BIQU
 
 [![BIQU_BX](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_BX.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_BX.yml) Config - Firmware - default_envs = BTT_SKR_SE_BX
 
+[![BIQU_B1_SE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SE.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SE.yml) Config - Firmware - default_envs = BIGTREE_SKR_2
+
+[![BIQU_B1_SE_Plus](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SE_Plus.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SE_Plus.yml) Config - Firmware - default_envs = BIGTREE_SKR_2
+
 [![BIQU_B1_SKR2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR2.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR2.yml) Config - Firmware - default_envs = BIGTREE_SKR_2
 
 [![BIQU_B1_SKR_1.4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR_1.4.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR_1.4.yml) Config - Firmware - default_envs = LPC1768
