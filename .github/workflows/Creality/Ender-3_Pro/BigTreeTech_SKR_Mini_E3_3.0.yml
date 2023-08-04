@@ -1,0 +1,42 @@
+name: Firmware/Builds/Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_3.0
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'Firmware/Configuration/Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_3.0/**.h'
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  build_and_push:
+    name: Compile and Push Firmware
+    runs-on: ubuntu-latest
+    env:
+      BOARD: STM32G0B1RE_btt
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Compile firmware
+        run: |
+          docker run \
+            -u root:root \
+            -e BOARD \
+            -e USE_TAG=2.1.2.1 \
+            -v $(pwd)/Firmware/Builds/Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_3.0:/home/platformio/build \
+            -v $(pwd)/Firmware/Configuration/Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_3.0:/home/platformio/CustomConfiguration \
+            frealmyr/marlin-build:latest
+
+      - name: Push firmware
+        run: |
+          git config --global user.name "alienboyxp"
+          git config --global user.email "jrodriguez@qitec.net"
+          git pull origin master --ff-only
+          git add .
+          git commit -m "Compiled firmware"
+          git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git"
