@@ -1,11 +1,11 @@
-name: Artillery_Sidewinder_X1_V1
+name: Artillery_Genius_V1
 
 on:
   push:
     branches:
       - master
     paths:
-      - 'Firmware/Configuration/Artillery/Sidewinder_X1/V1/**.h'
+      - 'Firmware/Configuration/Artillery/Genius/V1/**.h'
 permissions:
   contents: write
   issues: write
@@ -29,8 +29,8 @@ jobs:
             -e BOARD \
             -e USE_TAG=2.1.2.1 \
             -e FW_EXTENSION=hex \
-            -v $(pwd)/Firmware/Builds/Artillery/Sidewinder_X1/V1:/home/platformio/build \
-            -v $(pwd)/Firmware/Configuration/Artillery/Sidewinder_X1/V1:/home/platformio/CustomConfiguration \
+            -v $(pwd)/Firmware/Builds/Artillery/Genius/V1:/home/platformio/build \
+            -v $(pwd)/Firmware/Configuration/Artillery/Genius/V1:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
 
       - name: Push firmware
