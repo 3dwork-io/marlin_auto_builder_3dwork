@@ -1,4 +1,4 @@
-name: Firmware/Builds/Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_1.2
+name: Creality_Ender-3_Pro_BigTreeTech_SKR_Mini_E3_1.2
 
 on:
   push:
