@@ -12,6 +12,13 @@ Creality - Ender 3 Pro
 
 ![Creality_Ender-3_Pro_BigTreeTech_SKR_1.4_Turbo](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_Pro_BigTreeTech_SKR_1.4_Turbo.yml/badge.svg) - Config - Firmware - default_envs = LPC1769
 
+Creality - Ender 3 V2
+----------------------
+
+![Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_CrealityUI](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_CrealityUI.yml/badge.svg) - Config - Firmware - default_envs = STM32G0B1RE_btt
+
+![Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_MarlinUI](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_MarlinUI.yml/badge.svg) - Config - Firmware - default_envs = STM32G0B1RE_btt
+
 ---
 
 BIQU
