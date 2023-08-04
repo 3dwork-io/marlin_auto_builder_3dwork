@@ -28,6 +28,7 @@ jobs:
             -u root:root \
             -e BOARD \
             -e USE_TAG=2.1.2.1 \
+            -e FW_EXTENSION=hex \
             -v $(pwd)/Firmware/Builds/Artillery/Sidewinder_X1/V1/{USE_TAG}:/home/platformio/build \
             -v $(pwd)/Firmware/Configuration/Artillery/Sidewinder_X1/V1:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
