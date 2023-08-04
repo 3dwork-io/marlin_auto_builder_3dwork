@@ -1,0 +1,1 @@
+[![3Dwork Auto Build Marlin Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/auto_marlin_builder.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/auto_marlin_builder.yml)
