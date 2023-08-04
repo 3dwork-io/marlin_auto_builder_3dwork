@@ -1,11 +1,11 @@
-name: 3Dwork Auto Build Marlin Firmware
+name: Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.2
 
 on:
   push:
     branches:
       - master
     paths:
-      - 'Firmware/Configuration/**.h'
+      - 'Firmware/Configuration/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.2**.h'
 permissions:
   contents: write
   issues: write
@@ -28,8 +28,8 @@ jobs:
             -u root:root \
             -e BOARD \
             -e USE_TAG=2.1.1 \
-            -v $(pwd)/Firmware/Builds:/home/platformio/build \
-            -v $(pwd)/Firmware/Configuration:/home/platformio/CustomConfiguration \
+            -v $(pwd)/Firmware/Builds/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.2:/home/platformio/build \
+            -v $(pwd)/Firmware/Configuration/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.2:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
 
       - name: Push firmware
