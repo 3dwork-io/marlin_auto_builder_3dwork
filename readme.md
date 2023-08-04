@@ -26,3 +26,9 @@ BIQU
 [![BIQU_B1_SKR2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR2.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR2.yml) Config - Firmware - default_envs = BIGTREE_SKR_2
 
 [![BIQU_B1_SKR_1.4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR_1.4.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR_1.4.yml) Config - Firmware - default_envs = LPC1768
+
+----------------------
+Artillery
+----------------------
+
+[![Artillery_Genius_Pro](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Genius_Pro.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Genius_Pro.yml) Config - Firmware - default_envs = Artillery_Ruby
