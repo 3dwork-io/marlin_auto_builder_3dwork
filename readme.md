@@ -15,4 +15,6 @@ Creality - Ender 3 Pro
 BIQU
 ----------------------
 
+[![BIQU_BX](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_BX.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_BX.yml) Config - Firmware - default_envs = BTT_SKR_SE_BX
+
 [![BIQU_Hurakan](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_Hurakan.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_Hurakan.yml) - Config - Firmware - default_envs = STM32G0B1RE_manta_btt
