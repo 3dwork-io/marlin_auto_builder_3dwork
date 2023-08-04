@@ -15,6 +15,10 @@ Creality - Ender 3 Pro
 BIQU
 ----------------------
 
+[![BIQU_Hurakan](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_Hurakan.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_Hurakan.yml) - Config - Firmware - default_envs = STM32G0B1RE_manta_btt
+
 [![BIQU_BX](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_BX.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_BX.yml) Config - Firmware - default_envs = BTT_SKR_SE_BX
 
-[![BIQU_Hurakan](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_Hurakan.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_Hurakan.yml) - Config - Firmware - default_envs = STM32G0B1RE_manta_btt
+[![BIQU_B1_SKR2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR2.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR2.yml) Config - Firmware - default_envs = BIGTREE_SKR_2
+
+[![BIQU_B1_SKR_1.4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR_1.4.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR_1.4.yml) Config - Firmware - default_envs = LPC1768
