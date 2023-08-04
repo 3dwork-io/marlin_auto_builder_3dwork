@@ -34,7 +34,7 @@ jobs:
 
       - name: Push firmware
         run: |
-          git config --global user.name "alienboyxp"
+          git config --global user.name "JJR"
           git config --global user.email "jrodriguez@qitec.net"
           git pull origin master --ff-only
           git add .
