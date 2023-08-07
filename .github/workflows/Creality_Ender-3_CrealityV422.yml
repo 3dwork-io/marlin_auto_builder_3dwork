@@ -1,11 +1,11 @@
-name: Creality_Ender-3_CrealityV427
+name: Creality_Ender-3_CrealityV422
 
 on:
   push:
     branches:
       - master
     paths:
-      - 'Firmware/Configuration/Creality/Ender-3/CrealityV427/**.h'
+      - 'Firmware/Configuration/Creality/Ender-3/CrealityV422/**.h'
 permissions:
   contents: write
   issues: write
@@ -28,8 +28,8 @@ jobs:
             -u root:root \
             -e BOARD \
             -e USE_TAG=2.1.2.1 \
-            -v $(pwd)/Firmware/Builds/Creality/Ender-3/CrealityV427/2_1_2_1:/home/platformio/build \
-            -v $(pwd)/Firmware/Configuration/Creality/Ender-3/CrealityV427:/home/platformio/CustomConfiguration \
+            -v $(pwd)/Firmware/Builds/Creality/Ender-3/CrealityV422/2_1_2_1:/home/platformio/build \
+            -v $(pwd)/Firmware/Configuration/Creality/Ender-3/CrealityV422:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
 
       - name: Push firmware
