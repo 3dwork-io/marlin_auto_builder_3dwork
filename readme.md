@@ -12,7 +12,9 @@ Creality - Ender 3
 
 ![Creality_Ender-3_BigTreeTech_SKR_1.4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_BigTreeTech_SKR_1.4.yml/badge.svg) - Config - Firmware - default_envs = LPC1768
 
-![Creality_Ender-3_FYSETC_Cheetah_2.0](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_FYSETC_Cheetah_2.0.yml/badge.svg) - Config - Firmware - default_envs =  FYSETC_CHEETAH_V20
+![Creality_Ender-3_FYSETC_Cheetah_2.0](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_FYSETC_Cheetah_2.0.yml/badge.svg) - Config - Firmware - default_envs = FYSETC_CHEETAH_V20
+
+![Creality_Ender-3_CrealityV1](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_CrealityV1.yml/badge.svg) - Config - Firmware - default_envs = melzi_optiboot_optimized
 
 
 Creality - Ender 3 Pro
