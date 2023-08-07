@@ -20,9 +20,8 @@ Creality - Ender 3 V2
 ![Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_MarlinUI](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_MarlinUI.yml/badge.svg) - Config - Firmware - default_envs = STM32G0B1RE_btt
 
 ---
-
 BIQU
-----
+---
 
 ![BIQU_Hurakan](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_Hurakan.yml/badge.svg) - Config - Firmware - default_envs = STM32G0B1RE_manta_btt
 
@@ -37,9 +36,8 @@ BIQU
 ![BIQU_B1_SKR_1.4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR_1.4.yml/badge.svg) Config - Firmware - default_envs = LPC1768
 
 ---
-
 Artillery
----------
+---
 
 ![Artillery_Sidewinder_X2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Sidewinder_X2.yml/badge.svg) Config - Firmware - default_envs = Artillery_Ruby
 
@@ -52,3 +50,13 @@ Artillery
 ![Artillery_Genius_V1_BLTouch](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Genius_V1_BLTouch.yml/badge.svg) Config - Firmware - default_envs = mega2560
 
 ![Artillery_Hornet](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Hornet.yml/badge.svg) Config - Firmware - default_envs = Artillery_Ruby
+
+---
+Kingroon
+---
+
+![Kingroon_KP5L](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Kingroon_KP5L.yml/badge.svg) Config - Firmware - default_envs = mks_robin_nano_v1v2
+
+![Kingroon_KP3S](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Kingroon_KP3S.yml/badge.svg) Config - Firmware - default_envs = mks_robin_nano_v1v2
+
+![Kingroon_KP3](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Kingroon_KP3.yml/badge.svg) Config - Firmware - default_envs = mks_robin_mini
