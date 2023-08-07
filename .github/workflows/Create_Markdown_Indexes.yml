@@ -28,7 +28,7 @@ jobs:
       - name: Generated Markdown Readmes
         uses: DaanV2/Markdown-Action-Create-Indexes@v2.0.0
         with: 
-          folder: ${{github.workspace}}/Builds
+          folder: ${{github.workspace}}/Firmware/Builds
           filename: builds.md
 
       - name: Commit changes
