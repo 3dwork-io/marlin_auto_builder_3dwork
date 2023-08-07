@@ -2,24 +2,23 @@
 --------------------------------------
 
 Creality - Ender 3
-----------------------
+------------------
 
-![Creality_Ender-3_BigTreeTech_SKR_Mini_E3_3.0](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_BigTreeTech_SKR_Mini_E3_3.0.yml/badge.svg) - Config - Firmware - default_envs = STM32G0B1RE_btt
+![Creality_Ender-3_BigTreeTech_SKR_Mini_E3_3.0](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_BigTreeTech_SKR_Mini_E3_3.0.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3/BigTreeTech_SKR_Mini_E3_3.0) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3/BigTreeTech_SKR_Mini_E3_3.0) - default_envs = STM32G0B1RE_btt
 
-![Creality_Ender-3_BigTreeTech_SKR_Mini_E3_2.0](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_BigTreeTech_SKR_Mini_E3_2.0.yml/badge.svg) - Config - Firmware - default_envs = STM32F103RC_btt
+![Creality_Ender-3_BigTreeTech_SKR_Mini_E3_2.0](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_BigTreeTech_SKR_Mini_E3_2.0.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3/BigTreeTech_SKR_Mini_E3_2.0) - Firmware - default_envs = STM32F103RC_btt
 
-![Creality_Ender-3_BigTreeTech_SKR_Mini_E3_1.2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_BigTreeTech_SKR_Mini_E3_1.2.yml/badge.svg) - Config - Firmware - default_envs = STM32F103RC_btt
+![Creality_Ender-3_BigTreeTech_SKR_Mini_E3_1.2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_BigTreeTech_SKR_Mini_E3_1.2.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3/BigTreeTech_SKR_Mini_E3_1.2) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3/BigTreeTech_SKR_Mini_E3_1.2) - default_envs = STM32F103RC_btt
 
-![Creality_Ender-3_BigTreeTech_SKR_1.4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_BigTreeTech_SKR_1.4.yml/badge.svg) - Config - Firmware - default_envs = LPC1768
+![Creality_Ender-3_BigTreeTech_SKR_1.4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_BigTreeTech_SKR_1.4.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3/BigTreeTech_SKR_1.4) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3/BigTreeTech_SKR_1.4) - default_envs = LPC1768
 
-![Creality_Ender-3_FYSETC_Cheetah_2.0](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_FYSETC_Cheetah_2.0.yml/badge.svg) - Config - Firmware - default_envs = FYSETC_CHEETAH_V20
+![Creality_Ender-3_FYSETC_Cheetah_2.0](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_FYSETC_Cheetah_2.0.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3/FYSETC_Cheetah_2.0) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3/FYSETC_Cheetah_2.0) - default_envs = FYSETC_CHEETAH_V20
 
-![Creality_Ender-3_CrealityV427](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_CrealityV427.yml/badge.svg) - Config - Firmware - default_envs = STM32F103RE_creality
+![Creality_Ender-3_CrealityV427](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_CrealityV427.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3/CrealityV427) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3/CrealityV427) - default_envs = STM32F103RE_creality
 
-![Creality_Ender-3_CrealityV422](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_CrealityV422.yml/badge.svg) - Config - Firmware - default_envs = STM32F103RE_creality
+![Creality_Ender-3_CrealityV422](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_CrealityV422.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3/CrealityV422) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3/CrealityV422) - default_envs = STM32F103RE_creality
 
-![Creality_Ender-3_CrealityV1](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_CrealityV1.yml/badge.svg) - Config - Firmware - default_envs = melzi_optiboot_optimized
-
+![Creality_Ender-3_CrealityV1](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_CrealityV1.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3/CrealityV1) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3/CrealityV1) - default_envs = melzi_optiboot_optimized
 
 Creality - Ender 3 Pro
 ----------------------
@@ -33,15 +32,16 @@ Creality - Ender 3 Pro
 ![Creality_Ender-3_Pro_BigTreeTech_SKR_1.4_Turbo](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_Pro_BigTreeTech_SKR_1.4_Turbo.yml/badge.svg) - Config - Firmware - default_envs = LPC1769
 
 Creality - Ender 3 V2
-----------------------
+---------------------
 
 ![Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_CrealityUI](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_CrealityUI.yml/badge.svg) - Config - Firmware - default_envs = STM32G0B1RE_btt
 
 ![Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_MarlinUI](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_MarlinUI.yml/badge.svg) - Config - Firmware - default_envs = STM32G0B1RE_btt
 
 ---
+
 BIQU
----
+----
 
 ![BIQU_Hurakan](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_Hurakan.yml/badge.svg) - Config - Firmware - default_envs = STM32G0B1RE_manta_btt
 
@@ -56,8 +56,9 @@ BIQU
 ![BIQU_B1_SKR_1.4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR_1.4.yml/badge.svg) Config - Firmware - default_envs = LPC1768
 
 ---
+
 Artillery
----
+---------
 
 ![Artillery_Sidewinder_X2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Sidewinder_X2.yml/badge.svg) Config - Firmware - default_envs = Artillery_Ruby
 
@@ -72,8 +73,9 @@ Artillery
 ![Artillery_Hornet](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Hornet.yml/badge.svg) Config - Firmware - default_envs = Artillery_Ruby
 
 ---
+
 Kingroon
----
+--------
 
 ![Kingroon_KP5L](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Kingroon_KP5L.yml/badge.svg) Config - Firmware - default_envs = mks_robin_nano_v1v2
 
