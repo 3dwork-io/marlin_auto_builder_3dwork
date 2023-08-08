@@ -31,7 +31,7 @@ jobs:
             -e FW_EXTENSION=hex \
             -v $(pwd)/Firmware/Builds/Creality/Ender-3/CrealityV1/2_1_2_1:/home/platformio/build \
             -v $(pwd)/Firmware/Configuration/Creality/Ender-3/CrealityV1:/home/platformio/CustomConfiguration \
-            3dwork-io/marlin_auto_builder_docker_3dwork:latest
+            frealmyr/marlin-build:latest
 
       - name: Push firmware
         run: |
