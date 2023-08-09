@@ -1,6 +1,7 @@
 **Currently Marlin Version - [2.1.2.1](https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.1)**
 -------------------------------------------------------------------------------------------------------
 
+# Creality
 
 ## Creality - Ender 3
 
@@ -36,9 +37,15 @@
 
 ![Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_MarlinUI](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_MarlinUI.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3_V2/BigTreeTech_SKR_Mini_E3_v3/MarlinUI) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3_V2/BigTreeTech_SKR_Mini_E3_3.0/MarlinUI) - default_envs = STM32G0B1RE_btt
 
+## Creality - Ender 3 S1
+
+![Creality_Ender-3_S1_STM32F4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_S1_STM32F4.yml/badge.svg) [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3_S1/STM32F1) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3_S1/STM32F1) - default_envs = STM32F103RE_creality
+
+![Creality_Ender-3_S1_STM32F1](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_S1_STM32F1.yml/badge.svg) Config - Firmware - default_envs = STM32F401RC_creality
+
 ---
 
-## BIQU[](https://)
+# BIQU
 
 ![BIQU_Hurakan](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_Hurakan.yml/badge.svg) [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/BIQU/Hurakan) - Firmware - default_envs = STM32G0B1RE_manta_btt
 
@@ -54,7 +61,7 @@
 
 ---
 
-## Artillery
+# Artillery
 
 ![Artillery_Sidewinder_X2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Sidewinder_X2.yml/badge.svg) [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Artillery/Sidewinder_X2) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Artillery/Sidewinder_X2) - default_envs = Artillery_Ruby
 
@@ -70,7 +77,7 @@
 
 ---
 
-## Kingroon
+# Kingroon
 
 ![Kingroon_KP5L](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Kingroon_KP5L.yml/badge.svg) [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Kingroon/KP5L) - Firmware - default_envs = mks_robin_nano_v1v2
 
