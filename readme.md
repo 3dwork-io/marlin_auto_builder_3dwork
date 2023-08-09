@@ -1,6 +1,9 @@
 **Currently Marlin Version - [2.1.2.1](https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.1)**
 -------------------------------------------------------------------------------------------------------
 
+> [!WARNING]
+> Marlin binaries are created from official Marlin pre configurations repository, use at your own risk. Suggested to take the config files and compile yourself, [compilation guide](https://3dwork-qitec-net.translate.goog/guias-impresion-3d/mejoras-upgrades/marlin-guia-compilacion?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=es&_x_tr_pto=wapp).
+
 # Creality
 
 ## Creality - Ender 3
@@ -36,6 +39,10 @@
 ![Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_CrealityUI](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_CrealityUI.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3_V2/BigTreeTech_SKR_Mini_E3_v3/CrealityUI) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3_V2/BigTreeTech_SKR_Mini_E3_3.0/CrealityUI) - default_envs = STM32G0B1RE_btt
 
 ![Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_MarlinUI](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_V2_BigTreeTech_SKR_Mini_E3_3.0_MarlinUI.yml/badge.svg) - [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3_V2/BigTreeTech_SKR_Mini_E3_v3/MarlinUI) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3_V2/BigTreeTech_SKR_Mini_E3_3.0/MarlinUI) - default_envs = STM32G0B1RE_btt
+
+## Creality - Ender 3 V2 Neo
+
+![Creality_Ender-3_V2_Neo](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_V2_Neo.yml/badge.svg) [Config](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3_V2_Neo) - [Firmware](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3_V2_Neo) - default_envs = STM32F103RE_creality
 
 ## Creality - Ender 3 S1
 
