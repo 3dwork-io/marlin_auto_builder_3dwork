@@ -16,7 +16,7 @@ jobs:
     name: Compile and Push Firmware
     runs-on: ubuntu-latest
     env:
-      BOARD: mks_robin_mini
+      BOARD: mks_robin_nano_v1v2
 
     steps:
       - name: Check out repo
