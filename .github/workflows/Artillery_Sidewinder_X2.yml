@@ -27,7 +27,7 @@ jobs:
           docker run \
             -u root:root \
             -e BOARD \
-            -e USE_TAG=2.1.2.1 \
+            -e USE_TAG=2.1.2.2 \
             -v $(pwd)/Firmware/Builds/Artillery/Sidewinder_X2:/home/platformio/build \
             -v $(pwd)/Firmware/Configuration/Artillery/Sidewinder_X2:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest

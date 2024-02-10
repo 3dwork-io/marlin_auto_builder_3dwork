@@ -27,7 +27,7 @@ jobs:
           docker run \
             -u root:root \
             -e BOARD \
-            -e USE_TAG=2.1.2.1 \
+            -e USE_TAG=2.1.2.2 \
             -e FW_EXTENSION=hex \
             -v $(pwd)/Firmware/Builds/Artillery/Genius/V1:/home/platformio/build \
             -v $(pwd)/Firmware/Configuration/Artillery/Genius/V1:/home/platformio/CustomConfiguration \
