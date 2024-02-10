@@ -55,7 +55,7 @@
 //===========================================================================
 //============================= Thermal Settings ============================
 //===========================================================================
-// @section temperature
+// @section temperature 
 
 /**
  * Thermocouple sensors are quite sensitive to noise.  Any noise induced in
