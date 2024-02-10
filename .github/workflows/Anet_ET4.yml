@@ -45,7 +45,8 @@ jobs:
           git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git"
 
   build_and_push_Anet_ET4_OpenBLT:
-    name: Anet_ET4_OpenBLT - Compile and Push Firmware 
+    name: Anet_ET4_OpenBLT - Compile and Push Firmware
+    needs: build_and_push_Anet_ET4_no_bootloader
     runs-on: ubuntu-latest
     env:
       BOARD: Anet_ET4_OpenBLT
