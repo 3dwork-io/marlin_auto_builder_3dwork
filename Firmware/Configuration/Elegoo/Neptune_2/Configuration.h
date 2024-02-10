@@ -21,7 +21,7 @@
  */
 #pragma once
 
-#define CONFIG_EXAMPLES_DIR "config/examples/Elegoo/Neptune_2"
+#define CONFIG_EXAMPLES_DIR "config/examples/Elegoo/Neptune 2"
 
 /**
  * Configuration.h
