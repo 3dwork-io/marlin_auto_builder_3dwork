@@ -3198,6 +3198,7 @@
 //
 // Ender-3 v2 OEM display. A DWIN display with Rotary Encoder.
 //
+#define NO_CONTROLLER_CUSTOM_WIRING_WARNING // 3D Work suppress compiling warning about wiring adapt
 //#define DWIN_CREALITY_LCD           // Creality UI
 //#define DWIN_LCD_PROUI              // Pro UI by MRiscoC
 //#define DWIN_CREALITY_LCD_JYERSUI   // Jyers UI by Jacob Myers
