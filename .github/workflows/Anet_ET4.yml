@@ -1,4 +1,6 @@
 name: Anet_ET4
+concurrency:
+  group: ${{ github.workflow }}
 
 on:
   push:
@@ -13,7 +15,7 @@ permissions:
 
 jobs:
   build_and_push_Anet_ET4_no_bootloader:
-    name: Compile and Push Firmware Anet_ET4_no_bootloader
+    name: Anet_ET4_no_bootloader - Compile and Push Firmware
     runs-on: ubuntu-latest
     env:
       BOARD: Anet_ET4_no_bootloader
@@ -43,7 +45,7 @@ jobs:
           git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git"
 
   build_and_push_Anet_ET4_OpenBLT:
-    name: Compile and Push Firmware Anet_ET4_OpenBLT
+    name: Anet_ET4_OpenBLT - Compile and Push Firmware 
     runs-on: ubuntu-latest
     env:
       BOARD: Anet_ET4_OpenBLT
