@@ -1,4 +1,4 @@
-**Currently Marlin Version - [2.1.2.1](https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.1)**
+**Currently Marlin Version - [2.1.2.2](https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.2)**
 -------------------------------------------------------------------------------------------------------
 
 > [!WARNING]
