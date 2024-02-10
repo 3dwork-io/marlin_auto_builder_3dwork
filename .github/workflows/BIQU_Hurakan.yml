@@ -27,7 +27,7 @@ jobs:
           docker run \
             -u root:root \
             -e BOARD \
-            -e USE_TAG=2.1.2.2 \
+            -e USE_TAG=bugfix-2.1.x \
             -v $(pwd)/Firmware/Builds/BIQU/Hurakan:/home/platformio/build \
             -v $(pwd)/Firmware/Configuration/BIQU/Hurakan:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
