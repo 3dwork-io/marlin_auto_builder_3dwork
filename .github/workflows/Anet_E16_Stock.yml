@@ -1,0 +1,43 @@
+name: Anet_E16_Stock
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'Firmware/Configuration/Anet/E16/Stock/**.h'
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  build_and_push:
+    name: Compile and Push Firmware
+    runs-on: ubuntu-latest
+    env:
+      BOARD: sanguino1284p_optimized
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Compile firmware
+        run: |
+          docker run \
+            -u root:root \
+            -e BOARD \
+            -e USE_TAG=2.1.2.2 \
+            -e FW_EXTENSION=hex \
+            -v $(pwd)/Firmware/Builds/Anet/E16/Stock/2_1_2_2:/home/platformio/build \
+            -v $(pwd)/Firmware/Configuration/Anet/E16/Stock:/home/platformio/CustomConfiguration \
+            frealmyr/marlin-build:latest
+
+      - name: Push firmware
+        run: |
+          git config --global user.name "JJR Bot"
+          git config --global user.email "jrodriguez@qitec.net"
+          git pull origin master --ff-only
+          git add .
+          git commit -m "Compiled firmware"
+          git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git"
