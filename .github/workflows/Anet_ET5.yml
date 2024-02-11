@@ -18,7 +18,7 @@ jobs:
     name: Anet_ET5_no_bootloader - Compile and Push Firmware
     runs-on: ubuntu-latest
     env:
-      BOARD: Anet_ET5_no_bootloader
+      BOARD: Anet_ET4_no_bootloader
 
     steps:
       - name: Check out repo
@@ -49,7 +49,7 @@ jobs:
     needs: build_and_push_Anet_ET5_no_bootloader
     runs-on: ubuntu-latest
     env:
-      BOARD: Anet_ET5_OpenBLT
+      BOARD: Anet_ET4_OpenBLT
 
     steps:
       - name: Check out repo
