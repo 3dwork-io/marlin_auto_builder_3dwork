@@ -2490,8 +2490,8 @@
  * you must uncomment the following option or it won't work.
  */
 #define SDSUPPORT
-#define SDIO_SUPPORT
-
+//#define SDIO_SUPPORT
+#define ONBOARD_SDIO // 3DWORK 2.1.2.2 FIX
 /**
  * SD CARD: ENABLE CRC
  *
