@@ -4,7 +4,7 @@ on:
       branches:
         - master
       paths:
-        - 'readme.md'
+        - '/**.md'
 permissions:
   contents: write
   issues: write
@@ -21,5 +21,5 @@ jobs:
             with:
                 token: ${{ secrets.COMMIT_TOKEN }}
                 gist_id: 07b5a603f9becbe484182f8c5dc25b52
-                file_path: readme.md
+                file_path: /readme.md
                 file_type: binary
