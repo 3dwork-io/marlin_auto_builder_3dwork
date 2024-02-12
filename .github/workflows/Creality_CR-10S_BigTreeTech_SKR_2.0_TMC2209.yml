@@ -1,11 +1,11 @@
-name: Creality_CR-10S_BigTreeTech_SKR_2.0_TMC2209_TMC2209
+name: Creality_CR-10S_BigTreeTech_SKR_2.0_TMC2209
 
 on:
   push:
     branches:
       - master
     paths:
-      - 'Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209_TMC2209/**.h'
+      - 'Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209/**.h'
 permissions:
   contents: write
   issues: write
@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build_and_push:
-    name: CR-10S BigTreeTech_SKR_2.0_TMC2209_TMC2209 - Compile and Push Firmware
+    name: CR-10S BigTreeTech_SKR_2.0_TMC2209 - Compile and Push Firmware
     runs-on: ubuntu-latest
     env:
       BOARD: BIGTREE_SKR_2
@@ -28,8 +28,8 @@ jobs:
             -u root:root \
             -e BOARD \
             -e USE_TAG=2.1.2.2 \
-            -v $(pwd)/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209_TMC2209:/home/platformio/build \
-            -v $(pwd)/Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209_TMC2209:/home/platformio/CustomConfiguration \
+            -v $(pwd)/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209:/home/platformio/build \
+            -v $(pwd)/Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
 
       - name: Push firmware
