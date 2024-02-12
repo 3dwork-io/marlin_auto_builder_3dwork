@@ -63,7 +63,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(3DWork, https://3dwork.io)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(3DWork.IO, https://3dwork.io)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -2490,8 +2490,8 @@
  * you must uncomment the following option or it won't work.
  */
 #define SDSUPPORT
-#define SDIO_SUPPORT
-
+//#define SDIO_SUPPORT
+#define ONBOARD_SDIO // 3DWORK 2.1.2.2 FIX
 /**
  * SD CARD: ENABLE CRC
  *
