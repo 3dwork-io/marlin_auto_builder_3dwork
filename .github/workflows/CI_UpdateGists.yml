@@ -13,10 +13,10 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-        - name: Checkout code for marlin_auto_builder_3dwork
+      - name: Checkout code for marlin_auto_builder_3dwork
         uses: actions/checkout@v3
 
-        - name: Creating start_print.cfg Gist
+      - name: Creating start_print.cfg Gist
         uses: exuanbo/actions-deploy-gist@v1
         with:
             token: ${{ secrets.COMMIT_TOKEN }}
