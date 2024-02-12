@@ -2510,7 +2510,8 @@
  * you must uncomment the following option or it won't work.
  */
 #define SDSUPPORT
-#define SDIO_SUPPORT // required!
+//#define SDIO_SUPPORT // required!
+#define ONBOARD_SDIO // 3Dwork fix
 
 /**
  * SD CARD: ENABLE CRC
