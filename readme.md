@@ -5,7 +5,7 @@
 > Marlin binaries are created from official Marlin pre configuration repository, use at your own risk. Review compilation badge for succesfully build.
 > Suggested to take the config files and compile yourself, [compilation guide](https://3dwork-qitec-net.translate.goog/guias-impresion-3d/mejoras-upgrades/marlin-guia-compilacion?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=es&_x_tr_pto=wapp).
 
-# Creality 
+# Creality
 
 ## Creality - Ender 3
 
