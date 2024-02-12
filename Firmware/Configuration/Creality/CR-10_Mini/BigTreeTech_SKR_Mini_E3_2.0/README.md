@@ -1,4 +1,4 @@
-## CR-10 Mini with BLTouch
+## CR-10 Mini with BLTouch 
 
 Configuration for the BigTreeTech SKR E3 Mini V2 in a Creality CR-10 Mini using the stock CR-10 display, and a BL Touch v3.1 ABL probe mounted on a Bullseye fan duct. Additional features are enabled to take advantage of the capabilities of the BTT SKR E3 Mini V2 board, detailed below.
 
