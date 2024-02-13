@@ -12,6 +12,15 @@
 > - the third component, FIRMWARE, it´s a link to the firmware binaries... you should find usually different folders by available Marlin versions  
 > - the last component, default_envs, it´s the name of the environment (related with the HAL/MCU used by the printer BOARD) used in plarformio.ini to generate the firmware binaries. Useful if you will use the CONFIG files and the Marlin sources to generate your own firmware version. Something we suggest to do.    
 
+> [!NOTE]
+> TOC:
+> - [Anet](#anet)
+> - [AnyCubic](#anycubic)
+> - [Creality](#creality)
+> - [BIQU](#biqu)
+> - [Artillery](#artillery)
+> - [Kingroon](#kingroon)
+
 # Anet
 
 ![Anet_A2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Anet_A2.yml/badge.svg) - [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Anet/A2) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Anet/A2plus/) - default_envs = sanguino1284p_optimized  
@@ -57,11 +66,13 @@
 
 ![Creality_Ender-3_V2_Neo](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_V2_Neo.yml/badge.svg) [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3_V2_Neo) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3_V2_Neo) - default_envs = STM32F103RE_creality  
 
-![Creality_Ender-3_S1_STM32F4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_S1_STM32F4.yml/badge.svg) [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3_S1/STM32F1) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3_S1/STM32F1) - default_envs = STM32F103RE_creality  
-![Creality_Ender-3_S1_STM32F1](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_S1_STM32F1.yml/badge.svg) Config - Firmware - default_envs = STM32F401RC_creality  
+![Creality_Ender-3_S1_STM32F4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_S1_STM32F4.yml/badge.svg) - [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3_S1/STM32F1) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3_S1/STM32F1) - default_envs = STM32F103RE_creality  
+![Creality_Ender-3_S1_STM32F1](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_Ender-3_S1_STM32F1.yml/badge.svg) - [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/Ender-3_S1/STM32F1) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/Ender-3_S1/STM32F1) - default_envs = STM32F103RE_creality 
 
-![Creality_CR-10S_BigTreeTech_SKR_1.4_Turbo_TMC2209](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_CR-10S_BigTreeTech_SKR_1.4_Turbo_TMC2209.yml/badge.svg) [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_1.4_Turbo_TMC2209) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_1.4_Turbo_TMC2209/) - default_envs = LPC1769  
-![Creality_CR-10S_BigTreeTech_SKR_2.0_TMC2209](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_CR-10S_BigTreeTech_SKR_2.0_TMC2209.yml/badge.svg) [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209) - default_envs = BIGTREE_SKR_2 
+![Creality_CR-10S_BigTreeTech_SKR_1.4_Turbo_TMC2209](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_CR-10S_BigTreeTech_SKR_1.4_Turbo_TMC2209.yml/badge.svg) - [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_1.4_Turbo_TMC2209) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_1.4_Turbo_TMC2209/) - default_envs = LPC1769  
+![Creality_CR-10S_BigTreeTech_SKR_2.0_TMC2209](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_CR-10S_BigTreeTech_SKR_2.0_TMC2209.yml/badge.svg) - [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209) - default_envs = BIGTREE_SKR_2  
+![Creality_CR-10S_BigTreeTech_SKR_Mini_E3_2.0](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_CR-10S_BigTreeTech_SKR_Mini_E3_2.0.yml/badge.svg) - [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_Mini_E3_2.0) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_Mini_E3_2.0/) - default_envs = STM32F103RC_btt  
+![Creality_CR-10S_CrealityV1](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Creality_CR-10S_CrealityV1.yml/badge.svg) - [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Creality/CR-10S/CrealityV1) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Creality/CR-10S/) - default_envs = mega2560  
 
 # BIQU
 
