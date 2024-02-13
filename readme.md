@@ -118,6 +118,10 @@
 ![BIQU_B1_SKR2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR2.yml/badge.svg) [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/BIQU/B1/SKR2) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/BIQU/B1/SKR2) - default_envs = BIGTREE_SKR_2  
 ![BIQU_B1_SKR_1.4](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/BIQU_B1_SKR_1.4.yml/badge.svg) [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/BIQU/B1/SKR_1.4) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/BIQU/B1/SKR_1.4) - default_envs = LPC1768  
 
+# Elegoo
+
+![Elegoo_Neptune_2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Elegoo_Neptune_2.yml/badge.svg) - [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Elegoo/Neptune_2) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Elegoo/Neptune_2/) - default_envs = mks_robin_nano_v1v2  
+
 # Artillery
 
 ![Artillery_Sidewinder_X2](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Artillery_Sidewinder_X2.yml/badge.svg) [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Artillery/Sidewinder_X2) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Artillery/Sidewinder_X2) - default_envs = Artillery_Ruby  
@@ -132,3 +136,12 @@
 ![Kingroon_KP5L](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Kingroon_KP5L.yml/badge.svg) [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Kingroon/KP5L) - Firmware - default_envs = mks_robin_nano_v1v2  
 ![Kingroon_KP3S](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Kingroon_KP3S.yml/badge.svg) [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Kingroon/KP3S) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Kingroon/KP3S) - default_envs = mks_robin_nano_v1v2  
 ![Kingroon_KP3](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Kingroon_KP3.yml/badge.svg) [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Kingroon/KP3) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Kingroon/KP3) - default_envs = mks_robin_mini  
+
+# Prusa
+
+![Prusa_MK3](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Prusa_MK3.yml/badge.svg) - [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Prusa/MK3) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Prusa/MK3/) - default_envs = rambo  
+![Prusa_MK3S-BigTreeTech-BTT002](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Prusa_MK3S-BigTreeTech-BTT002.yml/badge.svg) - [CONFIG](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Prusa/MK3S-BigTreeTech-BTT002) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Prusa/MK3S-BigTreeTech-BTT002/) - default_envs = BIGTREE_BTT002  
+
+# Sunlu
+
+![Sunlu_S8](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/Sunlu_S8.yml/badge.svg) - [CONFIG](hhttps://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Configuration/Sunlu/S8) - [FIRMWARE](https://github.com/3dwork-io/marlin_auto_builder_3dwork/tree/master/Firmware/Builds/Sunlu/S8/) - default_envs = mega2560  
