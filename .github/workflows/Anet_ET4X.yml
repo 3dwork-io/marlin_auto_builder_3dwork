@@ -32,7 +32,7 @@ jobs:
             -e USE_TAG=2.1.2.2 \
             -e FW_EXTENSION=bin \
             -v $(pwd)/Firmware/Builds/Anet/ET4X/Anet_ET4X_no_bootloader/2_1_2_2:/home/platformio/build \
-            -v $(pwd)/Firmware/Configuration/Anet/ET4X/Anet_ET4X_no_bootloader:/home/platformio/CustomConfiguration \
+            -v $(pwd)/Firmware/Configuration/Anet/ET4X:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
 
       - name: Push firmware
@@ -63,7 +63,7 @@ jobs:
             -e USE_TAG=2.1.2.2 \
             -e FW_EXTENSION=bin \
             -v $(pwd)/Firmware/Builds/Anet/ET4X/Anet_ET4X_OpenBLT/2_1_2_2:/home/platformio/build \
-            -v $(pwd)/Firmware/Configuration/Anet/ET4X/Anet_ET4X_OpenBLT:/home/platformio/CustomConfiguration \
+            -v $(pwd)/Firmware/Configuration/Anet/ET4X:/home/platformio/CustomConfiguration \
             frealmyr/marlin-build:latest
 
       - name: Push firmware
