@@ -34,57 +34,56 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 << 'PYEOF'
-import json, os, subprocess, sys
+          import json, os, subprocess, sys
 
-with open('board-matrix.json') as f:
-    all_boards = json.load(f)
+          with open('board-matrix.json') as f:
+              all_boards = json.load(f)
 
-RUN_ID = os.environ.get('INPUT_RUN_ID', '').strip()
-if not RUN_ID:
-    ref = os.environ.get('GITHUB_REF_NAME', '')
-    result = subprocess.run(
-        ['gh', 'run', 'list', '--branch', ref,
-         '--workflow', 'Auto-Update Marlin Firmwares',
-         '--status', 'completed', '--json', 'databaseId',
-         '--jq', '.[0].databaseId', '--limit', '1'],
-        capture_output=True, text=True
-    )
-    RUN_ID = result.stdout.strip()
+          RUN_ID = os.environ.get('INPUT_RUN_ID', '').strip()
+          if not RUN_ID:
+              ref = os.environ.get('GITHUB_REF_NAME', '')
+              result = subprocess.run(
+                  ['gh', 'run', 'list', '--branch', ref,
+                   '--workflow', 'Auto-Update Marlin Firmwares',
+                   '--status', 'completed', '--json', 'databaseId',
+                   '--jq', '.[0].databaseId', '--limit', '1'],
+                  capture_output=True, text=True
+              )
+              RUN_ID = result.stdout.strip()
 
-print(f"Run ID: {RUN_ID}", file=sys.stderr)
-if not RUN_ID or RUN_ID == 'null':
-    with open(os.environ['GITHUB_OUTPUT'], 'a') as out:
-        print('skip=true', file=out)
-        print('matrix={"include":[]}', file=out)
-    sys.exit(0)
+          print(f"Run ID: {RUN_ID}", file=sys.stderr)
+          if not RUN_ID or RUN_ID == 'null':
+              with open(os.environ['GITHUB_OUTPUT'], 'a') as out:
+                  print('skip=true', file=out)
+                  print('matrix={"include":[]}', file=out)
+              sys.exit(0)
 
-result = subprocess.run(
-    ['gh', 'run', 'view', RUN_ID, '--json', 'jobs',
-     '--jq', '.jobs[] | select(.conclusion=="failure") | .name'],
-    capture_output=True, text=True
-)
-failed_names = [n.strip() for n in result.stdout.strip().split('
-') if n.strip()]
-print(f"Failed: {failed_names}", file=sys.stderr)
+          result = subprocess.run(
+              ['gh', 'run', 'view', RUN_ID, '--json', 'jobs',
+               '--jq', '.jobs[] | select(.conclusion=="failure") | .name'],
+              capture_output=True, text=True
+          )
+          failed_names = [n.strip() for n in result.stdout.strip().split('\n') if n.strip()]
+          print(f"Failed: {failed_names}", file=sys.stderr)
 
-GROUPS = ['Creality ', 'delta+Geeetech ', 'Wanhao+Anet+Tronxy ',
-          'BIQU+Sovol+AnyCubic ', 'Artillery+Tevo+Kingroon ', 'Other ']
-found = []
-for name in failed_names:
-    for prefix in GROUPS:
-        if name.startswith(prefix):
-            label = name[len(prefix):]
-            for entry in all_boards:
-                if entry.get('label') == label:
-                    found.append(entry)
-                    break
-            break
+          GROUPS = ['Creality ', 'delta+Geeetech ', 'Wanhao+Anet+Tronxy ',
+                    'BIQU+Sovol+AnyCubic ', 'Artillery+Tevo+Kingroon ', 'Other ']
+          found = []
+          for name in failed_names:
+              for prefix in GROUPS:
+                  if name.startswith(prefix):
+                      label = name[len(prefix):]
+                      for entry in all_boards:
+                          if entry.get('label') == label:
+                              found.append(entry)
+                              break
+                      break
 
-print(f"Found {len(found)} boards to retry", file=sys.stderr)
-with open(os.environ['GITHUB_OUTPUT'], 'a') as out:
-    print(f'matrix={json.dumps({"include": found})}', file=out)
-    print('skip=false', file=out)
-PYEOF
+          print(f"Found {len(found)} boards to retry", file=sys.stderr)
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as out:
+              print(f'matrix={json.dumps({"include": found})}', file=out)
+              print('skip=false', file=out)
+          PYEOF
 
   rebuild:
     name: "Rebuild ${{ matrix.label }}"
