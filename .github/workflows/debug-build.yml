@@ -1,0 +1,155 @@
+name: Debug Build (8-bit + 32-bit)
+on:
+  workflow_dispatch:
+    inputs:
+      force_version:
+        description: 'Force specific version (e.g., 2.1.2.7)'
+        required: false
+        default: '2.1.2.7'
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        include:
+          - label: "Anet A2"
+            label_short: "Anet A2"
+            board: "sanguino1284p_optimized"
+            config_path: "Firmware/Configuration/Anet/A2"
+            board_path: "Anet/A2"
+            official_path: "Anet/A2"
+          - label: "Anet E16 BTT SKR 1.3"
+            label_short: "Anet E16"
+            board: "LPC1768"
+            config_path: "Firmware/Configuration/Anet/E16/BTT_SKR_1.3"
+            board_path: "Anet/E16/BTT_SKR_1.3"
+            official_path: "Anet/E16/BTT SKR 1.3"
+      fail-fast: false
+    name: "${{ matrix.label_short }} (${{ matrix.board }})"
+    runs-on: ubuntu-latest
+    env:
+      VER: ${{ inputs.force_version || '2.1.2.7' }}
+      VER_DIR: ${{ inputs.force_version && '2_1_2_7' || '2_1_2_7' }}
+      BOARD: ${{ matrix.board }}
+      BUILD_DIR: Firmware/Builds/${{ matrix.board_path }}/2_1_2_7
+      CONFIG_DIR: ${{ matrix.config_path }}
+      BOARD_PATH: ${{ matrix.board_path }}
+      OFFICIAL_PATH: ${{ matrix.official_path }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Prepare version-compatible configs
+        run: |
+          mkdir -p "$BUILD_DIR"
+          CUSTOM_DIR="Firmware/Configuration/$BOARD_PATH"
+          OFFICIAL_ARGS="--board \"$BOARD_PATH\" --version \"$VER\" --output-dir \"$CONFIG_DIR\""
+          if [ -n "$OFFICIAL_PATH" ] && [ "$OFFICIAL_PATH" != "$BOARD_PATH" ]; then
+            OFFICIAL_ARGS="$OFFICIAL_ARGS --official-path \"$OFFICIAL_PATH\""
+          fi
+          if [ -d "$CUSTOM_DIR" ] && [ -f "$CUSTOM_DIR/Configuration.h" ]; then
+            echo "=== Using config.ini approach ==="
+            eval "python3 scripts/prepare-configs.py $OFFICIAL_ARGS --custom-dir \"$CUSTOM_DIR\""
+          else
+            echo "=== No custom config, downloading official ==="
+            eval "python3 scripts/prepare-configs.py $OFFICIAL_ARGS"
+          fi
+          echo "=== Config files ==="
+          ls -la "$CONFIG_DIR" 2>/dev/null || echo "WARNING: No config files!"
+
+      - name: Compile firmware (entrypoint override)
+        run: |
+          echo "=== Building $BOARD ($BOARD_PATH) ==="
+          mkdir -p "$BUILD_DIR"
+          docker run \
+            -u root:root \
+            -e BOARD \
+            -e USE_TAG="$VER" \
+            -v "$(pwd)/$BUILD_DIR:/build_output" \
+            -v "$(pwd)/$CONFIG_DIR:/config" \
+            --name marlin-debug \
+            --entrypoint /bin/bash \
+            frealmyr/marlin-build:latest \
+            -c "
+              set -x
+              echo '=== CLONING Marlin \$USE_TAG ==='
+              git clone --depth 1 --branch \$USE_TAG https://github.com/MarlinFirmware/Marlin.git /Marlin/ 2>&1
+              echo '=== COPYING configs ==='
+              cp -r /config/* /Marlin/Marlin/ 2>/dev/null || true
+              echo '=== PLATFORMIO.INI before ==='
+              head -5 /Marlin/platformio.ini
+              echo '=== SETTING BOARD ==='
+              sed -i \"s/default_envs.*/default_envs = \${BOARD}/\" /Marlin/platformio.ini
+              grep default_envs /Marlin/platformio.ini
+              echo '=== BUILDING ==='
+              cd /Marlin && platformio run 2>&1
+              BUILD_EXIT=\$?
+              echo '=== PlatformIO exit code: \$BUILD_EXIT ==='
+              echo '=== FINDING firmware files ==='
+              find /Marlin/.pio -name 'firmware.*'
+              echo '=== COPYING firmware files ==='
+              mkdir -p /build_output
+              find /Marlin/.pio -name 'firmware.*' -exec cp -v {} /build_output/ \;
+              echo '=== MD5 CHECKSUM ==='
+              cd /build_output
+              for f in firmware.*; do
+                if [ -f \"\$f\" ]; then
+                  echo \"Generating MD5 for \$f\"
+                  md5sum \"\$f\" > \"\${f}.md5\"
+                  cat \"\${f}.md5\"
+                fi
+              done
+              echo '=== OUTPUT DIR ==='
+              ls -la /build_output/
+              echo '=== DONE (build exit: \$BUILD_EXIT) ==='
+            " || echo "DOCKER RUN EXIT CODE: $?"
+          docker rm marlin-debug 2>/dev/null || true
+
+      - name: Show compiled files
+        run: |
+          echo "=== BUILD DIR: $BUILD_DIR ==="
+          if [ -d "$BUILD_DIR" ]; then
+            echo "Contents:"
+            find "$BUILD_DIR" -type f -exec ls -la {} \;
+            echo "---"
+            echo "File list:"
+            find "$BUILD_DIR" -type f -printf '%f (%s bytes)\n' 2>/dev/null || find "$BUILD_DIR" -type f -exec basename {} \;
+            if [ -z "$(find "$BUILD_DIR" -type f 2>/dev/null)" ]; then
+              echo "WARNING: NO FIRMWARE FILES FOUND!"
+              echo "(directory exists but empty)"
+            fi
+          else
+            echo "WARNING: BUILD DIR DOES NOT EXIST"
+          fi
+
+      - name: Show repo state
+        run: |
+          echo "=== GIT STATUS ==="
+          git status --short
+          echo "=== STAGED ==="
+          git diff --staged --stat || true
+
+      - name: Push firmware to repo
+        run: |
+          echo "=== COMMITTING AND PUSHING ==="
+          git config --global user.name "JJR Bot"
+          git config --global user.email "jrodriguez@qitec.net"
+          git add "$BUILD_DIR" 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "debug: ${{ matrix.label_short }} @ $VER"
+            echo "=== Pushing (with autostash + retry) ==="
+            for i in 1 2 3; do
+              echo "--- Push attempt $i ---"
+              if git pull --rebase --autostash && git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:feat/auto-update-marlin; then
+                echo "PUSH SUCCESS"
+                break
+              fi
+              echo "Push failed, sleeping 5s..."
+              sleep 5
+            done
+          fi
