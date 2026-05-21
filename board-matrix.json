@@ -1,0 +1,2528 @@
+[
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/Anet/A2",
+    "board_path": "Anet/A2",
+    "official_path": "Anet/A2"
+  },
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/Anet/A2plus",
+    "board_path": "Anet/A2plus",
+    "official_path": "Anet/A2plus"
+  },
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/Anet/A6",
+    "board_path": "Anet/A6",
+    "official_path": "Anet/A6"
+  },
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/Anet/A8",
+    "board_path": "Anet/A8",
+    "official_path": "Anet/A8"
+  },
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/Anet/A8plus",
+    "board_path": "Anet/A8plus",
+    "official_path": "Anet/A8plus"
+  },
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/Anet/A9",
+    "board_path": "Anet/A9",
+    "official_path": "Anet/A9"
+  },
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/Anet/E10",
+    "board_path": "Anet/E10",
+    "official_path": "Anet/E10"
+  },
+  {
+    "board": "LPC1768",
+    "config_path": "Firmware/Configuration/Anet/E16/BTT_SKR_1.3",
+    "board_path": "Anet/E16/BTT_SKR_1.3",
+    "official_path": "Anet/E16/BTT SKR 1.3"
+  },
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/Anet/E16/Stock",
+    "board_path": "Anet/E16/Stock",
+    "official_path": "Anet/E16/Stock"
+  },
+  {
+    "board": "Anet_ET4_no_bootloader",
+    "config_path": "Firmware/Configuration/Anet/ET4",
+    "board_path": "Anet/ET4",
+    "official_path": "Anet/ET4"
+  },
+  {
+    "board": "Anet_ET4_no_bootloader",
+    "config_path": "Firmware/Configuration/Anet/ET4X",
+    "board_path": "Anet/ET4X",
+    "official_path": "Anet/ET4X"
+  },
+  {
+    "board": "Anet_ET4_no_bootloader",
+    "config_path": "Firmware/Configuration/Anet/ET4-Plus",
+    "board_path": "Anet/ET4-Plus",
+    "official_path": "Anet/ET4+"
+  },
+  {
+    "board": "Anet_ET4_no_bootloader",
+    "config_path": "Firmware/Configuration/Anet/ET4-Pro",
+    "board_path": "Anet/ET4-Pro",
+    "official_path": "Anet/ET4-Pro"
+  },
+  {
+    "board": "Anet_ET4_no_bootloader",
+    "config_path": "Firmware/Configuration/Anet/ET5",
+    "board_path": "Anet/ET5",
+    "official_path": "Anet/ET5"
+  },
+  {
+    "board": "Anet_ET4_no_bootloader",
+    "config_path": "Firmware/Configuration/Anet/ET5X",
+    "board_path": "Anet/ET5X",
+    "official_path": "Anet/ET5X"
+  },
+  {
+    "board": "Anet_ET4_no_bootloader",
+    "config_path": "Firmware/Configuration/Anet/ET5-Pro",
+    "board_path": "Anet/ET5-Pro",
+    "official_path": "Anet/ET5-Pro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/AnyCubic/Chiron",
+    "board_path": "AnyCubic/Chiron",
+    "official_path": "AnyCubic/Chiron"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/AnyCubic/Mega_Zero_2.0/Anycubic_V1",
+    "board_path": "AnyCubic/Mega_Zero_2.0/Anycubic_V1",
+    "official_path": "AnyCubic/Mega Zero 2.0/Anycubic V1"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/AnyCubic/Mega_Zero/Anycubic_V1",
+    "board_path": "AnyCubic/Mega_Zero/Anycubic_V1",
+    "official_path": "AnyCubic/Mega Zero/Anycubic V1"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/AnyCubic/Mega_Zero/BigTreeTech_SKR_Mini_MZ_V1.0",
+    "board_path": "AnyCubic/Mega_Zero/BigTreeTech_SKR_Mini_MZ_V1.0",
+    "official_path": "AnyCubic/Mega Zero/BigTreeTech SKR Mini MZ V1.0"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/AnyCubic/i3",
+    "board_path": "AnyCubic/i3",
+    "official_path": "AnyCubic/i3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/AnyCubic/i3_Mega/Mega_Trigorilla_AVR",
+    "board_path": "AnyCubic/i3_Mega/Mega_Trigorilla_AVR",
+    "official_path": "AnyCubic/i3 Mega/Trigorilla AVR"
+  },
+  {
+    "board": "trigorilla_pro",
+    "config_path": "Firmware/Configuration/AnyCubic/i3_Mega/Trigorilla_Pro_STM32",
+    "board_path": "AnyCubic/i3_Mega/Trigorilla_Pro_STM32",
+    "official_path": "AnyCubic/i3 Mega/Trigorilla Pro STM32"
+  },
+  {
+    "board": "Artillery_Ruby",
+    "config_path": "Firmware/Configuration/Artillery/Genius_Pro",
+    "board_path": "Artillery/Genius_Pro",
+    "official_path": "Artillery/Genius Pro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Artillery/Genius/V1",
+    "board_path": "Artillery/Genius/V1",
+    "official_path": "Artillery/Genius/V1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Artillery/Genius/BLTouch",
+    "board_path": "Artillery/Genius/BLTouch",
+    "official_path": "Artillery/Genius/BLTouch"
+  },
+  {
+    "board": "Artillery_Ruby",
+    "config_path": "Firmware/Configuration/Artillery/Hornet",
+    "board_path": "Artillery/Hornet",
+    "official_path": "Artillery/Hornet"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Artillery/Sidewinder_X1/V1",
+    "board_path": "Artillery/Sidewinder_X1/V1",
+    "official_path": "Artillery/Sidewinder X1/V1"
+  },
+  {
+    "board": "Artillery_Ruby",
+    "config_path": "Firmware/Configuration/Artillery/Sidewinder_X2",
+    "board_path": "Artillery/Sidewinder_X2",
+    "official_path": "Artillery/Sidewinder X2"
+  },
+  {
+    "board": "BIGTREE_SKR_2",
+    "config_path": "Firmware/Configuration/BIQU/B1_SE",
+    "board_path": "BIQU/B1_SE",
+    "official_path": "BIQU/B1 SE"
+  },
+  {
+    "board": "BIGTREE_SKR_2",
+    "config_path": "Firmware/Configuration/BIQU/B1_SE_Plus",
+    "board_path": "BIQU/B1_SE_Plus",
+    "official_path": "BIQU/B1 SE Plus"
+  },
+  {
+    "board": "BIGTREE_SKR_2",
+    "config_path": "Firmware/Configuration/BIQU/B1/SKR2",
+    "board_path": "BIQU/B1/SKR2",
+    "official_path": "BIQU/B1 - SKR 2"
+  },
+  {
+    "board": "LPC1768",
+    "config_path": "Firmware/Configuration/BIQU/B1/SKR_1.4",
+    "board_path": "BIQU/B1/SKR_1.4",
+    "official_path": "BIQU/B1 - SKR 1.4"
+  },
+  {
+    "board": "BTT_SKR_SE_BX",
+    "config_path": "Firmware/Configuration/BIQU/BX",
+    "board_path": "BIQU/BX",
+    "official_path": "BIQU/BX"
+  },
+  {
+    "board": "STM32G0B1RE_manta_btt",
+    "config_path": "Firmware/Configuration/BIQU/Hurakan",
+    "board_path": "BIQU/Hurakan",
+    "official_path": ""
+  },
+  {
+    "board": "LPC1769",
+    "config_path": "Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_1.4_Turbo_TMC2209",
+    "board_path": "Creality/CR-10S/BigTreeTech_SKR_1.4_Turbo_TMC2209",
+    "official_path": "Creality/CR-10S/BigTreeTech SKR 1.4 Turbo TMC2209"
+  },
+  {
+    "board": "BIGTREE_SKR_2",
+    "config_path": "Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209",
+    "board_path": "Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209",
+    "official_path": "Creality/CR-10S/BigTreeTech SKR 2.0 TMC2209"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/CR-10S/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Creality/CR-10S/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Creality/CR-10S/BigTreeTech SKR Mini E3 2.0"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR-10S/CrealityV1",
+    "board_path": "Creality/CR-10S/CrealityV1",
+    "official_path": "Creality/CR-10S/CrealityV1"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/CR-10/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Creality/CR-10/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Creality/CR-10/BigTreeTech SKR Mini E3 2.0"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Creality/CR-10/CrealityV1",
+    "board_path": "Creality/CR-10/CrealityV1",
+    "official_path": "Creality/CR-10/CrealityV1"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/CR-10_Mini/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Creality/CR-10_Mini/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Creality/CR-10 Mini/BigTreeTech SKR Mini E3 2.0"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Creality/CR-10_Mini/CrealityV1",
+    "board_path": "Creality/CR-10_Mini/CrealityV1",
+    "official_path": "Creality/CR-10 Mini/CrealityV1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR-10_S4/CrealityV1",
+    "board_path": "Creality/CR-10_S4/CrealityV1",
+    "official_path": "Creality/CR-10 S4/CrealityV1"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/CR-10_S5/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/CR-10_S5/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/CR-10 S5/BigTreeTech SKR Mini E3 v3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR-10_S5/CrealityV1",
+    "board_path": "Creality/CR-10_S5/CrealityV1",
+    "official_path": "Creality/CR-10 S5/CrealityV1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR-10_S5/CrealityV2.2-BLTouch",
+    "board_path": "Creality/CR-10_S5/CrealityV2.2-BLTouch",
+    "official_path": "Creality/CR-10 S5/CrealityV2.2-BLTouch"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR-10_V2",
+    "board_path": "Creality/CR-10_V2",
+    "official_path": "Creality/CR-10 V2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR-10_V3",
+    "board_path": "Creality/CR-10_V3",
+    "official_path": "Creality/CR-10 V3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR-20_Pro",
+    "board_path": "Creality/CR-20_Pro",
+    "official_path": "Creality/CR-20 Pro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR-20/Stock",
+    "board_path": "Creality/CR-20/Stock",
+    "official_path": "Creality/CR-20/Stock"
+  },
+  {
+    "board": "STM32F103RE_creality",
+    "config_path": "Firmware/Configuration/Creality/CR-6_SE",
+    "board_path": "Creality/CR-6_SE",
+    "official_path": "Creality/CR-6 SE"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR-8",
+    "board_path": "Creality/CR-8",
+    "official_path": "Creality/CR-8"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Creality/Ender-2",
+    "board_path": "Creality/Ender-2",
+    "official_path": "Creality/Ender-2"
+  },
+  {
+    "board": "LPC1768",
+    "config_path": "Firmware/Configuration/Creality/Ender-3/BigTreeTech_SKR_1.4",
+    "board_path": "Creality/Ender-3/BigTreeTech_SKR_1.4",
+    "official_path": "Creality/Ender-3/BigTreeTech SKR 1.4"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-3/BigTreeTech_SKR_Mini_E3_1.2",
+    "board_path": "Creality/Ender-3/BigTreeTech_SKR_Mini_E3_1.2",
+    "official_path": "Creality/Ender-3/BigTreeTech SKR Mini E3 1.2"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-3/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Creality/Ender-3/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Creality/Ender-3/BigTreeTech SKR Mini E3 2.0"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-3/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/Ender-3/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/Ender-3/BigTreeTech SKR Mini E3 3.0"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Creality/Ender-3/CrealityV1",
+    "board_path": "Creality/Ender-3/CrealityV1",
+    "official_path": "Creality/Ender-3/CrealityV1"
+  },
+  {
+    "board": "STM32F103RE_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender-3/CrealityV422",
+    "board_path": "Creality/Ender-3/CrealityV422",
+    "official_path": "Creality/Ender-3/CrealityV422"
+  },
+  {
+    "board": "STM32F103RE_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender-3/CrealityV427",
+    "board_path": "Creality/Ender-3/CrealityV427",
+    "official_path": "Creality/Ender-3/CrealityV427"
+  },
+  {
+    "board": "FYSETC_CHEETAH_V20",
+    "config_path": "Firmware/Configuration/Creality/Ender-3/FYSETC_Cheetah_2.0",
+    "board_path": "Creality/Ender-3/FYSETC_Cheetah_2.0",
+    "official_path": "Creality/Ender-3/FYSETC Cheetah 2.0"
+  },
+  {
+    "board": "STM32F103RE_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender-3_Max",
+    "board_path": "Creality/Ender-3_Max",
+    "official_path": "Creality/Ender-3 Max"
+  },
+  {
+    "board": "LPC1769",
+    "config_path": "Firmware/Configuration/Creality/Ender-3_Pro/BigTreeTech_SKR_1.4_Turbo",
+    "board_path": "Creality/Ender-3_Pro/BigTreeTech_SKR_1.4_Turbo",
+    "official_path": "Creality/Ender-3 Pro/BigTreeTech SKR 1.4 Turbo"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_1.2",
+    "board_path": "Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_1.2",
+    "official_path": "Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.2"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 2.0"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/Ender-3_Pro/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0"
+  },
+  {
+    "board": "STM32F103RE_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender-3_S1/STM32F1",
+    "board_path": "Creality/Ender-3_S1/STM32F1",
+    "official_path": "Creality/Ender-3 S1/STM32F1"
+  },
+  {
+    "board": "STM32F401RC_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender-3_S1/STM32F4",
+    "board_path": "Creality/Ender-3_S1/STM32F4",
+    "official_path": "Creality/Ender-3 S1/STM32F4"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-3_V2/BigTreeTech_SKR_Mini_E3_v3/CrealityUI",
+    "board_path": "Creality/Ender-3_V2/BigTreeTech_SKR_Mini_E3_v3/CrealityUI",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 v3/CrealityUI"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-3_V2/BigTreeTech_SKR_Mini_E3_v3/MarlinUI",
+    "board_path": "Creality/Ender-3_V2/BigTreeTech_SKR_Mini_E3_v3/MarlinUI",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 v3/MarlinUI"
+  },
+  {
+    "board": "STM32F103RE_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender-3_V2_Neo",
+    "board_path": "Creality/Ender-3_V2_Neo",
+    "official_path": "Creality/Ender-3 V2 Neo"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-5/BigTreeTech_SKR_Mini_E3_1.2",
+    "board_path": "Creality/Ender-5/BigTreeTech_SKR_Mini_E3_1.2",
+    "official_path": "Creality/Ender-5/BigTreeTech SKR Mini E3 1.2"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-5/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Creality/Ender-5/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Creality/Ender-5/BigTreeTech SKR Mini E3 2.0"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Creality/Ender-5/CrealityV1",
+    "board_path": "Creality/Ender-5/CrealityV1",
+    "official_path": "Creality/Ender-5/CrealityV1"
+  },
+  {
+    "board": "STM32F103RE_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender-5/CrealityV427",
+    "board_path": "Creality/Ender-5/CrealityV427",
+    "official_path": "Creality/Ender-5/CrealityV427"
+  },
+  {
+    "board": "STM32H743VI_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-5_Plus/BigTreeTech_SKR_3",
+    "board_path": "Creality/Ender-5_Plus/BigTreeTech_SKR_3",
+    "official_path": "Creality/Ender-5 Plus/BigTreeTech SKR 3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender-5_Plus/CrealityV1",
+    "board_path": "Creality/Ender-5_Plus/CrealityV1",
+    "official_path": "Creality/Ender-5 Plus/CrealityV1"
+  },
+  {
+    "board": "LPC1769",
+    "config_path": "Firmware/Configuration/Creality/Ender-5_Pro/BigTreeTech_SKR_E3_Turbo",
+    "board_path": "Creality/Ender-5_Pro/BigTreeTech_SKR_E3_Turbo",
+    "official_path": "Creality/Ender-5 Pro/BigTreeTech SKR E3 Turbo"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-5_Pro/BigTreeTech_SKR_Mini_E3_1.2",
+    "board_path": "Creality/Ender-5_Pro/BigTreeTech_SKR_Mini_E3_1.2",
+    "official_path": "Creality/Ender-5 Pro/BigTreeTech SKR Mini E3 1.2"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender-5_Pro/BigTreeTech_SKR_Mini_E3_2.0_BLTouch",
+    "board_path": "Creality/Ender-5_Pro/BigTreeTech_SKR_Mini_E3_2.0_BLTouch",
+    "official_path": "Creality/Ender-5 Pro/BigTreeTech SKR Mini E3 2.0 with BLTouch"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Creality/Ender-5_Pro/CrealityV1",
+    "board_path": "Creality/Ender-5_Pro/CrealityV1",
+    "official_path": "Creality/Ender-5 Pro/CrealityV1"
+  },
+  {
+    "board": "STM32F103RE_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender-5_Pro/CrealityV422",
+    "board_path": "Creality/Ender-5_Pro/CrealityV422",
+    "official_path": "Creality/Ender-5 Pro/CrealityV422"
+  },
+  {
+    "board": "STM32F103RE_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender-5_Pro/CrealityV427",
+    "board_path": "Creality/Ender-5_Pro/CrealityV427",
+    "official_path": "Creality/Ender-5 Pro/CrealityV427"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Elegoo/Neptune_2",
+    "board_path": "Elegoo/Neptune_2",
+    "official_path": "Elegoo/Neptune 2"
+  },
+  {
+    "board": "mks_robin_mini",
+    "config_path": "Firmware/Configuration/Kingroon/KP3",
+    "board_path": "Kingroon/KP3",
+    "official_path": "Kingroon/KP3"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Kingroon/KP3S",
+    "board_path": "Kingroon/KP3S",
+    "official_path": "Kingroon/KP3S"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Kingroon/KP5L",
+    "board_path": "Kingroon/KP5L",
+    "official_path": "Kingroon/KP5L"
+  },
+  {
+    "board": "rambo",
+    "config_path": "Firmware/Configuration/Prusa/MK3",
+    "board_path": "Prusa/MK3",
+    "official_path": "Prusa/MK3"
+  },
+  {
+    "board": "BIGTREE_BTT002",
+    "config_path": "Firmware/Configuration/Prusa/MK3S-BigTreeTech-BTT002",
+    "board_path": "Prusa/MK3S-BigTreeTech-BTT002",
+    "official_path": "Prusa/MK3S-BigTreeTech-BTT002"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Sunlu/S8",
+    "board_path": "Sunlu/S8",
+    "official_path": "Sunlu/S8"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/3DFabXYZ/Migbot",
+    "board_path": "3DFabXYZ/Migbot",
+    "official_path": "3DFabXYZ/Migbot"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/3DMatik/XL",
+    "board_path": "3DMatik/XL",
+    "official_path": "3DMatik/XL"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/ADIMLab/Gantry_v1",
+    "board_path": "ADIMLab/Gantry_v1",
+    "official_path": "ADIMLab/Gantry v1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/ADIMLab/Gantry_v2",
+    "board_path": "ADIMLab/Gantry_v2",
+    "official_path": "ADIMLab/Gantry v2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Alfawise/U20",
+    "board_path": "Alfawise/U20",
+    "official_path": "Alfawise/U20"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Alfawise/U20_bltouch",
+    "board_path": "Alfawise/U20_bltouch",
+    "official_path": "Alfawise/U20-bltouch"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/AliExpress/CL_260",
+    "board_path": "AliExpress/CL_260",
+    "official_path": "AliExpress/CL-260"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/AliExpress/UM2pExt",
+    "board_path": "AliExpress/UM2pExt",
+    "official_path": "AliExpress/UM2pExt"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/AnyCubic/Vyper",
+    "board_path": "AnyCubic/Vyper",
+    "official_path": "AnyCubic/Vyper"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/ArmEd",
+    "board_path": "ArmEd",
+    "official_path": "ArmEd"
+  },
+  {
+    "board": "Artillery_Ruby",
+    "config_path": "Firmware/Configuration/Artillery/Sidewinder_X1/0.9_BMG___E3D_V6",
+    "board_path": "Artillery/Sidewinder_X1/0.9_BMG___E3D_V6",
+    "official_path": "Artillery/Sidewinder X1/0.9 BMG - E3D V6"
+  },
+  {
+    "board": "LPC1769",
+    "config_path": "Firmware/Configuration/Azteeg/X5GT",
+    "board_path": "Azteeg/X5GT",
+    "official_path": "Azteeg/X5GT"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/BIBO/TouchX/cyclops",
+    "board_path": "BIBO/TouchX/cyclops",
+    "official_path": "BIBO/TouchX/cyclops"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/BIBO/TouchX/default",
+    "board_path": "BIBO/TouchX/default",
+    "official_path": "BIBO/TouchX/default"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/BIBO/TouchX/default___BLTouch",
+    "board_path": "BIBO/TouchX/default___BLTouch",
+    "official_path": "BIBO/TouchX/default - BLTouch"
+  },
+  {
+    "board": "LPC1769",
+    "config_path": "Firmware/Configuration/BIQU/B1",
+    "board_path": "BIQU/B1",
+    "official_path": "BIQU/B1"
+  },
+  {
+    "board": "BTT_SKR_SE_BX",
+    "config_path": "Firmware/Configuration/BIQU/BX/all_metal_hotend",
+    "board_path": "BIQU/BX/all_metal_hotend",
+    "official_path": "BIQU/BX/all-metal-hotend"
+  },
+  {
+    "board": "BTT_SKR_SE_BX",
+    "config_path": "Firmware/Configuration/BIQU/BX/base",
+    "board_path": "BIQU/BX/base",
+    "official_path": "BIQU/BX/base"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/BIQU/Thunder_Standard",
+    "board_path": "BIQU/Thunder_Standard",
+    "official_path": "BIQU/Thunder Standard"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/BQ/Hephestos",
+    "board_path": "BQ/Hephestos",
+    "official_path": "BQ/Hephestos"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/BQ/Hephestos_2",
+    "board_path": "BQ/Hephestos_2",
+    "official_path": "BQ/Hephestos_2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/BQ/WITBOX",
+    "board_path": "BQ/WITBOX",
+    "official_path": "BQ/WITBOX"
+  },
+  {
+    "board": "rambo",
+    "config_path": "Firmware/Configuration/CNC/miniRambo",
+    "board_path": "CNC/miniRambo",
+    "official_path": "CNC/miniRambo"
+  },
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/CTC/A13",
+    "board_path": "CTC/A13",
+    "official_path": "CTC/A13"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/CTC/Bizer",
+    "board_path": "CTC/Bizer",
+    "official_path": "CTC/Bizer"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/CTC/i3_2560_Rev_A/no_probe",
+    "board_path": "CTC/i3_2560_Rev_A/no_probe",
+    "official_path": "CTC/i3 2560 Rev A/no probe"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Cartesio",
+    "board_path": "Cartesio",
+    "official_path": "Cartesio"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Copymaster3D/300",
+    "board_path": "Copymaster3D/300",
+    "official_path": "Copymaster3D/300"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Copymaster3D/400",
+    "board_path": "Copymaster3D/400",
+    "official_path": "Copymaster3D/400"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Copymaster3D/500",
+    "board_path": "Copymaster3D/500",
+    "official_path": "Copymaster3D/500"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR_10_Max",
+    "board_path": "Creality/CR_10_Max",
+    "official_path": "Creality/CR-10 Max"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/CR_10_Mini/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/CR_10_Mini/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/CR-10 Mini/BigTreeTech SKR Mini E3 3.0"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/CR_10_Mini/MEEB_3DP",
+    "board_path": "Creality/CR_10_Mini/MEEB_3DP",
+    "official_path": "Creality/CR-10 Mini/MEEB-3DP"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/CR_10_S5/BigTreeTech_SKR_Mini_E3_1.2_with_TFT35_E3_V3.0",
+    "board_path": "Creality/CR_10_S5/BigTreeTech_SKR_Mini_E3_1.2_with_TFT35_E3_V3.0",
+    "official_path": "Creality/CR-10 S5/BigTreeTech SKR Mini E3 1.2 with TFT35 E3 V3.0"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR_10_S5/CrealityV2.2___BLTouch",
+    "board_path": "Creality/CR_10_S5/CrealityV2.2___BLTouch",
+    "official_path": "Creality/CR-10 S5/CrealityV2.2 - BLTouch"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR_10_S5/CrealityV427___BLTouch",
+    "board_path": "Creality/CR_10_S5/CrealityV427___BLTouch",
+    "official_path": "Creality/CR-10 S5/CrealityV427 - BLTouch"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/CR_10_V3/BigTreeTech_SKR_Mini_E3_v3",
+    "board_path": "Creality/CR_10_V3/BigTreeTech_SKR_Mini_E3_v3",
+    "official_path": "Creality/CR-10 V3/BigTreeTech SKR Mini E3 v3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR_10_V3/Stock",
+    "board_path": "Creality/CR_10_V3/Stock",
+    "official_path": "Creality/CR-10 V3/Stock"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/CR_10/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/CR_10/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/CR-10/BigTreeTech SKR Mini E3 3.0"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR_10S_Pro",
+    "board_path": "Creality/CR_10S_Pro",
+    "official_path": "Creality/CR-10S Pro"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/CR_10S/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/CR_10S/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/CR-10S/BigTreeTech SKR Mini E3 3.0"
+  },
+  {
+    "board": "STM32H743VI_btt",
+    "config_path": "Firmware/Configuration/Creality/CR_10S/BigTreeTech_SKR_Pro_v1.2",
+    "board_path": "Creality/CR_10S/BigTreeTech_SKR_Pro_v1.2",
+    "official_path": "Creality/CR-10S/BigTreeTech SKR Pro v1.2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR_10S/CrealityV1___BLTouch",
+    "board_path": "Creality/CR_10S/CrealityV1___BLTouch",
+    "official_path": "Creality/CR-10S/CrealityV1 - BLTouch"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR_20/RepRapWorld_Minitronics20",
+    "board_path": "Creality/CR_20/RepRapWorld_Minitronics20",
+    "official_path": "Creality/CR-20/RepRapWorld Minitronics20"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/CR_30_PrintMill",
+    "board_path": "Creality/CR_30_PrintMill",
+    "official_path": "Creality/CR-30 PrintMill"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_2_Pro/CrealityV24S4",
+    "board_path": "Creality/Ender_2_Pro/CrealityV24S4",
+    "official_path": "Creality/Ender-2 Pro/CrealityV24S4"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_2_Pro/CrealityV423",
+    "board_path": "Creality/Ender_2_Pro/CrealityV423",
+    "official_path": "Creality/Ender-2 Pro/CrealityV423"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Max_Neo/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/Ender_3_Max_Neo/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/Ender-3 Max Neo/BigTreeTech SKR Mini E3 3.0"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Max_Neo/CrealityV422",
+    "board_path": "Creality/Ender_3_Max_Neo/CrealityV422",
+    "official_path": "Creality/Ender-3 Max Neo/CrealityV422"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Neo",
+    "board_path": "Creality/Ender_3_Neo",
+    "official_path": "Creality/Ender-3 Neo"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_1.0",
+    "board_path": "Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_1.0",
+    "official_path": "Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.0"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0/BLTouch"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0/base"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/Creality_free_runs",
+    "board_path": "Creality/Ender_3_Pro/Creality_free_runs",
+    "official_path": "Creality/Ender-3 Pro/Creality free-runs"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/CrealityV1",
+    "board_path": "Creality/Ender_3_Pro/CrealityV1",
+    "official_path": "Creality/Ender-3 Pro/CrealityV1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/CrealityV422",
+    "board_path": "Creality/Ender_3_Pro/CrealityV422",
+    "official_path": "Creality/Ender-3 Pro/CrealityV422"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/CrealityV427",
+    "board_path": "Creality/Ender_3_Pro/CrealityV427",
+    "official_path": "Creality/Ender-3 Pro/CrealityV427/BLTouch"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/CrealityV427",
+    "board_path": "Creality/Ender_3_Pro/CrealityV427",
+    "official_path": "Creality/Ender-3 Pro/CrealityV427/base"
+  },
+  {
+    "board": "STM32F401RC_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_S1_Plus",
+    "board_path": "Creality/Ender_3_S1_Plus",
+    "official_path": "Creality/Ender-3 S1 Plus"
+  },
+  {
+    "board": "STM32F401RC_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_S1_Pro",
+    "board_path": "Creality/Ender_3_S1_Pro",
+    "official_path": "Creality/Ender-3 S1 Pro"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2_Neo/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/Ender_3_V2_Neo/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/Ender-3 V2 Neo/BigTreeTech SKR Mini E3 3.0"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2_Neo/CrealityV422",
+    "board_path": "Creality/Ender_3_V2_Neo/CrealityV422",
+    "official_path": "Creality/Ender-3 V2 Neo/CrealityV422"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/CrealityUI"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/MarlinUI"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/ProUI"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/CrealityUI"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/MarlinUI"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/ProUI"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/CrealityUI"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/MarlinUI"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/ProUI"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422",
+    "board_path": "Creality/Ender_3_V2/CrealityV422",
+    "official_path": "Creality/Ender-3 V2/CrealityV422/CrealityUI"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422",
+    "board_path": "Creality/Ender_3_V2/CrealityV422",
+    "official_path": "Creality/Ender-3 V2/CrealityV422/MarlinUI"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422",
+    "board_path": "Creality/Ender_3_V2/CrealityV422",
+    "official_path": "Creality/Ender-3 V2/CrealityV422/ProUI"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427",
+    "board_path": "Creality/Ender_3_V2/CrealityV427",
+    "official_path": "Creality/Ender-3 V2/CrealityV427/CrealityUI"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427",
+    "board_path": "Creality/Ender_3_V2/CrealityV427",
+    "official_path": "Creality/Ender-3 V2/CrealityV427/MarlinUI"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427",
+    "board_path": "Creality/Ender_3_V2/CrealityV427",
+    "official_path": "Creality/Ender-3 V2/CrealityV427/ProUI"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_E3_RRF",
+    "board_path": "Creality/Ender_3/BigTreeTech_E3_RRF",
+    "official_path": "Creality/Ender-3/BigTreeTech E3 RRF"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_Manta_E3_EZ",
+    "board_path": "Creality/Ender_3/BigTreeTech_Manta_E3_EZ",
+    "official_path": "Creality/Ender-3/BigTreeTech Manta E3 EZ"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
+    "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
+    "official_path": "Creality/Ender-3/BigTreeTech SKR E3 Turbo/2-into-1 Hotend"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
+    "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
+    "official_path": "Creality/Ender-3/BigTreeTech SKR E3 Turbo/Dual Z"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
+    "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
+    "official_path": "Creality/Ender-3/BigTreeTech SKR E3 Turbo/Single Extruder"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_DIP_V1.1",
+    "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_DIP_V1.1",
+    "official_path": "Creality/Ender-3/BigTreeTech SKR E3-DIP V1.1"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_Mini_E3_1.0",
+    "board_path": "Creality/Ender_3/BigTreeTech_SKR_Mini_E3_1.0",
+    "official_path": "Creality/Ender-3/BigTreeTech SKR Mini E3 1.0"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/Creality_free_runs",
+    "board_path": "Creality/Ender_3/Creality_free_runs",
+    "official_path": "Creality/Ender-3/Creality free-runs"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah_1.2",
+    "board_path": "Creality/Ender_3/FYSETC_Cheetah_1.2",
+    "official_path": "Creality/Ender-3/FYSETC Cheetah 1.2/BLTouch"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah_1.2",
+    "board_path": "Creality/Ender_3/FYSETC_Cheetah_1.2",
+    "official_path": "Creality/Ender-3/FYSETC Cheetah 1.2/base"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah",
+    "board_path": "Creality/Ender_3/FYSETC_Cheetah",
+    "official_path": "Creality/Ender-3/FYSETC Cheetah/BLTouch"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah",
+    "board_path": "Creality/Ender_3/FYSETC_Cheetah",
+    "official_path": "Creality/Ender-3/FYSETC Cheetah/base"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/MEEB_3DP",
+    "board_path": "Creality/Ender_3/MEEB_3DP",
+    "official_path": "Creality/Ender-3/MEEB-3DP"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/MKS_Robin_E3",
+    "board_path": "Creality/Ender_3/MKS_Robin_E3",
+    "official_path": "Creality/Ender-3/MKS Robin E3/V1.0"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/MKS_Robin_E3",
+    "board_path": "Creality/Ender_3/MKS_Robin_E3",
+    "official_path": "Creality/Ender-3/MKS Robin E3/V1.1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/MKS_Robin_E3P",
+    "board_path": "Creality/Ender_3/MKS_Robin_E3P",
+    "official_path": "Creality/Ender-3/MKS Robin E3P"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/TH3D_EZBoard_Lite_V2",
+    "board_path": "Creality/Ender_3/TH3D_EZBoard_Lite_V2",
+    "official_path": "Creality/Ender-3/TH3D EZBoard Lite V2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_4",
+    "board_path": "Creality/Ender_4",
+    "official_path": "Creality/Ender-4"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_5_Plus/Creality_4.2.2_(RELOADED_UI)",
+    "board_path": "Creality/Ender_5_Plus/Creality_4.2.2_(RELOADED_UI)",
+    "official_path": "Creality/Ender-5 Plus/Creality 4.2.2 (RELOADED UI)"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_5_Plus/CrealityV1_(ORIGIN_UI)",
+    "board_path": "Creality/Ender_5_Plus/CrealityV1_(ORIGIN_UI)",
+    "official_path": "Creality/Ender-5 Plus/CrealityV1 (ORIGIN UI)"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_5_Plus/CrealityV1_(RELOADED_UI)",
+    "board_path": "Creality/Ender_5_Plus/CrealityV1_(RELOADED_UI)",
+    "official_path": "Creality/Ender-5 Plus/CrealityV1 (RELOADED UI)"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_5_Pro/BigTreeTech_SKR_Mini_E3_3.0_with_BLTouch_HighTemp",
+    "board_path": "Creality/Ender_5_Pro/BigTreeTech_SKR_Mini_E3_3.0_with_BLTouch_HighTemp",
+    "official_path": "Creality/Ender-5 Pro/BigTreeTech SKR Mini E3 3.0 with BLTouch-HighTemp"
+  },
+  {
+    "board": "STM32F401RC_creality",
+    "config_path": "Firmware/Configuration/Creality/Ender_5_S1",
+    "board_path": "Creality/Ender_5_S1",
+    "official_path": "Creality/Ender-5 S1"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_5/BigTreeTech_SKR_E3_Turbo",
+    "board_path": "Creality/Ender_5/BigTreeTech_SKR_E3_Turbo",
+    "official_path": "Creality/Ender-5/BigTreeTech SKR E3 Turbo"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_5/BigTreeTech_SKR_E3_Turbo_with_BLTouch",
+    "board_path": "Creality/Ender_5/BigTreeTech_SKR_E3_Turbo_with_BLTouch",
+    "official_path": "Creality/Ender-5/BigTreeTech SKR E3 Turbo with BLTouch"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Creality/Ender_5/BigTreeTech_SKR_Mini_E3_3.0_with_BLTouch",
+    "board_path": "Creality/Ender_5/BigTreeTech_SKR_Mini_E3_3.0_with_BLTouch",
+    "official_path": "Creality/Ender-5/BigTreeTech SKR Mini E3 3.0 with BLTouch"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_5/Creality_free_runs",
+    "board_path": "Creality/Ender_5/Creality_free_runs",
+    "official_path": "Creality/Ender-5/Creality free-runs"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_5/CrealityV427_with_BLTouch",
+    "board_path": "Creality/Ender_5/CrealityV427_with_BLTouch",
+    "official_path": "Creality/Ender-5/CrealityV427 with BLTouch"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Creality/Ender_6",
+    "board_path": "Creality/Ender_6",
+    "official_path": "Creality/Ender-6"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Dagoma/Disco_Ultimate",
+    "board_path": "Dagoma/Disco_Ultimate",
+    "official_path": "Dagoma/Disco Ultimate"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Daycom/3DP_100",
+    "board_path": "Daycom/3DP_100",
+    "official_path": "Daycom/3DP-100"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/E3D/BigBox_Dual",
+    "board_path": "E3D/BigBox_Dual",
+    "official_path": "E3D/BigBox Dual"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/EXP3D/Imprimante_multifonction",
+    "board_path": "EXP3D/Imprimante_multifonction",
+    "official_path": "EXP3D/Imprimante multifonction"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/EasyThreeD/ET4000PLUS",
+    "board_path": "EasyThreeD/ET4000PLUS",
+    "official_path": "EasyThreeD/ET4000PLUS"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Eazao/Zero",
+    "board_path": "Eazao/Zero",
+    "official_path": "Eazao/Zero"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Einstart_S",
+    "board_path": "Einstart_S",
+    "official_path": "Einstart-S"
+  },
+  {
+    "board": "rambo",
+    "config_path": "Firmware/Configuration/Eryone/Thinker_SE",
+    "board_path": "Eryone/Thinker_SE",
+    "official_path": "Eryone/Thinker SE"
+  },
+  {
+    "board": "rambo",
+    "config_path": "Firmware/Configuration/Eryone/Thinker_V2",
+    "board_path": "Eryone/Thinker_V2",
+    "official_path": "Eryone/Thinker V2"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/FYSETC/AIO_II",
+    "board_path": "FYSETC/AIO_II",
+    "official_path": "FYSETC/AIO_II"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/FYSETC/F6_13",
+    "board_path": "FYSETC/F6_13",
+    "official_path": "FYSETC/F6_13"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/FYSETC/S6",
+    "board_path": "FYSETC/S6",
+    "official_path": "FYSETC/S6"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Felix/DUAL",
+    "board_path": "Felix/DUAL",
+    "official_path": "Felix/DUAL"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Felix/Single",
+    "board_path": "Felix/Single",
+    "official_path": "Felix/Single"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/FlashForge/Creator_2X",
+    "board_path": "FlashForge/Creator_2X",
+    "official_path": "FlashForge/Creator 2X"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/FlashForge/CreatorPro",
+    "board_path": "FlashForge/CreatorPro",
+    "official_path": "FlashForge/CreatorPro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/FlyingBear/FlyingBearGhost_v3",
+    "board_path": "FlyingBear/FlyingBearGhost_v3",
+    "official_path": "FlyingBear/FlyingBearGhost_v3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/FlyingBear/P902",
+    "board_path": "FlyingBear/P902",
+    "official_path": "FlyingBear/P902"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/FlyingBear/P905H",
+    "board_path": "FlyingBear/P905H",
+    "official_path": "FlyingBear/P905H"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/FoamCutter/generic",
+    "board_path": "FoamCutter/generic",
+    "official_path": "FoamCutter/generic"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/FoamCutter/rcKeith",
+    "board_path": "FoamCutter/rcKeith",
+    "official_path": "FoamCutter/rcKeith"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/FolgerTech/FT_5_R2",
+    "board_path": "FolgerTech/FT_5_R2",
+    "official_path": "FolgerTech/FT-5 R2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/FolgerTech/i3_2020",
+    "board_path": "FolgerTech/i3_2020",
+    "official_path": "FolgerTech/i3-2020"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Formbot/Raptor",
+    "board_path": "Formbot/Raptor",
+    "official_path": "Formbot/Raptor"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A10",
+    "board_path": "Geeetech/A10",
+    "official_path": "Geeetech/A10"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A10D",
+    "board_path": "Geeetech/A10D",
+    "official_path": "Geeetech/A10D"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A10M/Stock_LCD",
+    "board_path": "Geeetech/A10M/Stock_LCD",
+    "official_path": "Geeetech/A10M/Stock LCD"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A10M/YHCB2004_V4.1",
+    "board_path": "Geeetech/A10M/YHCB2004_V4.1",
+    "official_path": "Geeetech/A10M/YHCB2004_V4.1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A10PRO",
+    "board_path": "Geeetech/A10PRO",
+    "official_path": "Geeetech/A10PRO"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A10T/Stock_LCD",
+    "board_path": "Geeetech/A10T/Stock_LCD",
+    "official_path": "Geeetech/A10T/Stock LCD"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A10T/YHCB2004_V4.1",
+    "board_path": "Geeetech/A10T/YHCB2004_V4.1",
+    "official_path": "Geeetech/A10T/YHCB2004_V4.1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A20",
+    "board_path": "Geeetech/A20",
+    "official_path": "Geeetech/A20"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A20M",
+    "board_path": "Geeetech/A20M",
+    "official_path": "Geeetech/A20M"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A20T",
+    "board_path": "Geeetech/A20T",
+    "official_path": "Geeetech/A20T"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A30",
+    "board_path": "Geeetech/A30",
+    "official_path": "Geeetech/A30"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A30M",
+    "board_path": "Geeetech/A30M",
+    "official_path": "Geeetech/A30M"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/A30T",
+    "board_path": "Geeetech/A30T",
+    "official_path": "Geeetech/A30T"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/D200",
+    "board_path": "Geeetech/D200",
+    "official_path": "Geeetech/D200"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/Duplicator5",
+    "board_path": "Geeetech/Duplicator5",
+    "official_path": "Geeetech/Duplicator5"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/E180",
+    "board_path": "Geeetech/E180",
+    "official_path": "Geeetech/E180"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/GT2560",
+    "board_path": "Geeetech/GT2560",
+    "official_path": "Geeetech/GT2560"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/I3_Pro_X_GT2560",
+    "board_path": "Geeetech/I3_Pro_X_GT2560",
+    "official_path": "Geeetech/I3_Pro_X-GT2560"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/M201",
+    "board_path": "Geeetech/M201",
+    "official_path": "Geeetech/M201"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/MeCreator2",
+    "board_path": "Geeetech/MeCreator2",
+    "official_path": "Geeetech/MeCreator2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/Me_creator",
+    "board_path": "Geeetech/Me_creator",
+    "official_path": "Geeetech/Me_creator"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/Me_ducer",
+    "board_path": "Geeetech/Me_ducer",
+    "official_path": "Geeetech/Me_ducer"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/PI3A_PRO",
+    "board_path": "Geeetech/PI3A_PRO",
+    "official_path": "Geeetech/PI3A PRO"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/Prusa_i3_Pro_B/bltouch",
+    "board_path": "Geeetech/Prusa_i3_Pro_B/bltouch",
+    "official_path": "Geeetech/Prusa i3 Pro B/bltouch"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/Prusa_i3_Pro_B/noprobe",
+    "board_path": "Geeetech/Prusa_i3_Pro_B/noprobe",
+    "official_path": "Geeetech/Prusa i3 Pro B/noprobe"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/Prusa_i3_Pro_C",
+    "board_path": "Geeetech/Prusa_i3_Pro_C",
+    "official_path": "Geeetech/Prusa i3 Pro C"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Geeetech/Prusa_i3_Pro_W",
+    "board_path": "Geeetech/Prusa_i3_Pro_W",
+    "official_path": "Geeetech/Prusa i3 Pro W"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/HMS434",
+    "board_path": "HMS434",
+    "official_path": "HMS434"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Hictop/3DP_17",
+    "board_path": "Hictop/3DP_17",
+    "official_path": "Hictop/3DP-17"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Infitary/i3_M508",
+    "board_path": "Infitary/i3_M508",
+    "official_path": "Infitary/i3-M508"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Intamsys/FunmatHT_4988",
+    "board_path": "Intamsys/FunmatHT_4988",
+    "official_path": "Intamsys/FunmatHT 4988"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/JGAurora/A1",
+    "board_path": "JGAurora/A1",
+    "official_path": "JGAurora/A1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/JGAurora/A3",
+    "board_path": "JGAurora/A3",
+    "official_path": "JGAurora/A3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/JGAurora/A5",
+    "board_path": "JGAurora/A5",
+    "official_path": "JGAurora/A5"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/JGAurora/A5S",
+    "board_path": "JGAurora/A5S",
+    "official_path": "JGAurora/A5S"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/JGAurora/Magic",
+    "board_path": "JGAurora/Magic",
+    "official_path": "JGAurora/Magic"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Kingroon/KP3S_Pro",
+    "board_path": "Kingroon/KP3S_Pro",
+    "official_path": "Kingroon/KP3S_Pro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Kingroon/KP5L_DIY",
+    "board_path": "Kingroon/KP5L_DIY",
+    "official_path": "Kingroon/KP5L-DIY"
+  },
+  {
+    "board": "Anet_ET4_no_bootloader",
+    "config_path": "Firmware/Configuration/Labists/ET4",
+    "board_path": "Labists/ET4",
+    "official_path": "Labists/ET4"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Longer/LK5",
+    "board_path": "Longer/LK5",
+    "official_path": "Longer/LK5"
+  },
+  {
+    "board": "rambo",
+    "config_path": "Firmware/Configuration/LulzBot/TAZ4",
+    "board_path": "LulzBot/TAZ4",
+    "official_path": "LulzBot/TAZ4"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/MBot/Cube",
+    "board_path": "MBot/Cube",
+    "official_path": "MBot/Cube"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/MZ3D/360",
+    "board_path": "MZ3D/360",
+    "official_path": "MZ3D/360"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/MakerBot/Replicator_Dual",
+    "board_path": "MakerBot/Replicator_Dual",
+    "official_path": "MakerBot/Replicator Dual"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/MakerBot/Replicator_Single",
+    "board_path": "MakerBot/Replicator_Single",
+    "official_path": "MakerBot/Replicator Single"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/MakerFarm/Pegasus_12",
+    "board_path": "MakerFarm/Pegasus_12",
+    "official_path": "MakerFarm/Pegasus 12"
+  },
+  {
+    "board": "rambo",
+    "config_path": "Firmware/Configuration/MakerGear/M2_Rev_H",
+    "board_path": "MakerGear/M2_Rev_H",
+    "official_path": "MakerGear/M2 Rev H"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/MakerParts",
+    "board_path": "MakerParts",
+    "official_path": "MakerParts"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/MakerTech3D/Proforge2sDual",
+    "board_path": "MakerTech3D/Proforge2sDual",
+    "official_path": "MakerTech3D/Proforge2sDual"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Malyan/M150",
+    "board_path": "Malyan/M150",
+    "official_path": "Malyan/M150"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Malyan/M180",
+    "board_path": "Malyan/M180",
+    "official_path": "Malyan/M180"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Malyan/M200",
+    "board_path": "Malyan/M200",
+    "official_path": "Malyan/M200"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Materia101",
+    "board_path": "Materia101",
+    "official_path": "Materia101"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Micromake/C1/basic",
+    "board_path": "Micromake/C1/basic",
+    "official_path": "Micromake/C1/basic"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Micromake/C1/enhanced",
+    "board_path": "Micromake/C1/enhanced",
+    "official_path": "Micromake/C1/enhanced"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Mks/Robin",
+    "board_path": "Mks/Robin",
+    "official_path": "Mks/Robin"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Mks/Robin_Lite3",
+    "board_path": "Mks/Robin_Lite3",
+    "official_path": "Mks/Robin_Lite3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Mks/Robin_Pro",
+    "board_path": "Mks/Robin_Pro",
+    "official_path": "Mks/Robin_Pro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Mks/Sbase",
+    "board_path": "Mks/Sbase",
+    "official_path": "Mks/Sbase"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Modix/Big60",
+    "board_path": "Modix/Big60",
+    "official_path": "Modix/Big60"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Nextion",
+    "board_path": "Nextion",
+    "official_path": "Nextion"
+  },
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/ORD_Bot/Hadron/Sanguinololu",
+    "board_path": "ORD_Bot/Hadron/Sanguinololu",
+    "official_path": "ORD Bot/Hadron/Sanguinololu"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Opulo/Lumen_REV3",
+    "board_path": "Opulo/Lumen_REV3",
+    "official_path": "Opulo/Lumen_REV3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Opulo/Lumen_REV4",
+    "board_path": "Opulo/Lumen_REV4",
+    "official_path": "Opulo/Lumen_REV4"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Opulo/Lumen_REV5",
+    "board_path": "Opulo/Lumen_REV5",
+    "official_path": "Opulo/Lumen_REV5"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Ortur_4",
+    "board_path": "Ortur_4",
+    "official_path": "Ortur 4"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Polargraph",
+    "board_path": "Polargraph",
+    "official_path": "Polargraph"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Printrbot/PrintrboardG2",
+    "board_path": "Printrbot/PrintrboardG2",
+    "official_path": "Printrbot/PrintrboardG2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Printrbot/Simple_Metal_RevD",
+    "board_path": "Printrbot/Simple_Metal_RevD",
+    "official_path": "Printrbot/Simple Metal RevD"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Printrbot/Simple_Metal_RevF6",
+    "board_path": "Printrbot/Simple_Metal_RevF6",
+    "official_path": "Printrbot/Simple_Metal_RevF6"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Qidi/Qidi_1",
+    "board_path": "Qidi/Qidi_1",
+    "official_path": "Qidi/Qidi 1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Raiscube/A8r",
+    "board_path": "Raiscube/A8r",
+    "official_path": "Raiscube/A8r"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/RapideLite/RL200",
+    "board_path": "RapideLite/RL200",
+    "official_path": "RapideLite/RL200"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Renkforce/RF100",
+    "board_path": "Renkforce/RF100",
+    "official_path": "Renkforce/RF100"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Renkforce/RF100XL",
+    "board_path": "Renkforce/RF100XL",
+    "official_path": "Renkforce/RF100XL"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Renkforce/RF100v2",
+    "board_path": "Renkforce/RF100v2",
+    "official_path": "Renkforce/RF100v2"
+  },
+  {
+    "board": "sanguino1284p_optimized",
+    "config_path": "Firmware/Configuration/RepRapPro/Huxley",
+    "board_path": "RepRapPro/Huxley",
+    "official_path": "RepRapPro/Huxley"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/RepRapWorld/Megatronics",
+    "board_path": "RepRapWorld/Megatronics",
+    "official_path": "RepRapWorld/Megatronics"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/RepRapWorld/Minitronics11",
+    "board_path": "RepRapWorld/Minitronics11",
+    "official_path": "RepRapWorld/Minitronics11"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/RepRapWorld/Minitronics20/CNC",
+    "board_path": "RepRapWorld/Minitronics20/CNC",
+    "official_path": "RepRapWorld/Minitronics20/CNC"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/RigidBot",
+    "board_path": "RigidBot",
+    "official_path": "RigidBot"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Robo3D/R1_Plus",
+    "board_path": "Robo3D/R1_Plus",
+    "official_path": "Robo3D/R1+"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Rolohaun/Rook_MK1",
+    "board_path": "Rolohaun/Rook_MK1",
+    "official_path": "Rolohaun/Rook MK1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/SCARA/MP_SCARA",
+    "board_path": "SCARA/MP_SCARA",
+    "official_path": "SCARA/MP_SCARA"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/SCARA/Morgan",
+    "board_path": "SCARA/Morgan",
+    "official_path": "SCARA/Morgan"
+  },
+  {
+    "board": "STM32F407VE_black",
+    "config_path": "Firmware/Configuration/STM32/Black_STM32F407VET6",
+    "board_path": "STM32/Black_STM32F407VET6",
+    "official_path": "STM32/Black_STM32F407VET6"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/STM32/STM32F103RE",
+    "board_path": "STM32/STM32F103RE",
+    "official_path": "STM32/STM32F103RE"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Simax/Mi_M200",
+    "board_path": "Simax/Mi_M200",
+    "official_path": "Simax/Mi-M200"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Simulator",
+    "board_path": "Simulator",
+    "official_path": "Simulator"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Sovol/SV_01/BigTreeTech_SKR_E3_Turbo",
+    "board_path": "Sovol/SV_01/BigTreeTech_SKR_E3_Turbo",
+    "official_path": "Sovol/SV-01/BigTreeTech SKR E3 Turbo"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Sovol/SV_01/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Sovol/SV_01/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Sovol/SV-01/BigTreeTech SKR Mini E3 2.0"
+  },
+  {
+    "board": "STM32G0B1RE_btt",
+    "config_path": "Firmware/Configuration/Sovol/SV_01/BigTreeTech_SKR_Mini_E3_3.0",
+    "board_path": "Sovol/SV_01/BigTreeTech_SKR_Mini_E3_3.0",
+    "official_path": "Sovol/SV-01/BigTreeTech SKR Mini E3 3.0"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Sovol/SV_01/CrealityV22",
+    "board_path": "Sovol/SV_01/CrealityV22",
+    "official_path": "Sovol/SV-01/CrealityV22"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Sovol/SV_01/CrealityV221",
+    "board_path": "Sovol/SV_01/CrealityV221",
+    "official_path": "Sovol/SV-01/CrealityV221"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Sovol/SV_02",
+    "board_path": "Sovol/SV_02",
+    "official_path": "Sovol/SV-02"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Sovol/SV_03",
+    "board_path": "Sovol/SV_03",
+    "official_path": "Sovol/SV-03"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Sovol/SV_05",
+    "board_path": "Sovol/SV_05",
+    "official_path": "Sovol/SV-05"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Sovol/SV_06",
+    "board_path": "Sovol/SV_06",
+    "official_path": "Sovol/SV-06"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Sovol/SV_06_Plus",
+    "board_path": "Sovol/SV_06_Plus",
+    "official_path": "Sovol/SV-06 Plus"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Sunlu/T3",
+    "board_path": "Sunlu/T3",
+    "official_path": "Sunlu/T3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/TPARA/AXEL_TPARA",
+    "board_path": "TPARA/AXEL_TPARA",
+    "official_path": "TPARA/AXEL_TPARA"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tevo/Michelangelo",
+    "board_path": "Tevo/Michelangelo",
+    "official_path": "Tevo/Michelangelo"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Tevo/Nereus",
+    "board_path": "Tevo/Nereus",
+    "official_path": "Tevo/Nereus"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tevo/Tarantula_Pro/MKS_Gen_L",
+    "board_path": "Tevo/Tarantula_Pro/MKS_Gen_L",
+    "official_path": "Tevo/Tarantula Pro/MKS Gen_L"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tevo/Tarantula_Pro/MKS_SGen_L",
+    "board_path": "Tevo/Tarantula_Pro/MKS_SGen_L",
+    "official_path": "Tevo/Tarantula Pro/MKS SGen_L"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tevo/Tornado/V1_(MKS_Base)",
+    "board_path": "Tevo/Tornado/V1_(MKS_Base)",
+    "official_path": "Tevo/Tornado/V1 (MKS Base)"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tevo/Tornado/V2_(MKS_Gen_L)",
+    "board_path": "Tevo/Tornado/V2_(MKS_Gen_L)",
+    "official_path": "Tevo/Tornado/V2 (MKS Gen_L)"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tinkerine/Ditto_Pro/RAMPS_1.4",
+    "board_path": "Tinkerine/Ditto_Pro/RAMPS_1.4",
+    "official_path": "Tinkerine/Ditto Pro/RAMPS 1.4"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/TinyBoy2",
+    "board_path": "TinyBoy2",
+    "official_path": "TinyBoy2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tronxy/D01/CXY_v6_191017_board",
+    "board_path": "Tronxy/D01/CXY_v6_191017_board",
+    "official_path": "Tronxy/D01/CXY-v6-191017 board"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Tronxy/X1",
+    "board_path": "Tronxy/X1",
+    "official_path": "Tronxy/X1"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Tronxy/X3A",
+    "board_path": "Tronxy/X3A",
+    "official_path": "Tronxy/X3A"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Tronxy/X5S",
+    "board_path": "Tronxy/X5S",
+    "official_path": "Tronxy/X5S"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tronxy/X5S_2E/Green_Board_(Chitu_V5)",
+    "board_path": "Tronxy/X5S_2E/Green_Board_(Chitu_V5)",
+    "official_path": "Tronxy/X5S-2E/Green Board (Chitu V5)"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tronxy/X5S_2E/Red_Board_(Tronxy_3.1.0)",
+    "board_path": "Tronxy/X5S_2E/Red_Board_(Tronxy_3.1.0)",
+    "official_path": "Tronxy/X5S-2E/Red Board (Tronxy 3.1.0)"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tronxy/X5SA",
+    "board_path": "Tronxy/X5SA",
+    "official_path": "Tronxy/X5SA"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tronxy/X5SA_Pro",
+    "board_path": "Tronxy/X5SA_Pro",
+    "official_path": "Tronxy/X5SA Pro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tronxy/X5SA_2E",
+    "board_path": "Tronxy/X5SA_2E",
+    "official_path": "Tronxy/X5SA-2E"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Tronxy/XY100",
+    "board_path": "Tronxy/XY100",
+    "official_path": "Tronxy/XY100"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Tronxy/XY2_Pro",
+    "board_path": "Tronxy/XY2_Pro",
+    "official_path": "Tronxy/XY2-Pro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Turnigy/Fabrikator",
+    "board_path": "Turnigy/Fabrikator",
+    "official_path": "Turnigy/Fabrikator"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Two_Trees/BlueR_Plus",
+    "board_path": "Two_Trees/BlueR_Plus",
+    "official_path": "Two Trees/BlueR Plus"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Two_Trees/BlueR/BlueR_V1",
+    "board_path": "Two_Trees/BlueR/BlueR_V1",
+    "official_path": "Two Trees/BlueR/BlueR V1"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Two_Trees/BlueR/BlueR_V2",
+    "board_path": "Two_Trees/BlueR/BlueR_V2",
+    "official_path": "Two Trees/BlueR/BlueR V2"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Two_Trees/BlueR/BlueR_V3",
+    "board_path": "Two_Trees/BlueR/BlueR_V3",
+    "official_path": "Two Trees/BlueR/BlueR V3"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Two_Trees/SP_5_V3",
+    "board_path": "Two_Trees/SP_5_V3",
+    "official_path": "Two Trees/SP-5_V3"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Two_Trees/Sapphire_Plus/Sapphire_Plus_V2",
+    "board_path": "Two_Trees/Sapphire_Plus/Sapphire_Plus_V2",
+    "official_path": "Two Trees/Sapphire Plus/Sapphire Plus V2"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Two_Trees/Sapphire_Plus/Sapphire_Plus_V2.1",
+    "board_path": "Two_Trees/Sapphire_Plus/Sapphire_Plus_V2.1",
+    "official_path": "Two Trees/Sapphire Plus/Sapphire Plus V2.1"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/Two_Trees/Sapphire_Pro",
+    "board_path": "Two_Trees/Sapphire_Pro",
+    "official_path": "Two Trees/Sapphire Pro"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/UltiMachine/Archim1",
+    "board_path": "UltiMachine/Archim1",
+    "official_path": "UltiMachine/Archim1"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/UltiMachine/Archim2",
+    "board_path": "UltiMachine/Archim2",
+    "official_path": "UltiMachine/Archim2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Ultimaker/Ultimaker_2",
+    "board_path": "Ultimaker/Ultimaker_2",
+    "official_path": "Ultimaker/Ultimaker 2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Ultimaker/Ultimaker_2_Plus",
+    "board_path": "Ultimaker/Ultimaker_2_Plus",
+    "official_path": "Ultimaker/Ultimaker 2+"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Ultimaker/Ultimaker_Original_(1.5.7)",
+    "board_path": "Ultimaker/Ultimaker_Original_(1.5.7)",
+    "official_path": "Ultimaker/Ultimaker Original (1.5.7)"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Ultimaker/Ultimaker_Original_Plus_(2.1.1)",
+    "board_path": "Ultimaker/Ultimaker_Original_Plus_(2.1.1)",
+    "official_path": "Ultimaker/Ultimaker Original Plus (2.1.1)"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Ultimaker/Ultimaker_Original_Plus_DXU",
+    "board_path": "Ultimaker/Ultimaker_Original_Plus_DXU",
+    "official_path": "Ultimaker/Ultimaker Original Plus DXU"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/VORONDesign",
+    "board_path": "VORONDesign",
+    "official_path": "VORONDesign"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Velleman/K8200",
+    "board_path": "Velleman/K8200",
+    "official_path": "Velleman/K8200"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Velleman/K8200_Upgraded",
+    "board_path": "Velleman/K8200_Upgraded",
+    "official_path": "Velleman/K8200 Upgraded"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Velleman/K8400/Dual_head",
+    "board_path": "Velleman/K8400/Dual_head",
+    "official_path": "Velleman/K8400/Dual-head"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Velleman/K8400/Single_head",
+    "board_path": "Velleman/K8400/Single_head",
+    "official_path": "Velleman/K8400/Single-head"
+  },
+  {
+    "board": "STM32F103RC_btt",
+    "config_path": "Firmware/Configuration/Voxelab/Aquila/BigTreeTech_SKR_Mini_E3_2.0",
+    "board_path": "Voxelab/Aquila/BigTreeTech_SKR_Mini_E3_2.0",
+    "official_path": "Voxelab/Aquila/BigTreeTech SKR Mini E3 2.0"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/WASP/PowerWASP",
+    "board_path": "WASP/PowerWASP",
+    "official_path": "WASP/PowerWASP"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_4S",
+    "board_path": "Wanhao/Duplicator_4S",
+    "official_path": "Wanhao/Duplicator 4S"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_6",
+    "board_path": "Wanhao/Duplicator_6",
+    "official_path": "Wanhao/Duplicator 6"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK1/300",
+    "board_path": "Wanhao/Duplicator_9/MK1/300",
+    "official_path": "Wanhao/Duplicator 9/MK1/300"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK1/400",
+    "board_path": "Wanhao/Duplicator_9/MK1/400",
+    "official_path": "Wanhao/Duplicator 9/MK1/400"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK1/500",
+    "board_path": "Wanhao/Duplicator_9/MK1/500",
+    "official_path": "Wanhao/Duplicator 9/MK1/500"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK1u2/300",
+    "board_path": "Wanhao/Duplicator_9/MK1u2/300",
+    "official_path": "Wanhao/Duplicator 9/MK1u2/300"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK1u2/400",
+    "board_path": "Wanhao/Duplicator_9/MK1u2/400",
+    "official_path": "Wanhao/Duplicator 9/MK1u2/400"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK1u2/500",
+    "board_path": "Wanhao/Duplicator_9/MK1u2/500",
+    "official_path": "Wanhao/Duplicator 9/MK1u2/500"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK2/300",
+    "board_path": "Wanhao/Duplicator_9/MK2/300",
+    "official_path": "Wanhao/Duplicator 9/MK2/300"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK2/400",
+    "board_path": "Wanhao/Duplicator_9/MK2/400",
+    "official_path": "Wanhao/Duplicator 9/MK2/400"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK2/500",
+    "board_path": "Wanhao/Duplicator_9/MK2/500",
+    "official_path": "Wanhao/Duplicator 9/MK2/500"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK3/300",
+    "board_path": "Wanhao/Duplicator_9/MK3/300",
+    "official_path": "Wanhao/Duplicator 9/MK3/300"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK3/400",
+    "board_path": "Wanhao/Duplicator_9/MK3/400",
+    "official_path": "Wanhao/Duplicator 9/MK3/400"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_9/MK3/500",
+    "board_path": "Wanhao/Duplicator_9/MK3/500",
+    "official_path": "Wanhao/Duplicator 9/MK3/500"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_i3_2.1",
+    "board_path": "Wanhao/Duplicator_i3_2.1",
+    "official_path": "Wanhao/Duplicator i3 2.1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_i3_Mini",
+    "board_path": "Wanhao/Duplicator_i3_Mini",
+    "official_path": "Wanhao/Duplicator i3 Mini"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Wanhao/Duplicator_i3_Plus",
+    "board_path": "Wanhao/Duplicator_i3_Plus",
+    "official_path": "Wanhao/Duplicator i3 Plus"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Weedo/Tina2/V2",
+    "board_path": "Weedo/Tina2/V2",
+    "official_path": "Weedo/Tina2/V2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Weedo/Tina2/V3",
+    "board_path": "Weedo/Tina2/V3",
+    "official_path": "Weedo/Tina2/V3"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/Weistek/wt150",
+    "board_path": "Weistek/wt150",
+    "official_path": "Weistek/wt150"
+  },
+  {
+    "board": "melzi_optiboot_optimized",
+    "config_path": "Firmware/Configuration/Zonestar/P802M",
+    "board_path": "Zonestar/P802M",
+    "official_path": "Zonestar/P802M"
+  },
+  {
+    "board": "LPC1769",
+    "config_path": "Firmware/Configuration/Zonestar/P802QR2/BigTreeTech_SKR_1.4_Turbo_(A4988)",
+    "board_path": "Zonestar/P802QR2/BigTreeTech_SKR_1.4_Turbo_(A4988)",
+    "official_path": "Zonestar/P802QR2/BigTreeTech SKR 1.4 Turbo (A4988)"
+  },
+  {
+    "board": "LPC1769",
+    "config_path": "Firmware/Configuration/Zonestar/P802QR2/BigTreeTech_SKR_1.4_Turbo_(TMC2209)",
+    "board_path": "Zonestar/P802QR2/BigTreeTech_SKR_1.4_Turbo_(TMC2209)",
+    "official_path": "Zonestar/P802QR2/BigTreeTech SKR 1.4 Turbo (TMC2209)"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Anycubic/Kossel",
+    "board_path": "delta/Anycubic/Kossel",
+    "official_path": "delta/Anycubic/Kossel"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Anycubic/Kossel_Linear_Plus",
+    "board_path": "delta/Anycubic/Kossel_Linear_Plus",
+    "official_path": "delta/Anycubic/Kossel Linear Plus"
+  },
+  {
+    "board": "trigorilla_pro",
+    "config_path": "Firmware/Configuration/delta/Anycubic/Predator",
+    "board_path": "delta/Anycubic/Predator",
+    "official_path": "delta/Anycubic/Predator"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Dreammaker/Overlord",
+    "board_path": "delta/Dreammaker/Overlord",
+    "official_path": "delta/Dreammaker/Overlord"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Dreammaker/Overlord_Pro",
+    "board_path": "delta/Dreammaker/Overlord_Pro",
+    "official_path": "delta/Dreammaker/Overlord_Pro"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/delta/FLSUN/Q5_nano_v1",
+    "board_path": "delta/FLSUN/Q5_nano_v1",
+    "official_path": "delta/FLSUN/Q5-nano_v1"
+  },
+  {
+    "board": "mks_robin_nano_v1v2",
+    "config_path": "Firmware/Configuration/delta/FLSUN/Q5_nano_v2",
+    "board_path": "delta/FLSUN/Q5_nano_v2",
+    "official_path": "delta/FLSUN/Q5-nano_v2"
+  },
+  {
+    "board": "mks_robin_mini",
+    "config_path": "Firmware/Configuration/delta/FLSUN/QQ_S",
+    "board_path": "delta/FLSUN/QQ_S",
+    "official_path": "delta/FLSUN/QQ-S"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/FLSUN/QQS_Pro",
+    "board_path": "delta/FLSUN/QQS_Pro",
+    "official_path": "delta/FLSUN/QQS-Pro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/FLSUN/auto_calibrate",
+    "board_path": "delta/FLSUN/auto_calibrate",
+    "official_path": "delta/FLSUN/auto_calibrate"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/FLSUN/kossel",
+    "board_path": "delta/FLSUN/kossel",
+    "official_path": "delta/FLSUN/kossel"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/FLSUN/kossel_mini",
+    "board_path": "delta/FLSUN/kossel_mini",
+    "official_path": "delta/FLSUN/kossel_mini"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Geeetech/G2",
+    "board_path": "delta/Geeetech/G2",
+    "official_path": "delta/Geeetech/G2"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Geeetech/G2Pro",
+    "board_path": "delta/Geeetech/G2Pro",
+    "official_path": "delta/Geeetech/G2Pro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Geeetech/G2S",
+    "board_path": "delta/Geeetech/G2S",
+    "official_path": "delta/Geeetech/G2S"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Geeetech/G2SPro",
+    "board_path": "delta/Geeetech/G2SPro",
+    "official_path": "delta/Geeetech/G2SPro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Geeetech/Rostock_301",
+    "board_path": "delta/Geeetech/Rostock_301",
+    "official_path": "delta/Geeetech/Rostock 301"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Hatchbox_Alpha",
+    "board_path": "delta/Hatchbox_Alpha",
+    "official_path": "delta/Hatchbox_Alpha"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/MKS/SBASE",
+    "board_path": "delta/MKS/SBASE",
+    "official_path": "delta/MKS/SBASE"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Malyan_M300",
+    "board_path": "delta/Malyan_M300",
+    "official_path": "delta/Malyan M300"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Micromake_D1/MKS_Gen_L_V2.1",
+    "board_path": "delta/Micromake_D1/MKS_Gen_L_V2.1",
+    "official_path": "delta/Micromake-D1/MKS-Gen-L-V2.1"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Micromake_D1/RAMPS_1.4",
+    "board_path": "delta/Micromake_D1/RAMPS_1.4",
+    "official_path": "delta/Micromake-D1/RAMPS-1.4"
+  },
+  {
+    "board": "LPC1769",
+    "config_path": "Firmware/Configuration/delta/Tevo_Little_Monster",
+    "board_path": "delta/Tevo_Little_Monster",
+    "official_path": "delta/Tevo Little Monster"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/Velleman/K8800",
+    "board_path": "delta/Velleman/K8800",
+    "official_path": "delta/Velleman/K8800"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/generic",
+    "board_path": "delta/generic",
+    "official_path": "delta/generic"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/kossel_clear",
+    "board_path": "delta/kossel_clear",
+    "official_path": "delta/kossel_clear"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/kossel_mini",
+    "board_path": "delta/kossel_mini",
+    "official_path": "delta/kossel_mini"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/kossel_pro",
+    "board_path": "delta/kossel_pro",
+    "official_path": "delta/kossel_pro"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/delta/kossel_xl",
+    "board_path": "delta/kossel_xl",
+    "official_path": "delta/kossel_xl"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/gCreate/gMax1.5_Plus",
+    "board_path": "gCreate/gMax1.5_Plus",
+    "official_path": "gCreate/gMax1.5+"
+  },
+  {
+    "board": "STM32H743VI_btt",
+    "config_path": "Firmware/Configuration/linear_axes/Octopus_8_LINEAR_AXES",
+    "board_path": "linear_axes/Octopus_8_LINEAR_AXES",
+    "official_path": "linear_axes/Octopus 8 LINEAR_AXES"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/linear_axes/RAMPS_5_LINEAR_AXES",
+    "board_path": "linear_axes/RAMPS_5_LINEAR_AXES",
+    "official_path": "linear_axes/RAMPS 5 LINEAR_AXES"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/makibox",
+    "board_path": "makibox",
+    "official_path": "makibox"
+  },
+  {
+    "board": "mega2560",
+    "config_path": "Firmware/Configuration/tvrrug/Round2",
+    "board_path": "tvrrug/Round2",
+    "official_path": "tvrrug/Round2"
+  }
+]
