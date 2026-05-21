@@ -138,12 +138,15 @@ jobs:
           echo "=== STAGED ==="
           git diff --staged --stat || true
 
-      - name: Push firmware to repo
+      - name: Push firmware + configs to repo
         run: |
           echo "=== COMMITTING AND PUSHING ==="
           git config --global user.name "JJR Bot"
           git config --global user.email "jrodriguez@qitec.net"
-          git add "$BUILD_DIR" 2>/dev/null || true
+          # Stage generated configs
+          git add "$CONFIG_DIR/Configuration.h" "$CONFIG_DIR/Configuration_adv.h" "$CONFIG_DIR/config.ini" 2>/dev/null || true
+          # Stage firmware files
+          find "$BUILD_DIR" -type f \( -name 'firmware.bin' -o -name 'firmware.hex' -o -name 'firmware.bin.md5' -o -name 'firmware.hex.md5' \) -exec git add {} \; 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else

@@ -1,0 +1,195 @@
+name: Auto-Update Marlin Firmwares
+
+on:
+  schedule:
+    - cron: "0 6 * * 0"
+  workflow_dispatch:
+    inputs:
+      force_version:
+        description: 'Force specific version (e.g., 2.1.2.7)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  detect:
+    name: Detect Marlin Version
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.check.outputs.version }}
+      version_dir: ${{ steps.check.outputs.version_dir }}
+      skip: ${{ steps.check.outputs.skip }}
+      matrix: ${{ steps.matrix.outputs.matrix }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Read current version
+        id: current
+        run: |
+          if [ -f VERSION ]; then
+            echo "version=$(cat VERSION)" >> $GITHUB_OUTPUT
+          else
+            echo "version=0.0.0.0" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Get latest Marlin release
+        id: check
+        run: |
+          FORCE="${{ github.event.inputs.force_version }}"
+          if [ -n "$FORCE" ]; then
+            echo "version=$FORCE" >> $GITHUB_OUTPUT
+            echo "version_dir=$(echo $FORCE | tr '.' '_')" >> $GITHUB_OUTPUT
+            echo "skip=false" >> $GITHUB_OUTPUT
+          else
+            LATEST=$(curl -s -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/MarlinFirmware/Marlin/releases/latest" \
+              | python3 -c "import json,sys; print(json.load(sys.stdin).get('tag_name',''))")
+            CURRENT="${{ steps.current.outputs.version }}"
+            echo "current=$CURRENT"
+            echo "latest=$LATEST"
+            if [ -z "$LATEST" ]; then
+              echo "skip=true" >> $GITHUB_OUTPUT
+            elif [ "$LATEST" = "$CURRENT" ]; then
+              echo "skip=true" >> $GITHUB_OUTPUT
+              echo "version=$CURRENT" >> $GITHUB_OUTPUT
+              echo "version_dir=$(echo $CURRENT | tr '.' '_')" >> $GITHUB_OUTPUT
+            else
+              echo "skip=false" >> $GITHUB_OUTPUT
+              echo "version=$LATEST" >> $GITHUB_OUTPUT
+              echo "version_dir=$(echo $LATEST | tr '.' '_')" >> $GITHUB_OUTPUT
+            fi
+          fi
+
+      - name: Generate matrix
+        id: matrix
+        run: |
+          MATRIX=$(python3 scripts/generate-matrix.py "${{ steps.check.outputs.version_dir }}")
+          echo "matrix=$MATRIX" >> $GITHUB_OUTPUT
+
+  build:
+    name: ${{ matrix.label }}
+    needs: detect
+    if: needs.detect.outputs.skip == 'false'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{ fromJSON(needs.detect.outputs.matrix) }}
+      max-parallel: 4
+      fail-fast: false
+    env:
+      BOARD: ${{ matrix.board }}
+      VER: ${{ needs.detect.outputs.version }}
+      VER_DIR: ${{ needs.detect.outputs.version_dir }}
+      BUILD_DIR: ${{ matrix.build_path }}
+      CONFIG_DIR: ${{ matrix.config_path }}
+      BOARD_PATH: ${{ matrix.board_path }}
+      OFFICIAL_PATH: ${{ matrix.official_path }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare build directories
+        run: |
+          mkdir -p "$BUILD_DIR"
+
+      - name: Prepare version-compatible configs (official + config.ini overrides)
+        run: |
+          CUSTOM_DIR="Firmware/Configuration/$BOARD_PATH"
+          OFFICIAL_ARGS="--board \"$BOARD_PATH\" --version \"$VER\" --output-dir \"$CONFIG_DIR\""
+          if [ -n "$OFFICIAL_PATH" ] && [ "$OFFICIAL_PATH" != "$BOARD_PATH" ]; then
+            OFFICIAL_ARGS="$OFFICIAL_ARGS --official-path \"$OFFICIAL_PATH\""
+          fi
+          if [ -d "$CUSTOM_DIR" ] && [ -f "$CUSTOM_DIR/Configuration.h" ]; then
+            echo "Board has custom configs — downloading official @ $VER, diffing to config.ini, applying overrides"
+            eval "python3 scripts/prepare-configs.py $OFFICIAL_ARGS --custom-dir \"$CUSTOM_DIR\""
+          else
+            echo "No custom config for $BOARD_PATH — downloading official from MarlinFirmware/Configurations @ $VER"
+            eval "python3 scripts/prepare-configs.py $OFFICIAL_ARGS"
+          fi
+          echo "Config files ready for build:"
+          ls -la "$CONFIG_DIR" 2>/dev/null || echo "WARNING: No config files!"
+
+      - name: Compile firmware
+        run: |
+          mkdir -p "$BUILD_DIR"
+          docker run \
+            -u root:root \
+            -e BOARD \
+            -e USE_TAG="$VER" \
+            -v "$(pwd)/$BUILD_DIR:/build_output" \
+            -v "$(pwd)/$CONFIG_DIR:/config" \
+            --name marlin-build \
+            --entrypoint /bin/bash \
+            frealmyr/marlin-build:latest \
+            -c "
+              set -e
+              echo '=== Cloning Marlin \$USE_TAG ==='
+              git clone --depth 1 --branch \$USE_TAG https://github.com/MarlinFirmware/Marlin.git /Marlin/
+              echo '=== Copying configs ==='
+              cp -r /config/* /Marlin/Marlin/ 2>/dev/null || true
+              echo '=== Setting BOARD ==='
+              sed -i \"s/default_envs.*/default_envs = \${BOARD}/\" /Marlin/platformio.ini
+              echo '=== Building ==='
+              cd /Marlin && platformio run || true
+              echo '=== Copying firmware files (.bin/.hex only) ==='
+              mkdir -p /build_output
+              find /Marlin/.pio \( -name 'firmware.bin' -o -name 'firmware.hex' \) | while read f; do
+                cp -v \"\$f\" /build_output/
+                fname=\$(basename \"\$f\")
+                echo \"Generating MD5 for \$fname\"
+                md5sum \"/build_output/\$fname\" > \"/build_output/\$fname.md5\"
+                cat \"/build_output/\$fname.md5\"
+              done
+              echo '=== Build output ==='
+              ls -la /build_output/
+            " || true
+          docker rm marlin-build 2>/dev/null || true
+
+      - name: Show compiled files
+        run: |
+          if [ -d "$BUILD_DIR" ]; then
+            echo "Build output:"
+            find "$BUILD_DIR" -type f -ls
+            if [ -z "$(find "$BUILD_DIR" -type f 2>/dev/null)" ]; then
+              echo "WARNING: No firmware files found in build output!"
+            fi
+          else
+            echo "No build output directory found"
+          fi
+
+      - name: Push firmware + configs to repo
+        run: |
+          git config --global user.name "JJR Bot"
+          git config --global user.email "jrodriguez@qitec.net"
+          # Stage generated configs (.h + config.ini)
+          git add "$CONFIG_DIR/Configuration.h" "$CONFIG_DIR/Configuration_adv.h" "$CONFIG_DIR/config.ini" 2>/dev/null || true
+          # Stage firmware files
+          find "$BUILD_DIR" -type f \( -name 'firmware.bin' -o -name 'firmware.hex' -o -name 'firmware.bin.md5' -o -name 'firmware.hex.md5' \) -exec git add {} \; 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "build: ${{ matrix.label }} @ $VER"
+            for i in 1 2 3; do
+              if git pull --rebase --autostash && git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:feat/auto-update-marlin; then
+                break
+              fi
+              sleep 5
+            done
+          fi
+
+  bump-version:
+    name: Update VERSION file
+    needs: [detect, build]
+    if: always() && needs.detect.outputs.skip == 'false'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          echo "${{ needs.detect.outputs.version }}" > VERSION
+          git config --global user.name "JJR Bot"
+          git config --global user.email "jrodriguez@qitec.net"
+          git add VERSION
+          git commit -m "Bump to Marlin ${{ needs.detect.outputs.version }}" || true
+          git pull --rebase --autostash
+          git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:feat/auto-update-marlin
