@@ -301,6 +301,34 @@ def get_version_code(version_str):
     return f'{code:08d}'
 
 
+def fix_bed_pid(config_dir):
+    """Always ensure DEFAULT_BED_KP/ KI/ KD are defined (PIDTEMPBED may be auto-enabled)."""
+    path = os.path.join(config_dir, 'Configuration.h')
+    if not os.path.exists(path):
+        return
+    with open(path) as f:
+        content = f.read()
+    if '#define DEFAULT_BED_KP' in content:
+        return
+    add = (
+        '\n// Bed PID defaults (auto-added by Marlin Auto-Builder)\n'
+        '#if ENABLED(PIDTEMPBED)\n'
+        '  #define DEFAULT_BED_KP 478.71\n'
+        '  #define DEFAULT_BED_KI 95.74\n'
+        '  #define DEFAULT_BED_KD 598.39\n'
+        '#endif\n'
+    )
+    # Insert before the last #endif in Configuration.h
+    content = content.rstrip()
+    if content.endswith('#endif'):
+        content = content[:-len('#endif')] + add + '#endif\n'
+    else:
+        content += '\n' + add
+    with open(path, 'w') as f:
+        f.write(content)
+    print("  Fixed: added bed PID defaults")
+
+
 def main():
     parser = argparse.ArgumentParser(description='Prepare Marlin build configs')
     parser.add_argument('--board', required=True, help='Board path (e.g., Creality/Ender-3/CrealityV1)')
@@ -364,8 +392,12 @@ def main():
     else:
         print("  No config.ini overrides to apply")
 
-    # Step 4: Copy merged configs to output_dir
-    print("  Step 4: Copying merged configs to output...")
+    # Step 4: Fix common config issues
+    print("  Step 4: Fixing common config issues...")
+    fix_bed_pid(tmpdir)
+
+    # Step 5: Copy merged configs to output_dir
+    print("  Step 5: Copying merged configs to output...")
     for fname in ['Configuration.h', 'Configuration_adv.h']:
         src = os.path.join(tmpdir, fname)
         if os.path.exists(src):
