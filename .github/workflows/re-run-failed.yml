@@ -32,6 +32,7 @@ jobs:
         id: collect
         env:
           GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
           INPUT_RUN_ID: ${{ inputs.run_id }}
         run: |
           python3 << 'PYEOF'
@@ -59,12 +60,14 @@ jobs:
                   print('matrix={"include":[]}', file=out)
               sys.exit(0)
 
+          token = os.environ.get('GH_TOKEN', '')
+          api_url = f'https://api.github.com/repos/{os.environ["GITHUB_REPOSITORY"]}/actions/runs/{RUN_ID}/jobs?per_page=100'
           result = subprocess.run(
-              ['gh', 'run', 'view', RUN_ID, '--json', 'jobs',
-               '--jq', '.jobs[] | select(.conclusion=="failure") | .name'],
+              ['curl', '-s', '-H', f'Authorization: Bearer {token}', api_url],
               capture_output=True, text=True
           )
-          failed_names = [n.strip() for n in result.stdout.strip().split('\n') if n.strip()]
+          jobs_data = json.loads(result.stdout)
+          failed_names = [j['name'] for j in jobs_data.get('jobs', []) if j.get('conclusion') == 'failure']
           print(f"Failed: {failed_names}", file=sys.stderr)
 
           GROUPS = ['Creality ', 'delta+Geeetech ', 'Wanhao+Anet+Tronxy ',
