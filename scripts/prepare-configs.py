@@ -268,12 +268,37 @@ def fix_version_in_file(fpath, target_version_code):
 
 
 def get_version_code(version_str):
+    """
+    Fetch actual MARLIN_HEX_VERSION from Marlin source for this version.
+    This is more reliable than computing it from SHORT_BUILD_VERSION,
+    as the hex version is sometimes one behind the release (e.g. 2.1.2.7
+    uses MARLIN_HEX_VERSION 02010206, not 02010207).
+    """
+    url = f"https://raw.githubusercontent.com/MarlinFirmware/Marlin/{version_str}/Marlin/src/inc/Version.h"
+    try:
+        parts = url.split('/', 3)
+        base = '/'.join(parts[:3])
+        path = parts[3]
+        encoded_path = urllib.parse.quote(path, safe='/:@!$&\'()*+,;=')
+        encoded_url = f"{base}/{encoded_path}"
+        result = subprocess.run(
+            ["curl", "-sL", encoded_url],
+            capture_output=True, text=True, timeout=15
+        )
+        match = re.search(r'#define\s+MARLIN_HEX_VERSION\s+(\d+)', result.stdout)
+        if match:
+            return match.group(1)
+    except Exception as e:
+        print(f"  Warning: couldn't fetch MARLIN_HEX_VERSION: {e}", file=sys.stderr)
+
+    # Fallback: compute from version string
     parts = version_str.split('.')
     major = int(parts[0]) if len(parts) > 0 else 2
     minor = int(parts[1]) if len(parts) > 1 else 1
     patch = int(parts[2]) if len(parts) > 2 else 2
     build = int(parts[3]) if len(parts) > 3 else 0
-    return major * 1000000 + minor * 10000 + patch * 100 + build
+    code = major * 1000000 + minor * 10000 + patch * 100 + build
+    return f'{code:08d}'
 
 
 def main():
@@ -286,7 +311,7 @@ def main():
     args = parser.parse_args()
 
     download_path = args.official_path if args.official_path else args.board
-    target_version_code = str(get_version_code(args.version))
+    target_version_code = get_version_code(args.version)
     print(f"Preparing configs for {args.board} @ Marlin {args.version} (code: {target_version_code})")
     os.makedirs(args.output_dir, exist_ok=True)
 
