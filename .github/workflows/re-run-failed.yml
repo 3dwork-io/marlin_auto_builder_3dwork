@@ -32,6 +32,7 @@ jobs:
         id: collect
         env:
           GH_TOKEN: ${{ github.token }}
+          INPUT_RUN_ID: ${{ inputs.run_id }}
         run: |
           python3 << 'PYEOF'
           import json, os, subprocess, sys
