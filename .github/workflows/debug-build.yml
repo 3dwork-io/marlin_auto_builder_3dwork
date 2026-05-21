@@ -122,7 +122,8 @@ jobs:
             find "$BUILD_DIR" -type f -exec ls -la {} \;
             echo "---"
             echo "File list:"
-            find "$BUILD_DIR" -type f -printf '%f (%s bytes)\n' 2>/dev/null || find "$BUILD_DIR" -type f -exec basename {} \;
+            find "$BUILD_DIR" -type f -printf '%f (%s bytes)
+' 2>/dev/null || find "$BUILD_DIR" -type f -exec basename {} \;
             if [ -z "$(find "$BUILD_DIR" -type f 2>/dev/null)" ]; then
               echo "WARNING: NO FIRMWARE FILES FOUND!"
               echo "(directory exists but empty)"
