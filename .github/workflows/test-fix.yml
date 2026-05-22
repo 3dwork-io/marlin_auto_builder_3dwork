@@ -61,7 +61,7 @@ jobs:
         run: ls -la "$BUILD_DIR/" || echo "No firmware in $BUILD_DIR"
 
   test-compile-32bit:
-    name: "32-bit STM32 - AnyCubic Mega Zero BTT (STM32F103RC_btt)"
+    name: "32-bit STM32 - Ender 3 SKR Mini E3 2.0 (STM32F103RC_btt)"
     runs-on: ubuntu-latest
     env:
       BOARD: STM32F103RC_btt
@@ -69,7 +69,7 @@ jobs:
       VER_DIR: 2_1_2_7
       BUILD_DIR: Firmware/Builds/Test/STM32F103RC_btt
       CONFIG_DIR: Firmware/Configuration/Test/STM32F103RC_btt
-      BOARD_PATH: AnyCubic/Mega_Zero/BigTreeTech_SKR_Mini_MZ_V1.0
+      BOARD_PATH: Creality/Ender-3/BigTreeTech_SKR_Mini_E3_2.0
     steps:
       - uses: actions/checkout@v4
       - name: Prepare build dirs
