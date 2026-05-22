@@ -377,106 +377,16 @@ def get_version_code(version_str):
     return f'{version_code_for(version_str):08d}'
 
 
-def fix_bed_pid(config_dir):
-    """Always ensure DEFAULT_BED_KP/ KI/ KD are defined (PIDTEMPBED may be auto-enabled)."""
-    path = os.path.join(config_dir, 'Configuration.h')
-    if not os.path.exists(path):
-        return
-    with open(path) as f:
-        content = f.read()
-    if '#define DEFAULT_BED_KP' in content:
-        return
-    add = (
-        '\n// Bed PID defaults (auto-added by Marlin Auto-Builder)\n'
-        '#if ENABLED(PIDTEMPBED)\n'
-        '  #define DEFAULT_BED_KP 478.71\n'
-        '  #define DEFAULT_BED_KI 95.74\n'
-        '  #define DEFAULT_BED_KD 598.39\n'
-        '#endif\n'
-    )
-    # Insert before the last #endif in Configuration.h
-    content = content.rstrip()
-    if content.endswith('#endif'):
-        content = content[:-len('#endif')] + add + '#endif\n'
-    else:
-        content += '\n' + add
-    with open(path, 'w') as f:
-        f.write(content)
-    print("  Fixed: added bed PID defaults")
-
-
-def fix_author(config_dir):
-    """Set STRING_CONFIG_H_AUTHOR to 3Dwork branding for all firmwares."""
-    path = os.path.join(config_dir, 'Configuration.h')
-    if not os.path.exists(path):
-        return
-    with open(path) as f:
-        content = f.read()
-    author_line = '(3DWork, https://3dwork.io)'
-    if re.search(r'#define\s+STRING_CONFIG_H_AUTHOR', content):
-        content = re.sub(
-            r'#define\s+STRING_CONFIG_H_AUTHOR\s+.*',
-            f'#define STRING_CONFIG_H_AUTHOR "{author_line}"',
-            content
-        )
-    else:
-        content = content.rstrip() + f'\n#define STRING_CONFIG_H_AUTHOR "{author_line}"\n'
-    with open(path, 'w') as f:
-        f.write(content)
-    print(f"  Fixed: STRING_CONFIG_H_AUTHOR = {author_line}")
-
-
-STRIP_DEFINES = {
-    'MINIMUM_PLANNER_SPEED',
-}
-
-
-def strip_incompatible_defines(config_dir):
-    """Remove defines that don't exist in Marlin 2.1.2 (e.g. MINIMUM_PLANNER_SPEED)."""
-    for fname in ['Configuration.h', 'Configuration_adv.h']:
-        fpath = os.path.join(config_dir, fname)
-        if not os.path.exists(fpath):
-            continue
-        with open(fpath) as f:
-            lines = f.readlines()
-        cleaned = []
-        stripped = 0
-        for line in lines:
-            m = re.match(r'^#define\s+(\w+)', line.strip())
-            if m and m.group(1) in STRIP_DEFINES:
-                stripped += 1
-                continue
-            cleaned.append(line)
-        if stripped:
-            with open(fpath, 'w') as f:
-                f.writelines(cleaned)
-            print(f"  Stripped {stripped} incompatible define(s) from {fname}")
-
-
-FALLBACK_STUBS = {
-    '_Bootscreen.h': """#pragma once
-// Auto-generated stub — original _Bootscreen.h was missing
-""",
-}
-
-
-def write_fallback_stubs(config_dir):
-    """Create stub files for missing includes that custom configs may reference."""
+def copy_bootscreen_stubs(config_dir, repo_root):
+    """Copy _Bootscreen.h and _Statusscreen.h templates from repo to output dir."""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    repo_root_dir = os.path.abspath(os.path.join(script_dir, '..'))
     for fname in ['_Bootscreen.h', '_Statusscreen.h']:
-        fpath = os.path.join(config_dir, fname)
-        # Check if any config file references it
-        referenced = False
-        for cfg in ['Configuration.h', 'Configuration_adv.h']:
-            cfg_path = os.path.join(config_dir, cfg)
-            if os.path.exists(cfg_path):
-                with open(cfg_path) as f:
-                    if f'#include "{fname}"' in f.read():
-                        referenced = True
-                        break
-        if referenced and not os.path.exists(fpath):
-            with open(fpath, 'w') as f:
-                f.write(FALLBACK_STUBS.get(fname, ""))
-            print(f"  Created stub: {fname}")
+        src = os.path.join(repo_root_dir, fname)
+        dst = os.path.join(config_dir, fname)
+        if os.path.exists(src) and not os.path.exists(dst):
+            shutil.copy2(src, dst)
+            print(f"  Copied: {fname} (from repo template)")
 
 
 def main():
@@ -545,15 +455,31 @@ def main():
     else:
         print("  No config.ini overrides to apply")
 
-    # Step 4: Fix common config issues
-    print("  Step 4: Fixing common config issues...")
-    fix_bed_pid(tmpdir)
-    fix_author(tmpdir)
-    strip_incompatible_defines(tmpdir)
-    write_fallback_stubs(tmpdir)
+    # Step 4: Apply 3Dwork customizations via config.ini parser
+    print("  Step 4: Applying 3Dwork customizations...")
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    repo_root_dir_abs = os.path.abspath(os.path.join(script_dir, '..'))
+    dw_config_ini = os.path.join(repo_root_dir_abs, '3dwork-config.ini')
+    if os.path.exists(dw_config_ini):
+        print(f"  Applying 3Dwork config: {dw_config_ini}")
+        apply_config_ini(dw_config_ini, tmpdir)
+    else:
+        print("  No 3dwork-config.ini found, using inline overrides")
+        inline_ini = os.path.join(tmpdir, '_3dwork_overrides.ini')
+        with open(inline_ini, 'w') as f:
+            f.write('[config:base]\n')
+            f.write('ini_use_config = info\n')
+            f.write('\n')
+            f.write('[config:info]\n')
+            f.write('string_config_h_author = (3Dwork, https://3dwork.io)\n')
+        apply_config_ini(inline_ini, tmpdir)
 
-    # Step 5: Copy merged configs to output_dir
-    print("  Step 5: Copying merged configs to output...")
+    # Step 5: Copy bootscreen/statusscreen templates
+    print("  Step 5: Copying bootscreen/statusscreen templates...")
+    copy_bootscreen_stubs(tmpdir, repo_root_dir_abs)
+
+    # Step 6: Copy merged configs to output_dir
+    print("  Step 6: Copying merged configs to output...")
     for fname in ['Configuration.h', 'Configuration_adv.h']:
         src = os.path.join(tmpdir, fname)
         if os.path.exists(src):
