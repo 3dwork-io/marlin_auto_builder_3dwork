@@ -71,6 +71,7 @@ jobs:
       BUILD_DIR: Firmware/Builds/Test/STM32F103RC_btt
       CONFIG_DIR: Firmware/Configuration/Test/STM32F103RC_btt
       BOARD_PATH: Creality/Ender-3/BigTreeTech_SKR_Mini_E3_2.0
+      OFFICIAL_PATH: "Creality/Ender-3/BigTreeTech SKR Mini E3 2.0"
     steps:
       - uses: actions/checkout@v4
       - name: Prepare build dirs
