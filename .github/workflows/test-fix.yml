@@ -40,7 +40,7 @@ jobs:
 
             echo '=== COPY CONFIGS ==='
             cp -r /config/* /Marlin/Marlin/ 2>/dev/null || true
-            sed -i \"s/default_envs.*/default_envs = \\\${BOARD}/\" /Marlin/platformio.ini
+            sed -i \"s/default_envs.*/default_envs = \\${BOARD}/\" /Marlin/platformio.ini
 
             echo '=== COMPILE ==='
             cd /Marlin
@@ -91,7 +91,7 @@ jobs:
 
             echo '=== COPY CONFIGS ==='
             cp -r /config/* /Marlin/Marlin/ 2>/dev/null || true
-            sed -i \"s/default_envs.*/default_envs = \\\${BOARD}/\" /Marlin/platformio.ini
+            sed -i \"s/default_envs.*/default_envs = \\${BOARD}/\" /Marlin/platformio.ini
 
             echo '=== COMPILE ==='
             cd /Marlin
