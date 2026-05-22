@@ -49,8 +49,8 @@ jobs:
             echo '=== COLLECT OUTPUT ==='
             mkdir -p /build_output
             find /Marlin/.pio \( -name 'firmware.bin' -o -name 'firmware.hex' \) | while read f; do
-              cp -v \"\\\$f\" /build_output/
-              md5sum \"/build_output/\\\$(basename \\\"\\\$f\\\")\" > \"/build_output/\\\$(basename \\\"\\\$f\\\").md5\"
+              cp -v \"\$f\" /build_output/
+              md5sum \"/build_output/\$(basename \"\$f\")\" > \"/build_output/\$(basename \"\$f\").md5\"
             done
             echo '=== BUILD OK ==='
           "
@@ -100,8 +100,8 @@ jobs:
             echo '=== COLLECT OUTPUT ==='
             mkdir -p /build_output
             find /Marlin/.pio \( -name 'firmware.bin' -o -name 'firmware.hex' \) | while read f; do
-              cp -v \"\\\$f\" /build_output/
-              md5sum \"/build_output/\\\$(basename \\\"\\\$f\\\")\" > \"/build_output/\\\$(basename \\\"\\\$f\\\").md5\"
+              cp -v \"\$f\" /build_output/
+              md5sum \"/build_output/\$(basename \"\$f\")\" > \"/build_output/\$(basename \"\$f\").md5\"
             done
             echo '=== BUILD OK ==='
           "
