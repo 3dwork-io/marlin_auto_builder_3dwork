@@ -38,21 +38,6 @@ jobs:
             git clone --depth 1 --branch \$USE_TAG https://github.com/MarlinFirmware/Marlin.git /Marlin/
             test -d /Marlin/Marlin || { echo 'CLONE FAILED'; exit 1; }
 
-            echo '=== CHECK ENV (OLD) ==='
-            if grep -q \"env:.*\\\$BOARD\" /Marlin/platformio.ini; then
-              echo 'OLD grep: FOUND in platformio.ini'
-            else
-              echo 'OLD grep: NOT FOUND in platformio.ini only'
-            fi
-
-            echo '=== CHECK ENV (NEW - fix) ==='
-            if find /Marlin/ -name '*.ini' -exec grep -q \"env:.*\\\$BOARD\" {} +; then
-              echo 'NEW find+grep: FOUND it! Fix works.'
-            else
-              echo 'NEW find+grep: NOT FOUND - FIX FAILED'
-              exit 1
-            fi
-
             echo '=== COPY CONFIGS ==='
             cp -r /config/* /Marlin/Marlin/ 2>/dev/null || true
             sed -i \"s/default_envs.*/default_envs = \\\${BOARD}/\" /Marlin/platformio.ini
@@ -103,21 +88,6 @@ jobs:
             echo '=== CLONE ==='
             git clone --depth 1 --branch \$USE_TAG https://github.com/MarlinFirmware/Marlin.git /Marlin/
             test -d /Marlin/Marlin || { echo 'CLONE FAILED'; exit 1; }
-
-            echo '=== CHECK ENV (OLD) ==='
-            if grep -q \"env:.*\\\$BOARD\" /Marlin/platformio.ini; then
-              echo 'OLD grep: FOUND in platformio.ini'
-            else
-              echo 'OLD grep: NOT FOUND in platformio.ini only'
-            fi
-
-            echo '=== CHECK ENV (NEW - fix) ==='
-            if find /Marlin/ -name '*.ini' -exec grep -q \"env:.*\\\$BOARD\" {} +; then
-              echo 'NEW find+grep: FOUND it! Fix works.'
-            else
-              echo 'NEW find+grep: NOT FOUND - FIX FAILED'
-              exit 1
-            fi
 
             echo '=== COPY CONFIGS ==='
             cp -r /config/* /Marlin/Marlin/ 2>/dev/null || true
