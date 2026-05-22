@@ -62,13 +62,13 @@ jobs:
         run: ls -la "$BUILD_DIR/" || echo "No firmware in $BUILD_DIR"
 
   test-compile-32bit:
-    name: "32-bit STM32 - FYSETC S6 (STM32F103RC_btt)"
+    name: "32-bit ARM - FYSETC S6 (FYSETC_S6)"
     runs-on: ubuntu-latest
     env:
-      BOARD: STM32F103RC_btt
+      BOARD: FYSETC_S6
       VER: ${{ github.event.inputs.version }}
       VER_DIR: 2_1_2_7
-      BUILD_DIR: Firmware/Builds/Test/STM32F103RC_btt
+      BUILD_DIR: Firmware/Builds/Test/FYSETC_S6
       CONFIG_DIR: Firmware/Configuration/Test/STM32F103RC_btt
       BOARD_PATH: FYSETC/S6
       OFFICIAL_PATH: FYSETC/S6
