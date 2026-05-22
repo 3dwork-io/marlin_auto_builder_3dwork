@@ -80,20 +80,20 @@ jobs:
             --entrypoint /bin/bash \
             frealmyr/marlin-build:latest \
             -c "
-              set -x
+              set -ex
               echo '=== CLONING Marlin \$USE_TAG ==='
-              git clone --depth 1 --branch \$USE_TAG https://github.com/MarlinFirmware/Marlin.git /Marlin/ 2>&1
+              git clone --depth 1 --branch \$USE_TAG https://github.com/MarlinFirmware/Marlin.git /Marlin/
+              test -d /Marlin/Marlin || { echo 'CLONE FAILED'; exit 1; }
               echo '=== COPYING configs ==='
               cp -r /config/* /Marlin/Marlin/ 2>/dev/null || true
-              echo '=== PLATFORMIO.INI before ==='
-              head -5 /Marlin/platformio.ini
+              echo '=== VALIDATING board env ==='
+              grep -q \"env:.*\$BOARD\" /Marlin/platformio.ini || { echo 'BOARD ENV \$BOARD NOT FOUND'; exit 1; }
               echo '=== SETTING BOARD ==='
               sed -i \"s/default_envs.*/default_envs = \${BOARD}/\" /Marlin/platformio.ini
               grep default_envs /Marlin/platformio.ini
               echo '=== BUILDING ==='
-              cd /Marlin && platformio run 2>&1
-              BUILD_EXIT=\$?
-              echo '=== PlatformIO exit code: \$BUILD_EXIT ==='
+              cd /Marlin && platformio run
+              echo '=== PlatformIO completed ==='
               echo '=== FINDING firmware files ==='
               find /Marlin/.pio -name 'firmware.*'
               echo '=== COPYING firmware files ==='

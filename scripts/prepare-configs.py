@@ -32,6 +32,22 @@ BLOCKLIST = {
     'CONFIGURATION_H_VERSION',
     'CONFIGURATION_ADV_H_VERSION',
     'CONFIG_EXAMPLES_DIR',
+    'DEFAULT_NOMINAL_FILAMENT_DIA',
+    'DEFAULT_MINSEGMENTTIME',
+    'MINIMUM_PLANNER_SPEED',
+    'DEFAULT_MINIMUMFEEDRATE',
+    'DEFAULT_MINTRAVELFEEDRATE',
+    'QUICK_HOME',
+}
+NOISE_KEYS = {
+    'TPARA', 'TPARA_SENSOR_PIN',
+    'DELTA_', 'SCARA_',
+    'TOUCH_MI', 'Z_PROBE',
+    'NOZZLE_TO_PROBE', 'PROBE_OFFSET_',
+    'PREHEAT_', 'PROBING_',
+    'Z_PROBE_OFFSET_RANGE',
+    'XY_PROBE_SPEED', 'Z_CLEARANCE',
+    'MESH_', 'GRID_',
 }
 
 SECTION_MAP = {
@@ -88,20 +104,43 @@ def curl_download(url, dest_path):
     return result.returncode == 0
 
 
+def version_code_for(version_str):
+    """Convert a version string like '2.1.2.7' to a numeric code for comparison (e.g., 02010207)."""
+    parts = version_str.split('.')
+    major = int(parts[0]) if len(parts) > 0 else 2
+    minor = int(parts[1]) if len(parts) > 1 else 1
+    patch = int(parts[2]) if len(parts) > 2 else 2
+    build = int(parts[3]) if len(parts) > 3 else 0
+    return major * 1000000 + minor * 10000 + patch * 100 + build
+
+
 def download_official_config(board, version, output_dir):
-    branch = f"release-{version}" if not version.startswith('bugfix-') else version
-    url_base = f"{CONFIG_BASE_URL}/{branch}/config/examples/{board}"
+    """Download official configs for the exact Marlin version — no future-branch fallback."""
+    parts = version.split('.')
+    major_minor = f"{parts[0]}.{parts[1]}" if len(parts) >= 2 else "2.1"
+    # Only try exact-version branches/tags. Future-version branches (release-2.1.x,
+    # bugfix-2.1.x) cause compile failures due to incompatible features.
+    branches = [f"release-{version}", version]
     files = ['Configuration.h', 'Configuration_adv.h']
     downloaded = []
-    for fname in files:
-        url = f"{url_base}/{fname}"
-        dest = os.path.join(output_dir, fname)
-        if curl_download(url, dest):
-            print(f"  Downloaded: {fname}")
-            downloaded.append(fname)
-        else:
-            print(f"  Not found: {url}")
-    return downloaded
+    used_branch = None
+    for branch in branches:
+        url_base = f"{CONFIG_BASE_URL}/{branch}/config/examples/{board}"
+        for fname in files:
+            if fname in downloaded:
+                continue
+            url = f"{url_base}/{fname}"
+            dest = os.path.join(output_dir, fname)
+            if curl_download(url, dest):
+                print(f"  Downloaded ({branch}): {fname}")
+                downloaded.append(fname)
+                if used_branch is None:
+                    used_branch = branch
+            else:
+                print(f"  Not found ({branch}): {url}")
+        if len(downloaded) == len(files):
+            break
+    return downloaded, used_branch
 
 
 def extract_defines(path):
@@ -111,7 +150,10 @@ def extract_defines(path):
             for line in f:
                 m = re.match(r'^#define\s+(\w+)\s*(.*)', line.strip())
                 if m and not line.strip().startswith('//'):
-                    defines[m.group(1)] = m.group(2).strip()
+                    val = m.group(2).strip()
+                    val = re.sub(r'\s*//.*$', '', val).strip()
+                    val = re.sub(r'\s*/\*.*?\*/', '', val).strip()
+                    defines[m.group(1)] = val
     except:
         pass
     return defines
@@ -131,6 +173,8 @@ def diff_to_config_ini(custom_dir, official_dir, output_ini_path):
     all_keys = set(custom.keys()) | set(official.keys())
     for key in all_keys:
         if key in BLOCKLIST:
+            continue
+        if any(key.startswith(nk.rstrip('_')) for nk in NOISE_KEYS):
             continue
         cv = custom.get(key, '')
         ov = official.get(key, '')
@@ -188,31 +232,43 @@ def parse_config_ini(config_ini_path):
                 continue
             if current_section and '=' in line:
                 key, value = line.split('=', 1)
-                config['sections'][current_section][key.strip()] = value.strip()
+                value = value.strip()
+                value = re.sub(r'\s*//.*$', '', value).strip()
+                if not value:
+                    continue
+                config['sections'][current_section][key.strip()] = value
     return config
 
 
 def apply_override(line, define_key, value):
     v = value.strip()
-    on = v.lower() in ('on', 'true')
-    off = v.lower() in ('off', 'false')
+    on = v.lower() in ('on', 'true', '1')
+    off = v.lower() in ('off', 'false', '0')
+    stripped = line.strip()
+    is_commented = stripped.startswith('//')
+    bare_stripped = stripped.lstrip('/ ')
     indent = ' ' * (len(line) - len(line.lstrip()))
+
     if on:
+        if is_commented:
+            return f'{indent}#define {bare_stripped}\n'
         return line
     if off:
-        newline = line.lstrip()
-        if newline.startswith('//'):
+        if is_commented:
             return line
-        return '//' + newline
+        return f'{indent}//{stripped}\n'
 
-    stripped = line.strip()
+    # Value-less toggle (e.g., "#define BLTOUCH")
+    if not v or v == define_key:
+        if is_commented:
+            return f'{indent}#define {define_key}\n'
+        return line
+
     has_dquote = '"' in stripped.split('//')[0] if '//' in stripped else '"' in stripped
     has_brace = '{' in stripped.split('//')[0] if '//' in stripped else '{' in stripped
 
     if has_dquote:
         return f"{indent}#define {define_key} \"{v}\"\n"
-    elif has_brace:
-        return f"{indent}#define {define_key} {v}\n"
     else:
         return f"{indent}#define {define_key} {v}\n"
 
@@ -240,12 +296,14 @@ def apply_config_ini(config_ini_path, config_dir):
                 dk = m.group(1)
                 for section_name in sections:
                     section = config['sections'].get(section_name, {})
-                    for key, val in section.items():
-                        if dk.upper() == key.upper():
-                            r = apply_override(new_line, dk, val)
-                            if r != new_line:
-                                new_line = r
+                    if dk.upper() in {k.upper() for k in section}:
+                        for key, val in section.items():
+                            if dk.upper() == key.upper():
+                                r = apply_override(new_line, dk, val)
+                                if r != new_line:
+                                    new_line = r
                                 break
+                        break
             modified.append(new_line)
         with open(fpath, 'w') as f:
             f.writelines(modified)
@@ -265,6 +323,30 @@ def fix_version_in_file(fpath, target_version_code):
         )
     with open(fpath, 'w') as f:
         f.write(content)
+
+
+def strip_version_errors(config_dir, used_branch, target_version):
+    """Remove #error directives that guard against config/mismatch when using fallback branches."""
+    if not used_branch or target_version in used_branch:
+        return
+    for fname in ['Configuration.h', 'Configuration_adv.h']:
+        fpath = os.path.join(config_dir, fname)
+        if not os.path.exists(fpath):
+            continue
+        with open(fpath) as f:
+            lines = f.readlines()
+        cleaned = [
+            line for line in lines
+            if not re.match(
+                r'^\s*#error\s+.*(import|bugfix|release|configurations)',
+                line, re.IGNORECASE
+            )
+        ]
+        if len(cleaned) != len(lines):
+            with open(fpath, 'w') as f:
+                f.writelines(cleaned)
+            count = len(lines) - len(cleaned)
+            print(f"  Stripped {count} version-guard #error line(s) from {fname}")
 
 
 def get_version_code(version_str):
@@ -292,13 +374,7 @@ def get_version_code(version_str):
         print(f"  Warning: couldn't fetch MARLIN_HEX_VERSION: {e}", file=sys.stderr)
 
     # Fallback: compute from version string
-    parts = version_str.split('.')
-    major = int(parts[0]) if len(parts) > 0 else 2
-    minor = int(parts[1]) if len(parts) > 1 else 1
-    patch = int(parts[2]) if len(parts) > 2 else 2
-    build = int(parts[3]) if len(parts) > 3 else 0
-    code = major * 1000000 + minor * 10000 + patch * 100 + build
-    return f'{code:08d}'
+    return f'{version_code_for(version_str):08d}'
 
 
 def fix_bed_pid(config_dir):
@@ -329,6 +405,80 @@ def fix_bed_pid(config_dir):
     print("  Fixed: added bed PID defaults")
 
 
+def fix_author(config_dir):
+    """Set STRING_CONFIG_H_AUTHOR to 3Dwork branding for all firmwares."""
+    path = os.path.join(config_dir, 'Configuration.h')
+    if not os.path.exists(path):
+        return
+    with open(path) as f:
+        content = f.read()
+    author_line = '(3DWork, https://3dwork.io)'
+    if re.search(r'#define\s+STRING_CONFIG_H_AUTHOR', content):
+        content = re.sub(
+            r'#define\s+STRING_CONFIG_H_AUTHOR\s+.*',
+            f'#define STRING_CONFIG_H_AUTHOR "{author_line}"',
+            content
+        )
+    else:
+        content = content.rstrip() + f'\n#define STRING_CONFIG_H_AUTHOR "{author_line}"\n'
+    with open(path, 'w') as f:
+        f.write(content)
+    print(f"  Fixed: STRING_CONFIG_H_AUTHOR = {author_line}")
+
+
+STRIP_DEFINES = {
+    'MINIMUM_PLANNER_SPEED',
+}
+
+
+def strip_incompatible_defines(config_dir):
+    """Remove defines that don't exist in Marlin 2.1.2 (e.g. MINIMUM_PLANNER_SPEED)."""
+    for fname in ['Configuration.h', 'Configuration_adv.h']:
+        fpath = os.path.join(config_dir, fname)
+        if not os.path.exists(fpath):
+            continue
+        with open(fpath) as f:
+            lines = f.readlines()
+        cleaned = []
+        stripped = 0
+        for line in lines:
+            m = re.match(r'^#define\s+(\w+)', line.strip())
+            if m and m.group(1) in STRIP_DEFINES:
+                stripped += 1
+                continue
+            cleaned.append(line)
+        if stripped:
+            with open(fpath, 'w') as f:
+                f.writelines(cleaned)
+            print(f"  Stripped {stripped} incompatible define(s) from {fname}")
+
+
+FALLBACK_STUBS = {
+    '_Bootscreen.h': """#pragma once
+// Auto-generated stub — original _Bootscreen.h was missing
+""",
+}
+
+
+def write_fallback_stubs(config_dir):
+    """Create stub files for missing includes that custom configs may reference."""
+    for fname in ['_Bootscreen.h', '_Statusscreen.h']:
+        fpath = os.path.join(config_dir, fname)
+        # Check if any config file references it
+        referenced = False
+        for cfg in ['Configuration.h', 'Configuration_adv.h']:
+            cfg_path = os.path.join(config_dir, cfg)
+            if os.path.exists(cfg_path):
+                with open(cfg_path) as f:
+                    if f'#include "{fname}"' in f.read():
+                        referenced = True
+                        break
+        if referenced and not os.path.exists(fpath):
+            with open(fpath, 'w') as f:
+                f.write(FALLBACK_STUBS.get(fname, ""))
+            print(f"  Created stub: {fname}")
+
+
 def main():
     parser = argparse.ArgumentParser(description='Prepare Marlin build configs')
     parser.add_argument('--board', required=True, help='Board path (e.g., Creality/Ender-3/CrealityV1)')
@@ -346,7 +496,7 @@ def main():
     # Step 1: Download official configs to TEMP dir
     print("  Step 1: Downloading official configs...")
     tmpdir = tempfile.mkdtemp(prefix='marlin-official-')
-    downloaded = download_official_config(download_path, args.version, tmpdir)
+    downloaded, used_branch = download_official_config(download_path, args.version, tmpdir)
 
     if not downloaded:
         print("  WARNING: No official configs available for this board")
@@ -372,6 +522,9 @@ def main():
         if os.path.exists(fpath):
             fix_version_in_file(fpath, target_version_code)
 
+    # Strip #errors if configs came from a non-matching branch (e.g., import-2.1.x for release build)
+    strip_version_errors(tmpdir, used_branch, args.version)
+
     # Step 2: Generate or reuse config.ini
     config_ini_path = os.path.join(args.output_dir, 'config.ini')
     existing_ini = os.path.exists(config_ini_path)
@@ -395,6 +548,9 @@ def main():
     # Step 4: Fix common config issues
     print("  Step 4: Fixing common config issues...")
     fix_bed_pid(tmpdir)
+    fix_author(tmpdir)
+    strip_incompatible_defines(tmpdir)
+    write_fallback_stubs(tmpdir)
 
     # Step 5: Copy merged configs to output_dir
     print("  Step 5: Copying merged configs to output...")

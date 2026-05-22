@@ -465,28 +465,6 @@ def fetch_config_tree():
 def normalize_board_path(board_path):
     """Convert Configurations path to our board_path format."""
     bp = board_path.strip()
-    parts = bp.split('/')
-    ui_variants = {'CrealityUI', 'MarlinUI', 'ProUI', 'BLTouch', 'no probe',
-                   'noprobe', 'bltouch', 'basic', 'enhanced', 'base',
-                   'BLTouch-HighTemp', '2-into-1 Hotend', 'Dual Z',
-                   'Single Extruder', 'cyclops', 'default', 'default - BLTouch',
-                   'V1 (MKS Base)', 'V2 (MKS Gen_L)', '0.9 BMG - E3D V6',
-                   'all-metal-hotend', 'Stock LCD', 'YHCB2004_V4.1',
-                   'Green Board (Chitu V5)', 'Red Board (Tronxy 3.1.0)',
-                   'BlueR V1', 'BlueR V2', 'BlueR V3',
-                   'Sapphire Plus V2', 'Sapphire Plus V2.1',
-                   'MKS Gen_L', 'MKS SGen_L', 'STOCK',
-                   'ORIGIN UI', 'RELOADED UI',
-                   'CrealityV422', 'CrealityV427', 'CrealityV24S4', 'CrealityV423',
-                   'V1.0', 'V1.1',
-                   }
-    while len(parts) >= 4:
-        variant = parts[-1].strip()
-        if variant.lower().replace(' ', '_') in [v.lower().replace(' ', '_') for v in ui_variants]:
-            parts = parts[:-1]
-        else:
-            break
-    bp = '/'.join(parts)
     bp = bp.replace(' ', '_')
     bp = bp.replace('+', '_Plus')
     return bp
@@ -502,8 +480,7 @@ def load_matrix(path):
 def save_matrix(path, matrix):
     with open(path, 'w') as f:
         json.dump(matrix, f, indent=2)
-        f.write('
-')
+        f.write('\n')
 
 
 def main():
@@ -636,8 +613,7 @@ def main():
             else:
                 print(f"  ? [{'pending':30s}] (no MB found) {official_path}")
 
-    print(f"
-SUMMARY:")
+    print(f"\nSUMMARY:")
     print(f"  Existing in matrix: {len(existing_by_bp)}")
     print(f"  Matched already:    {matched}")
     print(f"  Added (auto):       {added}")
@@ -645,8 +621,7 @@ SUMMARY:")
     print(f"  Total:              {len(existing)}")
 
     save_matrix(output_path, existing)
-    print(f"
-Saved: {output_path}")
+    print(f"\nSaved: {output_path}")
 
 
 if __name__ == '__main__':

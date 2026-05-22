@@ -1137,19 +1137,19 @@
   },
   {
     "board": "STM32G0B1RE_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0",
-    "board_path": "Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0/BLTouch",
+    "board_path": "Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0/BLTouch",
     "official_path": "Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0/BLTouch",
     "build_path": "Firmware/Builds/Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0/2_1_2_2",
-    "label": "Creality - Ender_3_Pro - BigTreeTech_SKR_Mini_E3_3.0"
+    "label": "Creality - Ender_3_Pro - BigTreeTech_SKR_Mini_E3_3.0 - BLTouch"
   },
   {
     "board": "STM32G0B1RE_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0",
-    "board_path": "Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0/base",
+    "board_path": "Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0/base",
     "official_path": "Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0/base",
     "build_path": "Firmware/Builds/Creality/Ender_3_Pro/BigTreeTech_SKR_Mini_E3_3.0/2_1_2_2",
-    "label": "Creality - Ender_3_Pro - BigTreeTech_SKR_Mini_E3_3.0"
+    "label": "Creality - Ender_3_Pro - BigTreeTech_SKR_Mini_E3_3.0 - base"
   },
   {
     "board": "mega2560",
@@ -1177,19 +1177,19 @@
   },
   {
     "board": "mega2560",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/CrealityV427",
-    "board_path": "Creality/Ender_3_Pro/CrealityV427",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/CrealityV427/BLTouch",
+    "board_path": "Creality/Ender_3_Pro/CrealityV427/BLTouch",
     "official_path": "Creality/Ender-3 Pro/CrealityV427/BLTouch",
     "build_path": "Firmware/Builds/Creality/Ender_3_Pro/CrealityV427/2_1_2_2",
-    "label": "Creality - Ender_3_Pro - CrealityV427"
+    "label": "Creality - Ender_3_Pro - CrealityV427 - BLTouch"
   },
   {
     "board": "mega2560",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/CrealityV427",
-    "board_path": "Creality/Ender_3_Pro/CrealityV427",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/CrealityV427/base",
+    "board_path": "Creality/Ender_3_Pro/CrealityV427/base",
     "official_path": "Creality/Ender-3 Pro/CrealityV427/base",
     "build_path": "Firmware/Builds/Creality/Ender_3_Pro/CrealityV427/2_1_2_2",
-    "label": "Creality - Ender_3_Pro - CrealityV427"
+    "label": "Creality - Ender_3_Pro - CrealityV427 - base"
   },
   {
     "board": "STM32F401RC_creality",
@@ -1225,123 +1225,123 @@
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
-    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/CrealityUI",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/CrealityUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/CrealityUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_E3_Turbo"
+    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_E3_Turbo - CrealityUI"
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
-    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/MarlinUI",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/MarlinUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/MarlinUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_E3_Turbo"
+    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_E3_Turbo - MarlinUI"
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
-    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/ProUI",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/ProUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/ProUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_E3_Turbo"
+    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_E3_Turbo - ProUI"
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
-    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0/CrealityUI",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0/CrealityUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/CrealityUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_2.0"
+    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_2.0 - CrealityUI"
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
-    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0/MarlinUI",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0/MarlinUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/MarlinUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_2.0"
+    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_2.0 - MarlinUI"
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
-    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0/ProUI",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0/ProUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/ProUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_2.0/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_2.0"
+    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_2.0 - ProUI"
   },
   {
     "board": "STM32G0B1RE_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
-    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0/CrealityUI",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0/CrealityUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/CrealityUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_3.0"
+    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_3.0 - CrealityUI"
   },
   {
     "board": "STM32G0B1RE_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
-    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0/MarlinUI",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0/MarlinUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/MarlinUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_3.0"
+    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_3.0 - MarlinUI"
   },
   {
     "board": "STM32G0B1RE_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
-    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0/ProUI",
+    "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0/ProUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/ProUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/BigTreeTech_SKR_Mini_E3_3.0/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_3.0"
+    "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_3.0 - ProUI"
   },
   {
     "board": "mega2560",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422",
-    "board_path": "Creality/Ender_3_V2/CrealityV422",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422/CrealityUI",
+    "board_path": "Creality/Ender_3_V2/CrealityV422/CrealityUI",
     "official_path": "Creality/Ender-3 V2/CrealityV422/CrealityUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/CrealityV422/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - CrealityV422"
+    "label": "Creality - Ender_3_V2 - CrealityV422 - CrealityUI"
   },
   {
     "board": "mega2560",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422",
-    "board_path": "Creality/Ender_3_V2/CrealityV422",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422/MarlinUI",
+    "board_path": "Creality/Ender_3_V2/CrealityV422/MarlinUI",
     "official_path": "Creality/Ender-3 V2/CrealityV422/MarlinUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/CrealityV422/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - CrealityV422"
+    "label": "Creality - Ender_3_V2 - CrealityV422 - MarlinUI"
   },
   {
     "board": "mega2560",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422",
-    "board_path": "Creality/Ender_3_V2/CrealityV422",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422/ProUI",
+    "board_path": "Creality/Ender_3_V2/CrealityV422/ProUI",
     "official_path": "Creality/Ender-3 V2/CrealityV422/ProUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/CrealityV422/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - CrealityV422"
+    "label": "Creality - Ender_3_V2 - CrealityV422 - ProUI"
   },
   {
     "board": "mega2560",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427",
-    "board_path": "Creality/Ender_3_V2/CrealityV427",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427/CrealityUI",
+    "board_path": "Creality/Ender_3_V2/CrealityV427/CrealityUI",
     "official_path": "Creality/Ender-3 V2/CrealityV427/CrealityUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/CrealityV427/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - CrealityV427"
+    "label": "Creality - Ender_3_V2 - CrealityV427 - CrealityUI"
   },
   {
     "board": "mega2560",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427",
-    "board_path": "Creality/Ender_3_V2/CrealityV427",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427/MarlinUI",
+    "board_path": "Creality/Ender_3_V2/CrealityV427/MarlinUI",
     "official_path": "Creality/Ender-3 V2/CrealityV427/MarlinUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/CrealityV427/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - CrealityV427"
+    "label": "Creality - Ender_3_V2 - CrealityV427 - MarlinUI"
   },
   {
     "board": "mega2560",
-    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427",
-    "board_path": "Creality/Ender_3_V2/CrealityV427",
+    "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427/ProUI",
+    "board_path": "Creality/Ender_3_V2/CrealityV427/ProUI",
     "official_path": "Creality/Ender-3 V2/CrealityV427/ProUI",
     "build_path": "Firmware/Builds/Creality/Ender_3_V2/CrealityV427/2_1_2_2",
-    "label": "Creality - Ender_3_V2 - CrealityV427"
+    "label": "Creality - Ender_3_V2 - CrealityV427 - ProUI"
   },
   {
     "board": "STM32F103RC_btt",
@@ -1361,27 +1361,27 @@
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
-    "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/2_into_1_Hotend",
+    "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/2_into_1_Hotend",
     "official_path": "Creality/Ender-3/BigTreeTech SKR E3 Turbo/2-into-1 Hotend",
     "build_path": "Firmware/Builds/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/2_1_2_2",
-    "label": "Creality - Ender_3 - BigTreeTech_SKR_E3_Turbo"
+    "label": "Creality - Ender_3 - BigTreeTech_SKR_E3_Turbo - 2_into_1_Hotend"
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
-    "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/Dual_Z",
+    "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/Dual_Z",
     "official_path": "Creality/Ender-3/BigTreeTech SKR E3 Turbo/Dual Z",
     "build_path": "Firmware/Builds/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/2_1_2_2",
-    "label": "Creality - Ender_3 - BigTreeTech_SKR_E3_Turbo"
+    "label": "Creality - Ender_3 - BigTreeTech_SKR_E3_Turbo - Dual_Z"
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
-    "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/Single_Extruder",
+    "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/Single_Extruder",
     "official_path": "Creality/Ender-3/BigTreeTech SKR E3 Turbo/Single Extruder",
     "build_path": "Firmware/Builds/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/2_1_2_2",
-    "label": "Creality - Ender_3 - BigTreeTech_SKR_E3_Turbo"
+    "label": "Creality - Ender_3 - BigTreeTech_SKR_E3_Turbo - Single_Extruder"
   },
   {
     "board": "STM32F103RC_btt",
@@ -1409,35 +1409,35 @@
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah_1.2",
-    "board_path": "Creality/Ender_3/FYSETC_Cheetah_1.2",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah_1.2/BLTouch",
+    "board_path": "Creality/Ender_3/FYSETC_Cheetah_1.2/BLTouch",
     "official_path": "Creality/Ender-3/FYSETC Cheetah 1.2/BLTouch",
     "build_path": "Firmware/Builds/Creality/Ender_3/FYSETC_Cheetah_1.2/2_1_2_2",
-    "label": "Creality - Ender_3 - FYSETC_Cheetah_1.2"
+    "label": "Creality - Ender_3 - FYSETC_Cheetah_1.2 - BLTouch"
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah_1.2",
-    "board_path": "Creality/Ender_3/FYSETC_Cheetah_1.2",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah_1.2/base",
+    "board_path": "Creality/Ender_3/FYSETC_Cheetah_1.2/base",
     "official_path": "Creality/Ender-3/FYSETC Cheetah 1.2/base",
     "build_path": "Firmware/Builds/Creality/Ender_3/FYSETC_Cheetah_1.2/2_1_2_2",
-    "label": "Creality - Ender_3 - FYSETC_Cheetah_1.2"
+    "label": "Creality - Ender_3 - FYSETC_Cheetah_1.2 - base"
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah",
-    "board_path": "Creality/Ender_3/FYSETC_Cheetah",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah/BLTouch",
+    "board_path": "Creality/Ender_3/FYSETC_Cheetah/BLTouch",
     "official_path": "Creality/Ender-3/FYSETC Cheetah/BLTouch",
     "build_path": "Firmware/Builds/Creality/Ender_3/FYSETC_Cheetah/2_1_2_2",
-    "label": "Creality - Ender_3 - FYSETC_Cheetah"
+    "label": "Creality - Ender_3 - FYSETC_Cheetah - BLTouch"
   },
   {
     "board": "STM32F103RC_btt",
-    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah",
-    "board_path": "Creality/Ender_3/FYSETC_Cheetah",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah/base",
+    "board_path": "Creality/Ender_3/FYSETC_Cheetah/base",
     "official_path": "Creality/Ender-3/FYSETC Cheetah/base",
     "build_path": "Firmware/Builds/Creality/Ender_3/FYSETC_Cheetah/2_1_2_2",
-    "label": "Creality - Ender_3 - FYSETC_Cheetah"
+    "label": "Creality - Ender_3 - FYSETC_Cheetah - base"
   },
   {
     "board": "STM32F103RC_btt",
@@ -1449,19 +1449,19 @@
   },
   {
     "board": "mega2560",
-    "config_path": "Firmware/Configuration/Creality/Ender_3/MKS_Robin_E3",
-    "board_path": "Creality/Ender_3/MKS_Robin_E3",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/MKS_Robin_E3/V1.0",
+    "board_path": "Creality/Ender_3/MKS_Robin_E3/V1.0",
     "official_path": "Creality/Ender-3/MKS Robin E3/V1.0",
     "build_path": "Firmware/Builds/Creality/Ender_3/MKS_Robin_E3/2_1_2_2",
-    "label": "Creality - Ender_3 - MKS_Robin_E3"
+    "label": "Creality - Ender_3 - MKS_Robin_E3 - V1.0"
   },
   {
     "board": "mega2560",
-    "config_path": "Firmware/Configuration/Creality/Ender_3/MKS_Robin_E3",
-    "board_path": "Creality/Ender_3/MKS_Robin_E3",
+    "config_path": "Firmware/Configuration/Creality/Ender_3/MKS_Robin_E3/V1.1",
+    "board_path": "Creality/Ender_3/MKS_Robin_E3/V1.1",
     "official_path": "Creality/Ender-3/MKS Robin E3/V1.1",
     "build_path": "Firmware/Builds/Creality/Ender_3/MKS_Robin_E3/2_1_2_2",
-    "label": "Creality - Ender_3 - MKS_Robin_E3"
+    "label": "Creality - Ender_3 - MKS_Robin_E3 - V1.1"
   },
   {
     "board": "mega2560",
