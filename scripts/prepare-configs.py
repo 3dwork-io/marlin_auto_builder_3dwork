@@ -480,7 +480,7 @@ def main():
 
     # Step 6: Copy merged configs to output_dir
     print("  Step 6: Copying merged configs to output...")
-    for fname in ['Configuration.h', 'Configuration_adv.h']:
+    for fname in ['Configuration.h', 'Configuration_adv.h', '_Bootscreen.h', '_Statusscreen.h']:
         src = os.path.join(tmpdir, fname)
         if os.path.exists(src):
             shutil.copy2(src, os.path.join(args.output_dir, fname))
