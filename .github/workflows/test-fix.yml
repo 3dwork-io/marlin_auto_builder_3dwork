@@ -27,7 +27,8 @@ jobs:
         run: |
           python3 scripts/prepare-configs.py \
             --board "$BOARD_PATH" --version "$VER" \
-            --output-dir "$CONFIG_DIR"
+            --output-dir "$CONFIG_DIR" \
+            --official-path "$OFFICIAL_PATH"
       - name: Full compile test
         run: |
           docker run -u root:root -e BOARD -e USE_TAG="$VER" \
@@ -78,7 +79,8 @@ jobs:
         run: |
           python3 scripts/prepare-configs.py \
             --board "$BOARD_PATH" --version "$VER" \
-            --output-dir "$CONFIG_DIR"
+            --output-dir "$CONFIG_DIR" \
+            --official-path "$OFFICIAL_PATH"
       - name: Full compile test
         run: |
           docker run -u root:root -e BOARD -e USE_TAG="$VER" \
