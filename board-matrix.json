@@ -784,7 +784,7 @@
     "label": "AliExpress - CL_260"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/AliExpress/UM2pExt",
     "board_path": "AliExpress/UM2pExt",
     "official_path": "AliExpress/UM2pExt",
@@ -800,7 +800,7 @@
     "label": "AnyCubic - Vyper"
   },
   {
-    "board": "mega2560",
+    "board": "ARMED",
     "config_path": "Firmware/Configuration/ArmEd",
     "board_path": "ArmEd",
     "official_path": "ArmEd",
@@ -808,7 +808,7 @@
     "label": "ArmEd"
   },
   {
-    "board": "Artillery_Ruby",
+    "board": "mega2560",
     "config_path": "Firmware/Configuration/Artillery/Sidewinder_X1/0.9_BMG___E3D_V6",
     "board_path": "Artillery/Sidewinder_X1/0.9_BMG___E3D_V6",
     "official_path": "Artillery/Sidewinder X1/0.9 BMG - E3D V6",
@@ -872,7 +872,7 @@
     "label": "BIQU - BX - base"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "LPC1768",
     "config_path": "Firmware/Configuration/BIQU/Thunder_Standard",
     "board_path": "BIQU/Thunder_Standard",
     "official_path": "BIQU/Thunder Standard",
@@ -888,7 +888,7 @@
     "label": "BQ - Hephestos"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/BQ/Hephestos_2",
     "board_path": "BQ/Hephestos_2",
     "official_path": "BQ/Hephestos_2",
@@ -920,7 +920,7 @@
     "label": "CTC - A13"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/CTC/Bizer",
     "board_path": "CTC/Bizer",
     "official_path": "CTC/Bizer",
@@ -984,7 +984,7 @@
     "label": "Creality - CR_10_Mini - BigTreeTech_SKR_Mini_E3_3.0"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "STM32F103RC_meeb_maple",
     "config_path": "Firmware/Configuration/Creality/CR_10_Mini/MEEB_3DP",
     "board_path": "Creality/CR_10_Mini/MEEB_3DP",
     "official_path": "Creality/CR-10 Mini/MEEB-3DP",
@@ -1056,7 +1056,7 @@
     "label": "Creality - CR_10S - BigTreeTech_SKR_Mini_E3_3.0"
   },
   {
-    "board": "STM32H743VI_btt",
+    "board": "BIGTREE_SKR_PRO",
     "config_path": "Firmware/Configuration/Creality/CR_10S/BigTreeTech_SKR_Pro_v1.2",
     "board_path": "Creality/CR_10S/BigTreeTech_SKR_Pro_v1.2",
     "official_path": "Creality/CR-10S/BigTreeTech SKR Pro v1.2",
@@ -1072,7 +1072,7 @@
     "label": "Creality - CR_10S - CrealityV1___BLTouch"
   },
   {
-    "board": "mega2560",
+    "board": "SAMD21_minitronics20",
     "config_path": "Firmware/Configuration/Creality/CR_20/RepRapWorld_Minitronics20",
     "board_path": "Creality/CR_20/RepRapWorld_Minitronics20",
     "official_path": "Creality/CR-20/RepRapWorld Minitronics20",
@@ -1080,7 +1080,7 @@
     "label": "Creality - CR_20 - RepRapWorld_Minitronics20"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103RE_creality",
     "config_path": "Firmware/Configuration/Creality/CR_30_PrintMill",
     "board_path": "Creality/CR_30_PrintMill",
     "official_path": "Creality/CR-30 PrintMill",
@@ -1096,7 +1096,7 @@
     "label": "Creality - Ender_2_Pro - CrealityV24S4"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103RE_creality",
     "config_path": "Firmware/Configuration/Creality/Ender_2_Pro/CrealityV423",
     "board_path": "Creality/Ender_2_Pro/CrealityV423",
     "official_path": "Creality/Ender-2 Pro/CrealityV423",
@@ -1168,7 +1168,7 @@
     "label": "Creality - Ender_3_Pro - CrealityV1"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103RE_creality",
     "config_path": "Firmware/Configuration/Creality/Ender_3_Pro/CrealityV422",
     "board_path": "Creality/Ender_3_Pro/CrealityV422",
     "official_path": "Creality/Ender-3 Pro/CrealityV422",
@@ -1224,7 +1224,7 @@
     "label": "Creality - Ender_3_V2_Neo - CrealityV422"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "LPC1769",
     "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/CrealityUI",
     "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/CrealityUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/CrealityUI",
@@ -1232,7 +1232,7 @@
     "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_E3_Turbo - CrealityUI"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "LPC1769",
     "config_path": "Firmware/Configuration/Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/MarlinUI",
     "board_path": "Creality/Ender_3_V2/BigTreeTech_SKR_E3_Turbo/MarlinUI",
     "official_path": "Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/MarlinUI",
@@ -1296,7 +1296,7 @@
     "label": "Creality - Ender_3_V2 - BigTreeTech_SKR_Mini_E3_3.0 - ProUI"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103RE_creality",
     "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422/CrealityUI",
     "board_path": "Creality/Ender_3_V2/CrealityV422/CrealityUI",
     "official_path": "Creality/Ender-3 V2/CrealityV422/CrealityUI",
@@ -1304,7 +1304,7 @@
     "label": "Creality - Ender_3_V2 - CrealityV422 - CrealityUI"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103RE_creality",
     "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422/MarlinUI",
     "board_path": "Creality/Ender_3_V2/CrealityV422/MarlinUI",
     "official_path": "Creality/Ender-3 V2/CrealityV422/MarlinUI",
@@ -1312,7 +1312,7 @@
     "label": "Creality - Ender_3_V2 - CrealityV422 - MarlinUI"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103RE_creality",
     "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV422/ProUI",
     "board_path": "Creality/Ender_3_V2/CrealityV422/ProUI",
     "official_path": "Creality/Ender-3 V2/CrealityV422/ProUI",
@@ -1320,7 +1320,7 @@
     "label": "Creality - Ender_3_V2 - CrealityV422 - ProUI"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103RE_creality",
     "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427/CrealityUI",
     "board_path": "Creality/Ender_3_V2/CrealityV427/CrealityUI",
     "official_path": "Creality/Ender-3 V2/CrealityV427/CrealityUI",
@@ -1328,7 +1328,7 @@
     "label": "Creality - Ender_3_V2 - CrealityV427 - CrealityUI"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103RE_creality",
     "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427/MarlinUI",
     "board_path": "Creality/Ender_3_V2/CrealityV427/MarlinUI",
     "official_path": "Creality/Ender-3 V2/CrealityV427/MarlinUI",
@@ -1336,7 +1336,7 @@
     "label": "Creality - Ender_3_V2 - CrealityV427 - MarlinUI"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103RE_creality",
     "config_path": "Firmware/Configuration/Creality/Ender_3_V2/CrealityV427/ProUI",
     "board_path": "Creality/Ender_3_V2/CrealityV427/ProUI",
     "official_path": "Creality/Ender-3 V2/CrealityV427/ProUI",
@@ -1344,7 +1344,7 @@
     "label": "Creality - Ender_3_V2 - CrealityV427 - ProUI"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "BIGTREE_E3_RRF",
     "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_E3_RRF",
     "board_path": "Creality/Ender_3/BigTreeTech_E3_RRF",
     "official_path": "Creality/Ender-3/BigTreeTech E3 RRF",
@@ -1360,7 +1360,7 @@
     "label": "Creality - Ender_3 - BigTreeTech_Manta_E3_EZ"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "LPC1769",
     "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/2_into_1_Hotend",
     "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/2_into_1_Hotend",
     "official_path": "Creality/Ender-3/BigTreeTech SKR E3 Turbo/2-into-1 Hotend",
@@ -1368,7 +1368,7 @@
     "label": "Creality - Ender_3 - BigTreeTech_SKR_E3_Turbo - 2_into_1_Hotend"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "LPC1769",
     "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/Dual_Z",
     "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/Dual_Z",
     "official_path": "Creality/Ender-3/BigTreeTech SKR E3 Turbo/Dual Z",
@@ -1376,7 +1376,7 @@
     "label": "Creality - Ender_3 - BigTreeTech_SKR_E3_Turbo - Dual_Z"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "LPC1769",
     "config_path": "Firmware/Configuration/Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/Single_Extruder",
     "board_path": "Creality/Ender_3/BigTreeTech_SKR_E3_Turbo/Single_Extruder",
     "official_path": "Creality/Ender-3/BigTreeTech SKR E3 Turbo/Single Extruder",
@@ -1408,7 +1408,7 @@
     "label": "Creality - Ender_3 - Creality_free_runs"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "STM32F103RC_fysetc",
     "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah_1.2/BLTouch",
     "board_path": "Creality/Ender_3/FYSETC_Cheetah_1.2/BLTouch",
     "official_path": "Creality/Ender-3/FYSETC Cheetah 1.2/BLTouch",
@@ -1416,7 +1416,7 @@
     "label": "Creality - Ender_3 - FYSETC_Cheetah_1.2 - BLTouch"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "STM32F103RC_fysetc",
     "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah_1.2/base",
     "board_path": "Creality/Ender_3/FYSETC_Cheetah_1.2/base",
     "official_path": "Creality/Ender-3/FYSETC Cheetah 1.2/base",
@@ -1424,7 +1424,7 @@
     "label": "Creality - Ender_3 - FYSETC_Cheetah_1.2 - base"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "STM32F103RC_fysetc",
     "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah/BLTouch",
     "board_path": "Creality/Ender_3/FYSETC_Cheetah/BLTouch",
     "official_path": "Creality/Ender-3/FYSETC Cheetah/BLTouch",
@@ -1432,7 +1432,7 @@
     "label": "Creality - Ender_3 - FYSETC_Cheetah - BLTouch"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "STM32F103RC_fysetc",
     "config_path": "Firmware/Configuration/Creality/Ender_3/FYSETC_Cheetah/base",
     "board_path": "Creality/Ender_3/FYSETC_Cheetah/base",
     "official_path": "Creality/Ender-3/FYSETC Cheetah/base",
@@ -1440,7 +1440,7 @@
     "label": "Creality - Ender_3 - FYSETC_Cheetah - base"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "STM32F103RC_meeb_maple",
     "config_path": "Firmware/Configuration/Creality/Ender_3/MEEB_3DP",
     "board_path": "Creality/Ender_3/MEEB_3DP",
     "official_path": "Creality/Ender-3/MEEB-3DP",
@@ -1448,7 +1448,7 @@
     "label": "Creality - Ender_3 - MEEB_3DP"
   },
   {
-    "board": "mega2560",
+    "board": "mks_robin_e3",
     "config_path": "Firmware/Configuration/Creality/Ender_3/MKS_Robin_E3/V1.0",
     "board_path": "Creality/Ender_3/MKS_Robin_E3/V1.0",
     "official_path": "Creality/Ender-3/MKS Robin E3/V1.0",
@@ -1456,7 +1456,7 @@
     "label": "Creality - Ender_3 - MKS_Robin_E3 - V1.0"
   },
   {
-    "board": "mega2560",
+    "board": "mks_robin_e3",
     "config_path": "Firmware/Configuration/Creality/Ender_3/MKS_Robin_E3/V1.1",
     "board_path": "Creality/Ender_3/MKS_Robin_E3/V1.1",
     "official_path": "Creality/Ender-3/MKS Robin E3/V1.1",
@@ -1464,7 +1464,7 @@
     "label": "Creality - Ender_3 - MKS_Robin_E3 - V1.1"
   },
   {
-    "board": "mega2560",
+    "board": "mks_robin_e3p",
     "config_path": "Firmware/Configuration/Creality/Ender_3/MKS_Robin_E3P",
     "board_path": "Creality/Ender_3/MKS_Robin_E3P",
     "official_path": "Creality/Ender-3/MKS Robin E3P",
@@ -1472,7 +1472,7 @@
     "label": "Creality - Ender_3 - MKS_Robin_E3P"
   },
   {
-    "board": "mega2560",
+    "board": "TH3D_EZBoard_V2_no_bootloader",
     "config_path": "Firmware/Configuration/Creality/Ender_3/TH3D_EZBoard_Lite_V2",
     "board_path": "Creality/Ender_3/TH3D_EZBoard_Lite_V2",
     "official_path": "Creality/Ender-3/TH3D EZBoard Lite V2",
@@ -1528,7 +1528,7 @@
     "label": "Creality - Ender_5_S1"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "LPC1769",
     "config_path": "Firmware/Configuration/Creality/Ender_5/BigTreeTech_SKR_E3_Turbo",
     "board_path": "Creality/Ender_5/BigTreeTech_SKR_E3_Turbo",
     "official_path": "Creality/Ender-5/BigTreeTech SKR E3 Turbo",
@@ -1536,7 +1536,7 @@
     "label": "Creality - Ender_5 - BigTreeTech_SKR_E3_Turbo"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "LPC1769",
     "config_path": "Firmware/Configuration/Creality/Ender_5/BigTreeTech_SKR_E3_Turbo_with_BLTouch",
     "board_path": "Creality/Ender_5/BigTreeTech_SKR_E3_Turbo_with_BLTouch",
     "official_path": "Creality/Ender-5/BigTreeTech SKR E3 Turbo with BLTouch",
@@ -1568,7 +1568,7 @@
     "label": "Creality - Ender_5 - CrealityV427_with_BLTouch"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103RE_creality",
     "config_path": "Firmware/Configuration/Creality/Ender_6",
     "board_path": "Creality/Ender_6",
     "official_path": "Creality/Ender-6",
@@ -1608,7 +1608,7 @@
     "label": "EXP3D - Imprimante_multifonction"
   },
   {
-    "board": "mega2560",
+    "board": "mks_robin_lite",
     "config_path": "Firmware/Configuration/EasyThreeD/ET4000PLUS",
     "board_path": "EasyThreeD/ET4000PLUS",
     "official_path": "EasyThreeD/ET4000PLUS",
@@ -1624,7 +1624,7 @@
     "label": "Eazao - Zero"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/Einstart_S",
     "board_path": "Einstart_S",
     "official_path": "Einstart-S",
@@ -1648,7 +1648,7 @@
     "label": "Eryone - Thinker_V2"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "STM32F103RC_fysetc",
     "config_path": "Firmware/Configuration/FYSETC/AIO_II",
     "board_path": "FYSETC/AIO_II",
     "official_path": "FYSETC/AIO_II",
@@ -1656,7 +1656,7 @@
     "label": "FYSETC - AIO_II"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/FYSETC/F6_13",
     "board_path": "FYSETC/F6_13",
     "official_path": "FYSETC/F6_13",
@@ -1664,7 +1664,7 @@
     "label": "FYSETC - F6_13"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "FYSETC_S6",
     "config_path": "Firmware/Configuration/FYSETC/S6",
     "board_path": "FYSETC/S6",
     "official_path": "FYSETC/S6",
@@ -1688,7 +1688,7 @@
     "label": "Felix - Single"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/FlashForge/Creator_2X",
     "board_path": "FlashForge/Creator_2X",
     "official_path": "FlashForge/Creator 2X",
@@ -1696,7 +1696,7 @@
     "label": "FlashForge - Creator_2X"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/FlashForge/CreatorPro",
     "board_path": "FlashForge/CreatorPro",
     "official_path": "FlashForge/CreatorPro",
@@ -1848,7 +1848,7 @@
     "label": "Geeetech - A20T"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103VE",
     "config_path": "Firmware/Configuration/Geeetech/A30",
     "board_path": "Geeetech/A30",
     "official_path": "Geeetech/A30",
@@ -1856,7 +1856,7 @@
     "label": "Geeetech - A30"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103VE",
     "config_path": "Firmware/Configuration/Geeetech/A30M",
     "board_path": "Geeetech/A30M",
     "official_path": "Geeetech/A30M",
@@ -1864,7 +1864,7 @@
     "label": "Geeetech - A30M"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103VE",
     "config_path": "Firmware/Configuration/Geeetech/A30T",
     "board_path": "Geeetech/A30T",
     "official_path": "Geeetech/A30T",
@@ -1872,7 +1872,7 @@
     "label": "Geeetech - A30T"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103VE",
     "config_path": "Firmware/Configuration/Geeetech/D200",
     "board_path": "Geeetech/D200",
     "official_path": "Geeetech/D200",
@@ -1888,7 +1888,7 @@
     "label": "Geeetech - Duplicator5"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103VE",
     "config_path": "Firmware/Configuration/Geeetech/E180",
     "board_path": "Geeetech/E180",
     "official_path": "Geeetech/E180",
@@ -1912,7 +1912,7 @@
     "label": "Geeetech - I3_Pro_X_GT2560"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103VE",
     "config_path": "Firmware/Configuration/Geeetech/M201",
     "board_path": "Geeetech/M201",
     "official_path": "Geeetech/M201",
@@ -1936,7 +1936,7 @@
     "label": "Geeetech - Me_creator"
   },
   {
-    "board": "mega2560",
+    "board": "sanguino1284p_optimized",
     "config_path": "Firmware/Configuration/Geeetech/Me_ducer",
     "board_path": "Geeetech/Me_ducer",
     "official_path": "Geeetech/Me_ducer",
@@ -2016,7 +2016,7 @@
     "label": "Intamsys - FunmatHT_4988"
   },
   {
-    "board": "mega2560",
+    "board": "jgaurora_a5s_a1",
     "config_path": "Firmware/Configuration/JGAurora/A1",
     "board_path": "JGAurora/A1",
     "official_path": "JGAurora/A1",
@@ -2040,7 +2040,7 @@
     "label": "JGAurora - A5"
   },
   {
-    "board": "mega2560",
+    "board": "jgaurora_a5s_a1",
     "config_path": "Firmware/Configuration/JGAurora/A5S",
     "board_path": "JGAurora/A5S",
     "official_path": "JGAurora/A5S",
@@ -2096,7 +2096,7 @@
     "label": "LulzBot - TAZ4"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/MBot/Cube",
     "board_path": "MBot/Cube",
     "official_path": "MBot/Cube",
@@ -2144,7 +2144,7 @@
     "label": "MakerGear - M2_Rev_H"
   },
   {
-    "board": "mega2560",
+    "board": "DUE",
     "config_path": "Firmware/Configuration/MakerParts",
     "board_path": "MakerParts",
     "official_path": "MakerParts",
@@ -2160,7 +2160,7 @@
     "label": "MakerTech3D - Proforge2sDual"
   },
   {
-    "board": "melzi_optiboot_optimized",
+    "board": "sanguino1284p_optimized",
     "config_path": "Firmware/Configuration/Malyan/M150",
     "board_path": "Malyan/M150",
     "official_path": "Malyan/M150",
@@ -2176,7 +2176,7 @@
     "label": "Malyan - M180"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103CB_malyan",
     "config_path": "Firmware/Configuration/Malyan/M200",
     "board_path": "Malyan/M200",
     "official_path": "Malyan/M200",
@@ -2208,7 +2208,7 @@
     "label": "Micromake - C1 - enhanced"
   },
   {
-    "board": "mega2560",
+    "board": "mks_robin",
     "config_path": "Firmware/Configuration/Mks/Robin",
     "board_path": "Mks/Robin",
     "official_path": "Mks/Robin",
@@ -2216,7 +2216,7 @@
     "label": "Mks - Robin"
   },
   {
-    "board": "mega2560",
+    "board": "mks_robin_lite3",
     "config_path": "Firmware/Configuration/Mks/Robin_Lite3",
     "board_path": "Mks/Robin_Lite3",
     "official_path": "Mks/Robin_Lite3",
@@ -2224,7 +2224,7 @@
     "label": "Mks - Robin_Lite3"
   },
   {
-    "board": "mega2560",
+    "board": "mks_robin_pro",
     "config_path": "Firmware/Configuration/Mks/Robin_Pro",
     "board_path": "Mks/Robin_Pro",
     "official_path": "Mks/Robin_Pro",
@@ -2232,7 +2232,7 @@
     "label": "Mks - Robin_Pro"
   },
   {
-    "board": "mega2560",
+    "board": "LPC1768",
     "config_path": "Firmware/Configuration/Mks/Sbase",
     "board_path": "Mks/Sbase",
     "official_path": "Mks/Sbase",
@@ -2264,7 +2264,7 @@
     "label": "ORD_Bot - Hadron - Sanguinololu"
   },
   {
-    "board": "mega2560",
+    "board": "Opulo_Lumen_REV3",
     "config_path": "Firmware/Configuration/Opulo/Lumen_REV3",
     "board_path": "Opulo/Lumen_REV3",
     "official_path": "Opulo/Lumen_REV3",
@@ -2272,7 +2272,7 @@
     "label": "Opulo - Lumen_REV3"
   },
   {
-    "board": "mega2560",
+    "board": "Opulo_Lumen_REV4",
     "config_path": "Firmware/Configuration/Opulo/Lumen_REV4",
     "board_path": "Opulo/Lumen_REV4",
     "official_path": "Opulo/Lumen_REV4",
@@ -2304,7 +2304,7 @@
     "label": "Polargraph"
   },
   {
-    "board": "mega2560",
+    "board": "DUE_USB",
     "config_path": "Firmware/Configuration/Printrbot/PrintrboardG2",
     "board_path": "Printrbot/PrintrboardG2",
     "official_path": "Printrbot/PrintrboardG2",
@@ -2312,7 +2312,7 @@
     "label": "Printrbot - PrintrboardG2"
   },
   {
-    "board": "mega2560",
+    "board": "at90usb1286_dfu",
     "config_path": "Firmware/Configuration/Printrbot/Simple_Metal_RevD",
     "board_path": "Printrbot/Simple_Metal_RevD",
     "official_path": "Printrbot/Simple Metal RevD",
@@ -2328,7 +2328,7 @@
     "label": "Printrbot - Simple_Metal_RevF6"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/Qidi/Qidi_1",
     "board_path": "Qidi/Qidi_1",
     "official_path": "Qidi/Qidi 1",
@@ -2400,7 +2400,7 @@
     "label": "RepRapWorld - Minitronics11"
   },
   {
-    "board": "mega2560",
+    "board": "SAMD21_minitronics20",
     "config_path": "Firmware/Configuration/RepRapWorld/Minitronics20/CNC",
     "board_path": "RepRapWorld/Minitronics20/CNC",
     "official_path": "RepRapWorld/Minitronics20/CNC",
@@ -2456,7 +2456,7 @@
     "label": "STM32 - Black_STM32F407VET6"
   },
   {
-    "board": "melzi_optiboot_optimized",
+    "board": "STM32F103RE",
     "config_path": "Firmware/Configuration/STM32/STM32F103RE",
     "board_path": "STM32/STM32F103RE",
     "official_path": "STM32/STM32F103RE",
@@ -2472,7 +2472,7 @@
     "label": "Simax - Mi_M200"
   },
   {
-    "board": "mega2560",
+    "board": "linux_native",
     "config_path": "Firmware/Configuration/Simulator",
     "board_path": "Simulator",
     "official_path": "Simulator",
@@ -2480,7 +2480,7 @@
     "label": "Simulator"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "LPC1769",
     "config_path": "Firmware/Configuration/Sovol/SV_01/BigTreeTech_SKR_E3_Turbo",
     "board_path": "Sovol/SV_01/BigTreeTech_SKR_E3_Turbo",
     "official_path": "Sovol/SV-01/BigTreeTech SKR E3 Turbo",
@@ -2632,7 +2632,7 @@
     "label": "Tinkerine - Ditto_Pro - RAMPS_1.4"
   },
   {
-    "board": "melzi_optiboot_optimized",
+    "board": "sanguino1284p_optimized",
     "config_path": "Firmware/Configuration/TinyBoy2",
     "board_path": "TinyBoy2",
     "official_path": "TinyBoy2",
@@ -2648,7 +2648,7 @@
     "label": "Tronxy - D01 - CXY_v6_191017_board"
   },
   {
-    "board": "melzi_optiboot_optimized",
+    "board": "sanguino1284p_optimized",
     "config_path": "Firmware/Configuration/Tronxy/X1",
     "board_path": "Tronxy/X1",
     "official_path": "Tronxy/X1",
@@ -2656,7 +2656,7 @@
     "label": "Tronxy - X1"
   },
   {
-    "board": "melzi_optiboot_optimized",
+    "board": "sanguino1284p_optimized",
     "config_path": "Firmware/Configuration/Tronxy/X3A",
     "board_path": "Tronxy/X3A",
     "official_path": "Tronxy/X3A",
@@ -2664,7 +2664,7 @@
     "label": "Tronxy - X3A"
   },
   {
-    "board": "melzi_optiboot_optimized",
+    "board": "sanguino1284p_optimized",
     "config_path": "Firmware/Configuration/Tronxy/X5S",
     "board_path": "Tronxy/X5S",
     "official_path": "Tronxy/X5S",
@@ -2672,7 +2672,7 @@
     "label": "Tronxy - X5S"
   },
   {
-    "board": "mega2560",
+    "board": "chitu_f103",
     "config_path": "Firmware/Configuration/Tronxy/X5S_2E/Green_Board_(Chitu_V5)",
     "board_path": "Tronxy/X5S_2E/Green_Board_(Chitu_V5)",
     "official_path": "Tronxy/X5S-2E/Green Board (Chitu V5)",
@@ -2688,7 +2688,7 @@
     "label": "Tronxy - X5S_2E - Red_Board_(Tronxy_3.1.0)"
   },
   {
-    "board": "mega2560",
+    "board": "chitu_f103",
     "config_path": "Firmware/Configuration/Tronxy/X5SA",
     "board_path": "Tronxy/X5SA",
     "official_path": "Tronxy/X5SA",
@@ -2704,7 +2704,7 @@
     "label": "Tronxy - X5SA_Pro"
   },
   {
-    "board": "mega2560",
+    "board": "chitu_f103",
     "config_path": "Firmware/Configuration/Tronxy/X5SA_2E",
     "board_path": "Tronxy/X5SA_2E",
     "official_path": "Tronxy/X5SA-2E",
@@ -2712,7 +2712,7 @@
     "label": "Tronxy - X5SA_2E"
   },
   {
-    "board": "melzi_optiboot_optimized",
+    "board": "sanguino1284p_optimized",
     "config_path": "Firmware/Configuration/Tronxy/XY100",
     "board_path": "Tronxy/XY100",
     "official_path": "Tronxy/XY100",
@@ -2784,7 +2784,7 @@
     "label": "Two_Trees - Sapphire_Plus - Sapphire_Plus_V2"
   },
   {
-    "board": "mks_robin_nano_v1v2",
+    "board": "mks_robin_nano_v1_3_f4",
     "config_path": "Firmware/Configuration/Two_Trees/Sapphire_Plus/Sapphire_Plus_V2.1",
     "board_path": "Two_Trees/Sapphire_Plus/Sapphire_Plus_V2.1",
     "official_path": "Two Trees/Sapphire Plus/Sapphire Plus V2.1",
@@ -2800,7 +2800,7 @@
     "label": "Two_Trees - Sapphire_Pro"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "DUE_archim",
     "config_path": "Firmware/Configuration/UltiMachine/Archim1",
     "board_path": "UltiMachine/Archim1",
     "official_path": "UltiMachine/Archim1",
@@ -2808,7 +2808,7 @@
     "label": "UltiMachine - Archim1"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "DUE_archim",
     "config_path": "Firmware/Configuration/UltiMachine/Archim2",
     "board_path": "UltiMachine/Archim2",
     "official_path": "UltiMachine/Archim2",
@@ -2816,7 +2816,7 @@
     "label": "UltiMachine - Archim2"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/Ultimaker/Ultimaker_2",
     "board_path": "Ultimaker/Ultimaker_2",
     "official_path": "Ultimaker/Ultimaker 2",
@@ -2824,7 +2824,7 @@
     "label": "Ultimaker - Ultimaker_2"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/Ultimaker/Ultimaker_2_Plus",
     "board_path": "Ultimaker/Ultimaker_2_Plus",
     "official_path": "Ultimaker/Ultimaker 2+",
@@ -2840,7 +2840,7 @@
     "label": "Ultimaker - Ultimaker_Original_(1.5.7)"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/Ultimaker/Ultimaker_Original_Plus_(2.1.1)",
     "board_path": "Ultimaker/Ultimaker_Original_Plus_(2.1.1)",
     "official_path": "Ultimaker/Ultimaker Original Plus (2.1.1)",
@@ -2848,7 +2848,7 @@
     "label": "Ultimaker - Ultimaker_Original_Plus_(2.1.1)"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/Ultimaker/Ultimaker_Original_Plus_DXU",
     "board_path": "Ultimaker/Ultimaker_Original_Plus_DXU",
     "official_path": "Ultimaker/Ultimaker Original Plus DXU",
@@ -2856,7 +2856,7 @@
     "label": "Ultimaker - Ultimaker_Original_Plus_DXU"
   },
   {
-    "board": "STM32F103RC_btt",
+    "board": "mega2560",
     "config_path": "Firmware/Configuration/VORONDesign",
     "board_path": "VORONDesign",
     "official_path": "VORONDesign",
@@ -2912,7 +2912,7 @@
     "label": "WASP - PowerWASP"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/Wanhao/Duplicator_4S",
     "board_path": "Wanhao/Duplicator_4S",
     "official_path": "Wanhao/Duplicator 4S",
@@ -2920,7 +2920,7 @@
     "label": "Wanhao - Duplicator_4S"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/Wanhao/Duplicator_6",
     "board_path": "Wanhao/Duplicator_6",
     "official_path": "Wanhao/Duplicator 6",
@@ -3024,7 +3024,7 @@
     "label": "Wanhao - Duplicator_9 - MK3 - 500"
   },
   {
-    "board": "melzi_optiboot_optimized",
+    "board": "sanguino1284p_optimized",
     "config_path": "Firmware/Configuration/Wanhao/Duplicator_i3_2.1",
     "board_path": "Wanhao/Duplicator_i3_2.1",
     "official_path": "Wanhao/Duplicator i3 2.1",
@@ -3064,7 +3064,7 @@
     "label": "Weedo - Tina2 - V3"
   },
   {
-    "board": "mega2560",
+    "board": "mega2560ext",
     "config_path": "Firmware/Configuration/Weistek/wt150",
     "board_path": "Weistek/wt150",
     "official_path": "Weistek/wt150",
@@ -3072,7 +3072,7 @@
     "label": "Weistek - wt150"
   },
   {
-    "board": "melzi_optiboot_optimized",
+    "board": "sanguino1284p_optimized",
     "config_path": "Firmware/Configuration/Zonestar/P802M",
     "board_path": "Zonestar/P802M",
     "official_path": "Zonestar/P802M",
@@ -3160,7 +3160,7 @@
     "label": "delta - FLSUN - QQ_S"
   },
   {
-    "board": "mega2560",
+    "board": "flsun_hispeedv1",
     "config_path": "Firmware/Configuration/delta/FLSUN/QQS_Pro",
     "board_path": "delta/FLSUN/QQS_Pro",
     "official_path": "delta/FLSUN/QQS-Pro",
@@ -3224,7 +3224,7 @@
     "label": "delta - Geeetech - G2SPro"
   },
   {
-    "board": "mega2560",
+    "board": "STM32F103VE",
     "config_path": "Firmware/Configuration/delta/Geeetech/Rostock_301",
     "board_path": "delta/Geeetech/Rostock_301",
     "official_path": "delta/Geeetech/Rostock 301",
@@ -3240,7 +3240,7 @@
     "label": "delta - Hatchbox_Alpha"
   },
   {
-    "board": "mega2560",
+    "board": "LPC1768",
     "config_path": "Firmware/Configuration/delta/MKS/SBASE",
     "board_path": "delta/MKS/SBASE",
     "official_path": "delta/MKS/SBASE",
@@ -3248,7 +3248,7 @@
     "label": "delta - MKS - SBASE"
   },
   {
-    "board": "mega2560",
+    "board": "malyan_M300",
     "config_path": "Firmware/Configuration/delta/Malyan_M300",
     "board_path": "delta/Malyan_M300",
     "official_path": "delta/Malyan M300",
@@ -3272,7 +3272,7 @@
     "label": "delta - Micromake_D1 - RAMPS_1.4"
   },
   {
-    "board": "LPC1769",
+    "board": "LPC1768",
     "config_path": "Firmware/Configuration/delta/Tevo_Little_Monster",
     "board_path": "delta/Tevo_Little_Monster",
     "official_path": "delta/Tevo Little Monster",
@@ -3312,7 +3312,7 @@
     "label": "delta - kossel_mini"
   },
   {
-    "board": "mega2560",
+    "board": "at90usb1286_cdc",
     "config_path": "Firmware/Configuration/delta/kossel_pro",
     "board_path": "delta/kossel_pro",
     "official_path": "delta/kossel_pro",
@@ -3336,7 +3336,7 @@
     "label": "gCreate - gMax1.5_Plus"
   },
   {
-    "board": "STM32H743VI_btt",
+    "board": "STM32F446ZE_btt",
     "config_path": "Firmware/Configuration/linear_axes/Octopus_8_LINEAR_AXES",
     "board_path": "linear_axes/Octopus_8_LINEAR_AXES",
     "official_path": "linear_axes/Octopus 8 LINEAR_AXES",
@@ -3352,7 +3352,7 @@
     "label": "linear_axes - RAMPS_5_LINEAR_AXES"
   },
   {
-    "board": "mega2560",
+    "board": "at90usb1286_dfu",
     "config_path": "Firmware/Configuration/makibox",
     "board_path": "makibox",
     "official_path": "makibox",
@@ -3360,7 +3360,7 @@
     "label": "makibox"
   },
   {
-    "board": "mega2560",
+    "board": "sanguino644p",
     "config_path": "Firmware/Configuration/tvrrug/Round2",
     "board_path": "tvrrug/Round2",
     "official_path": "tvrrug/Round2",
