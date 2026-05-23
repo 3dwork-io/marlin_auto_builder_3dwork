@@ -120,7 +120,7 @@ def download_official_config(board, version, output_dir):
     major_minor = f"{parts[0]}.{parts[1]}" if len(parts) >= 2 else "2.1"
     # Only try exact-version branches/tags. Future-version branches (release-2.1.x,
     # bugfix-2.1.x) cause compile failures due to incompatible features.
-    branches = [f"release-{version}", version]
+    branches = [f"release-{version}", version, "latest-2.1.x"]
     files = ['Configuration.h', 'Configuration_adv.h']
     downloaded = []
     used_branch = None
