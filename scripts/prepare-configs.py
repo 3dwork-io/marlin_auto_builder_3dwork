@@ -389,6 +389,92 @@ def copy_bootscreen_stubs(config_dir, repo_root):
             print(f"  Copied: {fname} (from repo template)")
 
 
+def fix_known_broken_configs(config_dir, board):
+    """
+    Apply surgical fixes to known-broken official configs that won't compile.
+    Each fix is minimal and targeted to a specific known error.
+    """
+    config_h = os.path.join(config_dir, 'Configuration.h')
+    config_adv_h = os.path.join(config_dir, 'Configuration_adv.h')
+    
+    # Fix 1: Alfawise U20 - model define is commented out
+    # Error: #error "Please specify U20, U20_PLUS, U30, LK1, LK1_PLUS, LK2, or LK4."
+    if 'Alfawise/U20' in board and os.path.exists(config_h):
+        with open(config_h) as f:
+            content = f.read()
+        # Uncomment "//#define U20" at the model defines block
+        fixed = content.replace('//#define U20\n', '#define U20\n', 1)
+        if fixed != content:
+            with open(config_h, 'w') as f:
+                f.write(fixed)
+            print(f"  Fixed: Alfawise U20 - enabled model define")
+    
+    # Fix 2: FoamCutter generic - USE_IMIN_PLUG is commented out, missing I/J axis config
+    # Error: #error "Enable USE_IMIN_PLUG when homing I to MIN."
+    #        AXIS_RELATIVE_MODES must contain X Y Z I J elements.
+    #        HOMING_BUMP_MM must have X Y Z I J elements (and no others).
+    if 'FoamCutter/generic' in board and os.path.exists(config_h):
+        with open(config_h) as f:
+            lines = f.readlines()
+        modified = False
+        for i, line in enumerate(lines):
+            # Uncomment USE_IMIN_PLUG
+            if '//#define USE_IMIN_PLUG' in line:
+                lines[i] = line.replace('//#define USE_IMIN_PLUG', '#define USE_IMIN_PLUG')
+                modified = True
+            # Fix AXIS_RELATIVE_MODES to include I J
+            if '#define AXIS_RELATIVE_MODES' in line and line.strip().startswith('#'):
+                lines[i] = '#define AXIS_RELATIVE_MODES { false, false, false, false, false, false, false, false, false }\n'
+                modified = True
+            # Fix HOMING_BUMP_MM to include I J
+            if '#define HOMING_BUMP_MM' in line and line.strip().startswith('#'):
+                lines[i] = '#define HOMING_BUMP_MM { 5, 5, 5, 5, 5, 5 }\n'
+                modified = True
+        if modified:
+            with open(config_h, 'w') as f:
+                f.writelines(lines)
+            print(f"  Fixed: FoamCutter generic - enabled I axis config")
+    
+    # Fix 3: Micromake C1 basic - display with <4 rows can't show progress
+    # Error: #error "Displays with fewer than 4 rows of text can't show progress values."
+    if 'Micromake/C1/basic' in board and os.path.exists(config_h):
+        with open(config_h) as f:
+            content = f.read()
+        # Add NO_LCD to prevent default LCD being selected
+        if '#define NO_LCD' not in content:
+            content = content.replace('#define SDSUPPORT', '#define NO_LCD\n#define SDSUPPORT', 1)
+            with open(config_h, 'w') as f:
+                f.write(content)
+            print(f"  Fixed: Micromake C1 basic - added NO_LCD")
+    
+    # Fix 4: RepRapWorld Megatronics - display with <4 rows can't show progress
+    # Error: same as above - ULTRA_LCD enabled but no controller selected
+    if 'RepRapWorld/Megatronics' in board and os.path.exists(config_h):
+        with open(config_h) as f:
+            content = f.read()
+        # Comment out ULTRA_LCD since no actual LCD controller is selected
+        # (all LCD controller options are commented out, only keypad is used)
+        fixed = content.replace('#define ULTRA_LCD\n', '//#define ULTRA_LCD\n')
+        if fixed != content:
+            with open(config_h, 'w') as f:
+                f.write(fixed)
+            print(f"  Fixed: RepRapWorld Megatronics - disabled ULTRA_LCD (no controller selected)")
+    
+    # Fix 5: BIQU BX - 404 on Arduino Core STM32 zip (framework dependency)
+    # This is handled separately in the build pipeline (platformio.ini override)
+    # Not applicable here - the error is in the build environment, not config files
+    
+    # Fix 6: Alfawise U20_bltouch - same model define issue as Fix 1
+    if 'Alfawise/U20' in board and 'bltouch' in board.lower() and os.path.exists(config_h):
+        with open(config_h) as f:
+            content = f.read()
+        fixed = content.replace('//#define U20\n', '#define U20\n', 1)
+        if fixed != content:
+            with open(config_h, 'w') as f:
+                f.write(fixed)
+            print(f"  Fixed: Alfawise U20_bltouch - enabled model define")
+
+
 def main():
     parser = argparse.ArgumentParser(description='Prepare Marlin build configs')
     parser.add_argument('--board', required=True, help='Board path (e.g., Creality/Ender-3/CrealityV1)')
@@ -473,6 +559,10 @@ def main():
             f.write('[config:info]\n')
             f.write('string_config_h_author = (3Dwork, https://3dwork.io)\n')
         apply_config_ini(inline_ini, tmpdir)
+
+    # Step 4b: Fix known-broken official configs for specific boards
+    print("  Step 4b: Fixing known-broken configs...")
+    fix_known_broken_configs(tmpdir, args.board)
 
     # Step 5: Copy bootscreen/statusscreen templates
     print("  Step 5: Copying bootscreen/statusscreen templates...")
