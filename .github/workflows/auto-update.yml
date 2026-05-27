@@ -1,0 +1,14 @@
+name: Auto-Update Marlin Firmwares
+
+on:
+  schedule:
+    - cron: "0 6 * * 0"
+  workflow_dispatch:
+    inputs:
+      force_version:
+        description: 'Force specific version (e.g., 2.1.2.7)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
