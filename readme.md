@@ -2,13 +2,14 @@
 
 **Marlin [2.1.2.7](https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.7) | 421 boards | 22 PlatformIO envs | 100 vendors**
 
-[Auto-Update workflow](.github/workflows/auto-update.yml) — [Board Matrix](board-matrix.json) — [Sync Script](scripts/sync-boards.py)
+> [!TIP]
+> 📋 **[BUILD_STATUS.md](BUILD_STATUS.md)** — Check compiled firmwares per board with download links and official config sources.
 
 ---
 
 > [!WARNING]
 > Binaries are compiled from official Marlin Configurations, **use at your own risk**.  
-> We recommend you take the config files and compile them yourself — [compilation guide](https://3dwork-qitec-net.translate.goog/guias-impresion-3d/mejoras-upgrades/marlin-guia-compilacion?_x_tr_sl=es&_x_tr_tl=en&_x_tr_hl=es&_x_tr_pto=wapp).
+> We recommend you take the config files and compile them yourself — [compilation guide](https://marlin.3dwork.io/marlin/marlin-guia-compilacion).
 
 ## Auto-Update
 
