@@ -513,3 +513,26 @@ jobs:
           git commit -m "Bump to Marlin ${{ needs.detect.outputs.version }}" || true
           git pull --rebase --autostash
           git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:master
+
+  generate-status:
+    name: Generate Build Status
+    needs: [detect, bump-version]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate BUILD_STATUS.md
+        run: |
+          python3 scripts/generate-build-status.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_ID: ${{ github.run_id }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+      - name: Commit BUILD_STATUS.md
+        run: |
+          git config --global user.name "JJR Bot"
+          git config --global user.email "jrodriguez@qitec.net"
+          git add BUILD_STATUS.md
+          git commit -m "docs: update build status after workflow run" || true
+          git pull --rebase --autostash
+          git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:master
