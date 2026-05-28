@@ -28,6 +28,20 @@ def api_get(path):
     except urllib.error.URLError as e:
         return {"error": str(e)}
 
+def gh_anchor(text):
+    """Match GitHub's heading anchor generation."""
+    slug = text.lower()
+    slug = ''.join(c for c in slug if c.isalnum() or c in ' -')
+    slug = '-'.join(slug.split())
+    return slug
+
+def get_fw_filename(build_path, lang):
+    """Return 'firmware.bin' or 'firmware.hex' based on what exists."""
+    for fname in ["firmware.bin", "firmware.hex"]:
+        if os.path.isfile(os.path.join(build_path, lang, fname)):
+            return fname
+    return "firmware.bin"
+
 def get_config_source_link(official_path, version):
     if official_path:
         branch = f"release-{version}" if version else "master"
@@ -148,8 +162,10 @@ def main():
         dl_link_en = ""
         dl_link_es = ""
         if status == "success" and build_path:
-            dl_link_en = f"https://github.com/{REPO}/raw/master/{build_path}/en/firmware.bin"
-            dl_link_es = f"https://github.com/{REPO}/raw/master/{build_path}/es/firmware.bin"
+            fw_en = get_fw_filename(build_path, "en")
+            fw_es = get_fw_filename(build_path, "es")
+            dl_link_en = f"https://github.com/{REPO}/raw/master/{build_path}/en/{fw_en}"
+            dl_link_es = f"https://github.com/{REPO}/raw/master/{build_path}/es/{fw_es}"
 
         config_link = get_config_source_link(official_path, version)
 
@@ -199,7 +215,7 @@ def main():
         elif v["fail"] == 0: e = "✅"
         elif v["success"] > 0: e = "⚠️"
         else: e = "❌"
-        slug = vendor.lower().replace(" ", "-").replace("_", "-").replace(".", "")
+        slug = gh_anchor(vendor)
         lines.append(f"- [{e} {vendor}](#{slug}) ({v['count']} boards)")
     lines.append("")
 
