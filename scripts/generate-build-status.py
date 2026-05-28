@@ -249,7 +249,8 @@ def main():
         lines.append("---")
         lines.append("")
         lines.append(f"## {e} {vendor}")
-        lines.append(f"*{v['count']} boards — {summary}*")
+        lines.append("")
+        lines.append(f"<details><summary>{v['count']} boards — {summary}</summary>")
         lines.append("")
         lines.append("| Printer | default_envs | Status | CONFIG | FIRMWARE (EN) | FIRMWARE (ES) |")
         lines.append("|---------|-------------|--------|--------|---------------|---------------|")
@@ -268,7 +269,7 @@ def main():
                 fw_es = "—"
 
             cf = f"[Marlin Configs]({b['config_link']})" if b["config_link"] else "—"
-            lines.append(f"| {b['printer']} | `{b['board_env']}` | {badge} | {fw_en} | {fw_es} | {cf} |")
+            lines.append(f"| {b['printer']} | `{b['board_env']}` | {badge} | {cf} | {fw_en} | {fw_es} |")
 
         # Failure details sub-table
         failures = [b for b in v["boards"] if b["status"] == "failure"]
@@ -280,6 +281,7 @@ def main():
                 link = f" [[job]({b['board_link']})]" if b["board_link"] else ""
                 lines.append(f"- `{b['printer']}`: {err}{link}")
         lines.append("")
+        lines.append("</details>")
 
     lines.append("---")
     lines.append("")
