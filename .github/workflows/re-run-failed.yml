@@ -156,6 +156,7 @@ jobs:
           exit $EXIT_CODE
       - name: Push firmware + configs
         run: |
+          sudo chown -R $USER:$USER "$BUILD_DIR" 2>/dev/null || true
           git config --global user.name "JJR Bot"
           git config --global user.email "jrodriguez@qitec.net"
           git add "$CONFIG_DIR/Configuration.h" "$CONFIG_DIR/Configuration_adv.h" "$CONFIG_DIR/config.ini" 2>/dev/null || true
