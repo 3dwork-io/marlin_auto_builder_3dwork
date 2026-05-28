@@ -1,28 +1,28 @@
 # Marlin Auto Builder 3Dwork — Build Status
 
-**421 boards** — 0 ✅ / 0 ❌ = **0.0%**
+**421 boards** — 47 ✅ / 3 ❌ = **94.0%**
 **Marlin version:** `2.1.2.7`
 
 [![Auto Build](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/auto-update.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/auto-update.yml)
 
 | Range | Vendors |
 |-------|---------|
-| ✅ All passed | 0 |
+| ✅ All passed | 5 |
 | ⚠️ Partial | 0 |
-| ❌ All failed | 0 |
-| ⏳ Unknown | 100 |
+| ❌ All failed | 2 |
+| ⏳ Unknown | 93 |
 
 ## Vendor Index
 
-- [⏳ 3DFabXYZ](#3dfabxyz) (1 boards)
-- [⏳ 3DMatik](#3dmatik) (1 boards)
-- [⏳ ADIMLab](#adimlab) (2 boards)
-- [⏳ Alfawise](#alfawise) (2 boards)
+- [✅ 3DFabXYZ](#3dfabxyz) (1 boards)
+- [❌ 3DMatik](#3dmatik) (1 boards)
+- [✅ ADIMLab](#adimlab) (2 boards)
+- [❌ Alfawise](#alfawise) (2 boards)
 - [⏳ AliExpress](#aliexpress) (2 boards)
 - [⏳ Anet](#anet) (16 boards)
 - [⏳ AnyCubic](#anycubic) (8 boards)
 - [⏳ ArmEd](#armed) (1 boards)
-- [⏳ Artillery](#artillery) (7 boards)
+- [✅ Artillery](#artillery) (7 boards)
 - [⏳ Azteeg](#azteeg) (1 boards)
 - [⏳ BIBO](#bibo) (3 boards)
 - [⏳ BIQU](#biqu) (10 boards)
@@ -39,7 +39,7 @@
 - [⏳ EasyThreeD](#easythreed) (1 boards)
 - [⏳ Eazao](#eazao) (1 boards)
 - [⏳ Einstart_S](#einstart-s) (1 boards)
-- [⏳ Elegoo](#elegoo) (1 boards)
+- [✅ Elegoo](#elegoo) (1 boards)
 - [⏳ Eryone](#eryone) (2 boards)
 - [⏳ FYSETC](#fysetc) (3 boards)
 - [⏳ Felix](#felix) (2 boards)
@@ -76,7 +76,7 @@
 - [⏳ Ortur_4](#ortur-4) (1 boards)
 - [⏳ Polargraph](#polargraph) (1 boards)
 - [⏳ Printrbot](#printrbot) (3 boards)
-- [⏳ Prusa](#prusa) (2 boards)
+- [✅ Prusa](#prusa) (2 boards)
 - [⏳ Qidi](#qidi) (1 boards)
 - [⏳ Raiscube](#raiscube) (1 boards)
 - [⏳ RapideLite](#rapidelite) (1 boards)
@@ -117,1224 +117,1231 @@
 
 ---
 
-## ⏳ 3DFabXYZ
-*1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
+## ✅ 3DFabXYZ
+*1 boards — 1 ✅ / 0 ❌*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Migbot | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/3DFabXYZ/Migbot) |
-
----
-
-## ⏳ 3DMatik
-*1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
-
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| XL | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/3DMatik/XL) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Migbot | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/3DFabXYZ/Migbot/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/3DFabXYZ/Migbot/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/3DFabXYZ/Migbot) |
 
 ---
 
-## ⏳ ADIMLab
-*2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
+## ❌ 3DMatik
+*1 boards — 0 ✅ / 1 ❌*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Gantry v1 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/ADIMLab/Gantry v1) |
-| Gantry v2 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/ADIMLab/Gantry v2) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| XL | `mega2560` | ❌ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/3DMatik/XL) |
+
+**Failed boards:**
+- `XL`: No official config at tag [[job](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/runs/26563558340/job/78252389999)]
 
 ---
 
-## ⏳ Alfawise
-*2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
+## ✅ ADIMLab
+*2 boards — 2 ✅ / 0 ❌*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| U20 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Alfawise/U20) |
-| U20 bltouch | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Alfawise/U20-bltouch) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Gantry v1 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/ADIMLab/Gantry_v1/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/ADIMLab/Gantry_v1/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/ADIMLab/Gantry v1) |
+| Gantry v2 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/ADIMLab/Gantry_v2/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/ADIMLab/Gantry_v2/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/ADIMLab/Gantry v2) |
+
+---
+
+## ❌ Alfawise
+*2 boards — 0 ✅ / 2 ❌*
+
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| U20 | `mega2560` | ❌ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Alfawise/U20) |
+| U20 bltouch | `mega2560` | ❌ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Alfawise/U20-bltouch) |
+
+**Failed boards:**
+- `U20`: Compilation error [[job](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/runs/26563558340/job/78252389900)]
+- `U20 bltouch`: Compilation error [[job](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/runs/26563558340/job/78252390072)]
 
 ---
 
 ## ⏳ AliExpress
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| CL 260 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AliExpress/CL-260) |
-| UM2pExt | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AliExpress/UM2pExt) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| CL 260 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AliExpress/CL-260) |
+| UM2pExt | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AliExpress/UM2pExt) |
 
 ---
 
 ## ⏳ Anet
-*16 boards — 0 ✅ / 0 ❌ / 16 ⏳*
+*16 boards — 9 ✅ / 0 ❌ / 7 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| A2 | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A2) |
-| A2plus | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A2plus) |
-| A6 | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A6) |
-| A8 | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A8) |
-| A8plus | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A8plus) |
-| A9 | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A9) |
-| E10 | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/E10) |
-| E16/BTT SKR 1.3 | `LPC1768` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/E16/BTT SKR 1.3) |
-| E16/Stock | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/E16/Stock) |
-| ET4 | `Anet_ET4_no_bootloader` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET4) |
-| ET4X | `Anet_ET4_no_bootloader` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET4X) |
-| ET4-Plus | `Anet_ET4_no_bootloader` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET4+) |
-| ET4-Pro | `Anet_ET4_no_bootloader` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET4-Pro) |
-| ET5 | `Anet_ET4_no_bootloader` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET5) |
-| ET5X | `Anet_ET4_no_bootloader` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET5X) |
-| ET5-Pro | `Anet_ET4_no_bootloader` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET5-Pro) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| A2 | `sanguino1284p_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A2/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A2/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A2) |
+| A2plus | `sanguino1284p_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A2plus/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A2plus/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A2plus) |
+| A6 | `sanguino1284p_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A6/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A6/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A6) |
+| A8 | `sanguino1284p_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A8/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A8/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A8) |
+| A8plus | `sanguino1284p_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A8plus/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A8plus/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A8plus) |
+| A9 | `sanguino1284p_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A9/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/A9/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/A9) |
+| E10 | `sanguino1284p_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/E10/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/E10/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/E10) |
+| E16/BTT SKR 1.3 | `LPC1768` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/E16/BTT_SKR_1.3/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/E16/BTT_SKR_1.3/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/E16/BTT SKR 1.3) |
+| E16/Stock | `sanguino1284p_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/E16/Stock/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Anet/E16/Stock/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/E16/Stock) |
+| ET4 | `Anet_ET4_no_bootloader` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET4) |
+| ET4X | `Anet_ET4_no_bootloader` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET4X) |
+| ET4-Plus | `Anet_ET4_no_bootloader` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET4+) |
+| ET4-Pro | `Anet_ET4_no_bootloader` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET4-Pro) |
+| ET5 | `Anet_ET4_no_bootloader` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET5) |
+| ET5X | `Anet_ET4_no_bootloader` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET5X) |
+| ET5-Pro | `Anet_ET4_no_bootloader` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Anet/ET5-Pro) |
 
 ---
 
 ## ⏳ AnyCubic
-*8 boards — 0 ✅ / 0 ❌ / 8 ⏳*
+*8 boards — 7 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Chiron | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/Chiron) |
-| Mega Zero 2.0/Anycubic V1 | `melzi_optiboot_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/Mega Zero 2.0/Anycubic V1) |
-| Mega Zero/Anycubic V1 | `melzi_optiboot_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/Mega Zero/Anycubic V1) |
-| Mega Zero/BigTreeTech SKR Mini MZ V1.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/Mega Zero/BigTreeTech SKR Mini MZ V1.0) |
-| i3 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/i3) |
-| i3 Mega/Mega Trigorilla AVR | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/i3 Mega/Trigorilla AVR) |
-| i3 Mega/Trigorilla Pro STM32 | `trigorilla_pro` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/i3 Mega/Trigorilla Pro STM32) |
-| Vyper | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/Vyper) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Chiron | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/Chiron/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/Chiron/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/Chiron) |
+| Mega Zero 2.0/Anycubic V1 | `melzi_optiboot_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/Mega_Zero_2.0/Anycubic_V1/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/Mega_Zero_2.0/Anycubic_V1/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/Mega Zero 2.0/Anycubic V1) |
+| Mega Zero/Anycubic V1 | `melzi_optiboot_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/Mega_Zero/Anycubic_V1/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/Mega_Zero/Anycubic_V1/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/Mega Zero/Anycubic V1) |
+| Mega Zero/BigTreeTech SKR Mini MZ V1.0 | `STM32F103RC_btt` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/Mega_Zero/BigTreeTech_SKR_Mini_MZ_V1.0/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/Mega_Zero/BigTreeTech_SKR_Mini_MZ_V1.0/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/Mega Zero/BigTreeTech SKR Mini MZ V1.0) |
+| i3 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/i3/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/i3/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/i3) |
+| i3 Mega/Mega Trigorilla AVR | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/i3_Mega/Mega_Trigorilla_AVR/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/i3_Mega/Mega_Trigorilla_AVR/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/i3 Mega/Trigorilla AVR) |
+| i3 Mega/Trigorilla Pro STM32 | `trigorilla_pro` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/i3_Mega/Trigorilla_Pro_STM32/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/AnyCubic/i3_Mega/Trigorilla_Pro_STM32/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/i3 Mega/Trigorilla Pro STM32) |
+| Vyper | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/AnyCubic/Vyper) |
 
 ---
 
 ## ⏳ ArmEd
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `ARMED` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/ArmEd) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `ARMED` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/ArmEd) |
 
 ---
 
-## ⏳ Artillery
-*7 boards — 0 ✅ / 0 ❌ / 7 ⏳*
+## ✅ Artillery
+*7 boards — 7 ✅ / 0 ❌*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Genius Pro | `Artillery_Ruby` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Genius Pro) |
-| Genius/V1 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Genius/V1) |
-| Genius/BLTouch | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Genius/BLTouch) |
-| Hornet | `Artillery_Ruby` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Hornet) |
-| Sidewinder X1/V1 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Sidewinder X1/V1) |
-| Sidewinder X2 | `Artillery_Ruby` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Sidewinder X2) |
-| Sidewinder X1/0.9 BMG   E3D V6 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Sidewinder X1/0.9 BMG - E3D V6) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Genius Pro | `Artillery_Ruby` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Genius_Pro/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Genius_Pro/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Genius Pro) |
+| Genius/V1 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Genius/V1/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Genius/V1/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Genius/V1) |
+| Genius/BLTouch | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Genius/BLTouch/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Genius/BLTouch/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Genius/BLTouch) |
+| Hornet | `Artillery_Ruby` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Hornet/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Hornet/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Hornet) |
+| Sidewinder X1/V1 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Sidewinder_X1/V1/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Sidewinder_X1/V1/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Sidewinder X1/V1) |
+| Sidewinder X2 | `Artillery_Ruby` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Sidewinder_X2/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Sidewinder_X2/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Sidewinder X2) |
+| Sidewinder X1/0.9 BMG   E3D V6 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Sidewinder_X1/0.9_BMG___E3D_V6/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Artillery/Sidewinder_X1/0.9_BMG___E3D_V6/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Artillery/Sidewinder X1/0.9 BMG - E3D V6) |
 
 ---
 
 ## ⏳ Azteeg
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| X5GT | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Azteeg/X5GT) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| X5GT | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Azteeg/X5GT) |
 
 ---
 
 ## ⏳ BIBO
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| TouchX/cyclops | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIBO/TouchX/cyclops) |
-| TouchX/default | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIBO/TouchX/default) |
-| TouchX/default   BLTouch | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIBO/TouchX/default - BLTouch) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| TouchX/cyclops | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIBO/TouchX/cyclops) |
+| TouchX/default | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIBO/TouchX/default) |
+| TouchX/default   BLTouch | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIBO/TouchX/default - BLTouch) |
 
 ---
 
 ## ⏳ BIQU
 *10 boards — 0 ✅ / 0 ❌ / 10 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| B1 SE | `BIGTREE_SKR_2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/B1 SE) |
-| B1 SE Plus | `BIGTREE_SKR_2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/B1 SE Plus) |
-| B1/SKR2 | `BIGTREE_SKR_2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/B1 - SKR 2) |
-| B1/SKR 1.4 | `LPC1768` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/B1 - SKR 1.4) |
-| BX | `BTT_SKR_SE_BX` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/BX) |
-| Hurakan | `STM32G0B1RE_manta_btt` | ⏳ | — | — |
-| B1 | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/B1) |
-| BX/all metal hotend | `BTT_SKR_SE_BX` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/BX/all-metal-hotend) |
-| BX/base | `BTT_SKR_SE_BX` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/BX/base) |
-| Thunder Standard | `LPC1768` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/Thunder Standard) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| B1 SE | `BIGTREE_SKR_2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/B1 SE) |
+| B1 SE Plus | `BIGTREE_SKR_2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/B1 SE Plus) |
+| B1/SKR2 | `BIGTREE_SKR_2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/B1 - SKR 2) |
+| B1/SKR 1.4 | `LPC1768` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/B1 - SKR 1.4) |
+| BX | `BTT_SKR_SE_BX` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/BX) |
+| Hurakan | `STM32G0B1RE_manta_btt` | ⏳ | — | — | — |
+| B1 | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/B1) |
+| BX/all metal hotend | `BTT_SKR_SE_BX` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/BX/all-metal-hotend) |
+| BX/base | `BTT_SKR_SE_BX` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/BX/base) |
+| Thunder Standard | `LPC1768` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BIQU/Thunder Standard) |
 
 ---
 
 ## ⏳ BQ
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Hephestos | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BQ/Hephestos) |
-| Hephestos 2 | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BQ/Hephestos_2) |
-| WITBOX | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BQ/WITBOX) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Hephestos | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BQ/Hephestos) |
+| Hephestos 2 | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BQ/Hephestos_2) |
+| WITBOX | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/BQ/WITBOX) |
 
 ---
 
 ## ⏳ CNC
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| miniRambo | `rambo` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/CNC/miniRambo) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| miniRambo | `rambo` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/CNC/miniRambo) |
 
 ---
 
 ## ⏳ CTC
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| A13 | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/CTC/A13) |
-| Bizer | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/CTC/Bizer) |
-| i3 2560 Rev A/no probe | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/CTC/i3 2560 Rev A/no probe) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| A13 | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/CTC/A13) |
+| Bizer | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/CTC/Bizer) |
+| i3 2560 Rev A/no probe | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/CTC/i3 2560 Rev A/no probe) |
 
 ---
 
 ## ⏳ Cartesio
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Cartesio) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Cartesio) |
 
 ---
 
 ## ⏳ Copymaster3D
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| 300 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Copymaster3D/300) |
-| 400 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Copymaster3D/400) |
-| 500 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Copymaster3D/500) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| 300 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Copymaster3D/300) |
+| 400 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Copymaster3D/400) |
+| 500 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Copymaster3D/500) |
 
 ---
 
 ## ⏳ Creality
-*125 boards — 0 ✅ / 0 ❌ / 125 ⏳*
+*125 boards — 5 ✅ / 0 ❌ / 120 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| CR-10S/BigTreeTech SKR 1.4 Turbo TMC2209 | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/BigTreeTech SKR 1.4 Turbo TMC2209) |
-| CR-10S/BigTreeTech SKR 2.0 TMC2209 | `BIGTREE_SKR_2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/BigTreeTech SKR 2.0 TMC2209) |
-| CR-10S/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/BigTreeTech SKR Mini E3 2.0) |
-| CR-10S/CrealityV1 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/CrealityV1) |
-| CR-10/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10/BigTreeTech SKR Mini E3 2.0) |
-| CR-10/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10/CrealityV1) |
-| CR-10 Mini/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 Mini/BigTreeTech SKR Mini E3 2.0) |
-| CR-10 Mini/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 Mini/CrealityV1) |
-| CR-10 S4/CrealityV1 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S4/CrealityV1) |
-| CR-10 S5/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/BigTreeTech SKR Mini E3 v3) |
-| CR-10 S5/CrealityV1 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/CrealityV1) |
-| CR-10 S5/CrealityV2.2-BLTouch | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/CrealityV2.2-BLTouch) |
-| CR-10 V2 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 V2) |
-| CR-10 V3 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 V3) |
-| CR-20 Pro | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-20 Pro) |
-| CR-20/Stock | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-20/Stock) |
-| CR-6 SE | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-6 SE) |
-| CR-8 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-8) |
-| Ender-2 | `melzi_optiboot_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-2) |
-| Ender-3/BigTreeTech SKR 1.4 | `LPC1768` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR 1.4) |
-| Ender-3/BigTreeTech SKR Mini E3 1.2 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR Mini E3 1.2) |
-| Ender-3/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR Mini E3 2.0) |
-| Ender-3/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR Mini E3 3.0) |
-| Ender-3/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/CrealityV1) |
-| Ender-3/CrealityV422 | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/CrealityV422) |
-| Ender-3/CrealityV427 | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/CrealityV427) |
-| Ender-3/FYSETC Cheetah 2.0 | `FYSETC_CHEETAH_V20` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/FYSETC Cheetah 2.0) |
-| Ender-3 Max | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Max) |
-| Ender-3 Pro/BigTreeTech SKR 1.4 Turbo | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR 1.4 Turbo) |
-| Ender-3 Pro/BigTreeTech SKR Mini E3 1.2 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.2) |
-| Ender-3 Pro/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 2.0) |
-| Ender-3 Pro/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0) |
-| Ender-3 S1/STM32F1 | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 S1/STM32F1) |
-| Ender-3 S1/STM32F4 | `STM32F401RC_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 S1/STM32F4) |
-| Ender-3 V2/BigTreeTech SKR Mini E3 v3/CrealityUI | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 v3/CrealityUI) |
-| Ender-3 V2/BigTreeTech SKR Mini E3 v3/MarlinUI | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 v3/MarlinUI) |
-| Ender-3 V2 Neo | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2 Neo) |
-| Ender-5/BigTreeTech SKR Mini E3 1.2 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/BigTreeTech SKR Mini E3 1.2) |
-| Ender-5/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/BigTreeTech SKR Mini E3 2.0) |
-| Ender-5/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/CrealityV1) |
-| Ender-5/CrealityV427 | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/CrealityV427) |
-| Ender-5 Plus/BigTreeTech SKR 3 | `STM32H743VI_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Plus/BigTreeTech SKR 3) |
-| Ender-5 Plus/CrealityV1 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Plus/CrealityV1) |
-| Ender-5 Pro/BigTreeTech SKR E3 Turbo | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/BigTreeTech SKR E3 Turbo) |
-| Ender-5 Pro/BigTreeTech SKR Mini E3 1.2 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/BigTreeTech SKR Mini E3 1.2) |
-| Ender-5 Pro/BigTreeTech SKR Mini E3 2.0 BLTouch | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/BigTreeTech SKR Mini E3 2.0 with BLTouch) |
-| Ender-5 Pro/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/CrealityV1) |
-| Ender-5 Pro/CrealityV422 | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/CrealityV422) |
-| Ender-5 Pro/CrealityV427 | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/CrealityV427) |
-| CR 10 Max | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 Max) |
-| CR 10 Mini/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 Mini/BigTreeTech SKR Mini E3 3.0) |
-| CR 10 Mini/MEEB 3DP | `STM32F103RC_meeb_maple` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 Mini/MEEB-3DP) |
-| CR 10 S5/BigTreeTech SKR Mini E3 1.2 with TFT35 E3 V3.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/BigTreeTech SKR Mini E3 1.2 with TFT35 E3 V3.0) |
-| CR 10 S5/CrealityV2.2   BLTouch | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/CrealityV2.2 - BLTouch) |
-| CR 10 S5/CrealityV427   BLTouch | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/CrealityV427 - BLTouch) |
-| CR 10 V3/BigTreeTech SKR Mini E3 v3 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 V3/BigTreeTech SKR Mini E3 v3) |
-| CR 10 V3/Stock | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 V3/Stock) |
-| CR 10/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10/BigTreeTech SKR Mini E3 3.0) |
-| CR 10S Pro | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S Pro) |
-| CR 10S/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/BigTreeTech SKR Mini E3 3.0) |
-| CR 10S/BigTreeTech SKR Pro v1.2 | `BIGTREE_SKR_PRO` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/BigTreeTech SKR Pro v1.2) |
-| CR 10S/CrealityV1   BLTouch | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/CrealityV1 - BLTouch) |
-| CR 20/RepRapWorld Minitronics20 | `SAMD21_minitronics20` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-20/RepRapWorld Minitronics20) |
-| CR 30 PrintMill | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-30 PrintMill) |
-| Ender 2 Pro/CrealityV24S4 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-2 Pro/CrealityV24S4) |
-| Ender 2 Pro/CrealityV423 | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-2 Pro/CrealityV423) |
-| Ender 3 Max Neo/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Max Neo/BigTreeTech SKR Mini E3 3.0) |
-| Ender 3 Max Neo/CrealityV422 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Max Neo/CrealityV422) |
-| Ender 3 Neo | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Neo) |
-| Ender 3 Pro/BigTreeTech SKR Mini E3 1.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.0) |
-| Ender 3 Pro/BigTreeTech SKR Mini E3 3.0/BLTouch | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0/BLTouch) |
-| Ender 3 Pro/BigTreeTech SKR Mini E3 3.0/base | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0/base) |
-| Ender 3 Pro/Creality free runs | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/Creality free-runs) |
-| Ender 3 Pro/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/CrealityV1) |
-| Ender 3 Pro/CrealityV422 | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/CrealityV422) |
-| Ender 3 Pro/CrealityV427/BLTouch | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/CrealityV427/BLTouch) |
-| Ender 3 Pro/CrealityV427/base | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/CrealityV427/base) |
-| Ender 3 S1 Plus | `STM32F401RC_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 S1 Plus) |
-| Ender 3 S1 Pro | `STM32F401RC_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 S1 Pro) |
-| Ender 3 V2 Neo/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2 Neo/BigTreeTech SKR Mini E3 3.0) |
-| Ender 3 V2 Neo/CrealityV422 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2 Neo/CrealityV422) |
-| Ender 3 V2/BigTreeTech SKR E3 Turbo/CrealityUI | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/CrealityUI) |
-| Ender 3 V2/BigTreeTech SKR E3 Turbo/MarlinUI | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/MarlinUI) |
-| Ender 3 V2/BigTreeTech SKR E3 Turbo/ProUI | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/ProUI) |
-| Ender 3 V2/BigTreeTech SKR Mini E3 2.0/CrealityUI | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/CrealityUI) |
-| Ender 3 V2/BigTreeTech SKR Mini E3 2.0/MarlinUI | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/MarlinUI) |
-| Ender 3 V2/BigTreeTech SKR Mini E3 2.0/ProUI | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/ProUI) |
-| Ender 3 V2/BigTreeTech SKR Mini E3 3.0/CrealityUI | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/CrealityUI) |
-| Ender 3 V2/BigTreeTech SKR Mini E3 3.0/MarlinUI | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/MarlinUI) |
-| Ender 3 V2/BigTreeTech SKR Mini E3 3.0/ProUI | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/ProUI) |
-| Ender 3 V2/CrealityV422/CrealityUI | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV422/CrealityUI) |
-| Ender 3 V2/CrealityV422/MarlinUI | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV422/MarlinUI) |
-| Ender 3 V2/CrealityV422/ProUI | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV422/ProUI) |
-| Ender 3 V2/CrealityV427/CrealityUI | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV427/CrealityUI) |
-| Ender 3 V2/CrealityV427/MarlinUI | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV427/MarlinUI) |
-| Ender 3 V2/CrealityV427/ProUI | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV427/ProUI) |
-| Ender 3/BigTreeTech E3 RRF | `BIGTREE_E3_RRF` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech E3 RRF) |
-| Ender 3/BigTreeTech Manta E3 EZ | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech Manta E3 EZ) |
-| Ender 3/BigTreeTech SKR E3 Turbo/2 into 1 Hotend | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR E3 Turbo/2-into-1 Hotend) |
-| Ender 3/BigTreeTech SKR E3 Turbo/Dual Z | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR E3 Turbo/Dual Z) |
-| Ender 3/BigTreeTech SKR E3 Turbo/Single Extruder | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR E3 Turbo/Single Extruder) |
-| Ender 3/BigTreeTech SKR E3 DIP V1.1 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR E3-DIP V1.1) |
-| Ender 3/BigTreeTech SKR Mini E3 1.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR Mini E3 1.0) |
-| Ender 3/Creality free runs | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/Creality free-runs) |
-| Ender 3/FYSETC Cheetah 1.2/BLTouch | `STM32F103RC_fysetc` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/FYSETC Cheetah 1.2/BLTouch) |
-| Ender 3/FYSETC Cheetah 1.2/base | `STM32F103RC_fysetc` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/FYSETC Cheetah 1.2/base) |
-| Ender 3/FYSETC Cheetah/BLTouch | `STM32F103RC_fysetc` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/FYSETC Cheetah/BLTouch) |
-| Ender 3/FYSETC Cheetah/base | `STM32F103RC_fysetc` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/FYSETC Cheetah/base) |
-| Ender 3/MEEB 3DP | `STM32F103RC_meeb_maple` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/MEEB-3DP) |
-| Ender 3/MKS Robin E3/V1.0 | `mks_robin_e3` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/MKS Robin E3/V1.0) |
-| Ender 3/MKS Robin E3/V1.1 | `mks_robin_e3` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/MKS Robin E3/V1.1) |
-| Ender 3/MKS Robin E3P | `mks_robin_e3p` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/MKS Robin E3P) |
-| Ender 3/TH3D EZBoard Lite V2 | `TH3D_EZBoard_V2_no_bootloader` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/TH3D EZBoard Lite V2) |
-| Ender 4 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-4) |
-| Ender 5 Plus/Creality 4.2.2 (RELOADED UI) | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Plus/Creality 4.2.2 (RELOADED UI)) |
-| Ender 5 Plus/CrealityV1 (ORIGIN UI) | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Plus/CrealityV1 (ORIGIN UI)) |
-| Ender 5 Plus/CrealityV1 (RELOADED UI) | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Plus/CrealityV1 (RELOADED UI)) |
-| Ender 5 Pro/BigTreeTech SKR Mini E3 3.0 with BLTouch HighTemp | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/BigTreeTech SKR Mini E3 3.0 with BLTouch-HighTemp) |
-| Ender 5 S1 | `STM32F401RC_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 S1) |
-| Ender 5/BigTreeTech SKR E3 Turbo | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/BigTreeTech SKR E3 Turbo) |
-| Ender 5/BigTreeTech SKR E3 Turbo with BLTouch | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/BigTreeTech SKR E3 Turbo with BLTouch) |
-| Ender 5/BigTreeTech SKR Mini E3 3.0 with BLTouch | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/BigTreeTech SKR Mini E3 3.0 with BLTouch) |
-| Ender 5/Creality free runs | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/Creality free-runs) |
-| Ender 5/CrealityV427 with BLTouch | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/CrealityV427 with BLTouch) |
-| Ender 6 | `STM32F103RE_creality` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-6) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| CR-10S/BigTreeTech SKR 1.4 Turbo TMC2209 | `LPC1769` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_1.4_Turbo_TMC2209/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_1.4_Turbo_TMC2209/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/BigTreeTech SKR 1.4 Turbo TMC2209) |
+| CR-10S/BigTreeTech SKR 2.0 TMC2209 | `BIGTREE_SKR_2` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_2.0_TMC2209/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/BigTreeTech SKR 2.0 TMC2209) |
+| CR-10S/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_Mini_E3_2.0/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Creality/CR-10S/BigTreeTech_SKR_Mini_E3_2.0/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/BigTreeTech SKR Mini E3 2.0) |
+| CR-10S/CrealityV1 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Creality/CR-10S/CrealityV1/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Creality/CR-10S/CrealityV1/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/CrealityV1) |
+| CR-10/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10/BigTreeTech SKR Mini E3 2.0) |
+| CR-10/CrealityV1 | `melzi_optiboot_optimized` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Creality/CR-10/CrealityV1/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Creality/CR-10/CrealityV1/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10/CrealityV1) |
+| CR-10 Mini/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 Mini/BigTreeTech SKR Mini E3 2.0) |
+| CR-10 Mini/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 Mini/CrealityV1) |
+| CR-10 S4/CrealityV1 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S4/CrealityV1) |
+| CR-10 S5/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/BigTreeTech SKR Mini E3 v3) |
+| CR-10 S5/CrealityV1 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/CrealityV1) |
+| CR-10 S5/CrealityV2.2-BLTouch | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/CrealityV2.2-BLTouch) |
+| CR-10 V2 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 V2) |
+| CR-10 V3 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 V3) |
+| CR-20 Pro | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-20 Pro) |
+| CR-20/Stock | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-20/Stock) |
+| CR-6 SE | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-6 SE) |
+| CR-8 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-8) |
+| Ender-2 | `melzi_optiboot_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-2) |
+| Ender-3/BigTreeTech SKR 1.4 | `LPC1768` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR 1.4) |
+| Ender-3/BigTreeTech SKR Mini E3 1.2 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR Mini E3 1.2) |
+| Ender-3/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR Mini E3 2.0) |
+| Ender-3/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR Mini E3 3.0) |
+| Ender-3/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/CrealityV1) |
+| Ender-3/CrealityV422 | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/CrealityV422) |
+| Ender-3/CrealityV427 | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/CrealityV427) |
+| Ender-3/FYSETC Cheetah 2.0 | `FYSETC_CHEETAH_V20` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/FYSETC Cheetah 2.0) |
+| Ender-3 Max | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Max) |
+| Ender-3 Pro/BigTreeTech SKR 1.4 Turbo | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR 1.4 Turbo) |
+| Ender-3 Pro/BigTreeTech SKR Mini E3 1.2 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.2) |
+| Ender-3 Pro/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 2.0) |
+| Ender-3 Pro/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0) |
+| Ender-3 S1/STM32F1 | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 S1/STM32F1) |
+| Ender-3 S1/STM32F4 | `STM32F401RC_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 S1/STM32F4) |
+| Ender-3 V2/BigTreeTech SKR Mini E3 v3/CrealityUI | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 v3/CrealityUI) |
+| Ender-3 V2/BigTreeTech SKR Mini E3 v3/MarlinUI | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 v3/MarlinUI) |
+| Ender-3 V2 Neo | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2 Neo) |
+| Ender-5/BigTreeTech SKR Mini E3 1.2 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/BigTreeTech SKR Mini E3 1.2) |
+| Ender-5/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/BigTreeTech SKR Mini E3 2.0) |
+| Ender-5/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/CrealityV1) |
+| Ender-5/CrealityV427 | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/CrealityV427) |
+| Ender-5 Plus/BigTreeTech SKR 3 | `STM32H743VI_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Plus/BigTreeTech SKR 3) |
+| Ender-5 Plus/CrealityV1 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Plus/CrealityV1) |
+| Ender-5 Pro/BigTreeTech SKR E3 Turbo | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/BigTreeTech SKR E3 Turbo) |
+| Ender-5 Pro/BigTreeTech SKR Mini E3 1.2 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/BigTreeTech SKR Mini E3 1.2) |
+| Ender-5 Pro/BigTreeTech SKR Mini E3 2.0 BLTouch | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/BigTreeTech SKR Mini E3 2.0 with BLTouch) |
+| Ender-5 Pro/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/CrealityV1) |
+| Ender-5 Pro/CrealityV422 | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/CrealityV422) |
+| Ender-5 Pro/CrealityV427 | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/CrealityV427) |
+| CR 10 Max | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 Max) |
+| CR 10 Mini/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 Mini/BigTreeTech SKR Mini E3 3.0) |
+| CR 10 Mini/MEEB 3DP | `STM32F103RC_meeb_maple` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 Mini/MEEB-3DP) |
+| CR 10 S5/BigTreeTech SKR Mini E3 1.2 with TFT35 E3 V3.0 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/BigTreeTech SKR Mini E3 1.2 with TFT35 E3 V3.0) |
+| CR 10 S5/CrealityV2.2   BLTouch | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/CrealityV2.2 - BLTouch) |
+| CR 10 S5/CrealityV427   BLTouch | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 S5/CrealityV427 - BLTouch) |
+| CR 10 V3/BigTreeTech SKR Mini E3 v3 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 V3/BigTreeTech SKR Mini E3 v3) |
+| CR 10 V3/Stock | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10 V3/Stock) |
+| CR 10/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10/BigTreeTech SKR Mini E3 3.0) |
+| CR 10S Pro | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S Pro) |
+| CR 10S/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/BigTreeTech SKR Mini E3 3.0) |
+| CR 10S/BigTreeTech SKR Pro v1.2 | `BIGTREE_SKR_PRO` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/BigTreeTech SKR Pro v1.2) |
+| CR 10S/CrealityV1   BLTouch | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-10S/CrealityV1 - BLTouch) |
+| CR 20/RepRapWorld Minitronics20 | `SAMD21_minitronics20` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-20/RepRapWorld Minitronics20) |
+| CR 30 PrintMill | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/CR-30 PrintMill) |
+| Ender 2 Pro/CrealityV24S4 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-2 Pro/CrealityV24S4) |
+| Ender 2 Pro/CrealityV423 | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-2 Pro/CrealityV423) |
+| Ender 3 Max Neo/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Max Neo/BigTreeTech SKR Mini E3 3.0) |
+| Ender 3 Max Neo/CrealityV422 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Max Neo/CrealityV422) |
+| Ender 3 Neo | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Neo) |
+| Ender 3 Pro/BigTreeTech SKR Mini E3 1.0 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 1.0) |
+| Ender 3 Pro/BigTreeTech SKR Mini E3 3.0/BLTouch | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0/BLTouch) |
+| Ender 3 Pro/BigTreeTech SKR Mini E3 3.0/base | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/BigTreeTech SKR Mini E3 3.0/base) |
+| Ender 3 Pro/Creality free runs | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/Creality free-runs) |
+| Ender 3 Pro/CrealityV1 | `melzi_optiboot_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/CrealityV1) |
+| Ender 3 Pro/CrealityV422 | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/CrealityV422) |
+| Ender 3 Pro/CrealityV427/BLTouch | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/CrealityV427/BLTouch) |
+| Ender 3 Pro/CrealityV427/base | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 Pro/CrealityV427/base) |
+| Ender 3 S1 Plus | `STM32F401RC_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 S1 Plus) |
+| Ender 3 S1 Pro | `STM32F401RC_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 S1 Pro) |
+| Ender 3 V2 Neo/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2 Neo/BigTreeTech SKR Mini E3 3.0) |
+| Ender 3 V2 Neo/CrealityV422 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2 Neo/CrealityV422) |
+| Ender 3 V2/BigTreeTech SKR E3 Turbo/CrealityUI | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/CrealityUI) |
+| Ender 3 V2/BigTreeTech SKR E3 Turbo/MarlinUI | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/MarlinUI) |
+| Ender 3 V2/BigTreeTech SKR E3 Turbo/ProUI | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR E3 Turbo/ProUI) |
+| Ender 3 V2/BigTreeTech SKR Mini E3 2.0/CrealityUI | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/CrealityUI) |
+| Ender 3 V2/BigTreeTech SKR Mini E3 2.0/MarlinUI | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/MarlinUI) |
+| Ender 3 V2/BigTreeTech SKR Mini E3 2.0/ProUI | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 2.0/ProUI) |
+| Ender 3 V2/BigTreeTech SKR Mini E3 3.0/CrealityUI | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/CrealityUI) |
+| Ender 3 V2/BigTreeTech SKR Mini E3 3.0/MarlinUI | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/MarlinUI) |
+| Ender 3 V2/BigTreeTech SKR Mini E3 3.0/ProUI | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/BigTreeTech SKR Mini E3 3.0/ProUI) |
+| Ender 3 V2/CrealityV422/CrealityUI | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV422/CrealityUI) |
+| Ender 3 V2/CrealityV422/MarlinUI | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV422/MarlinUI) |
+| Ender 3 V2/CrealityV422/ProUI | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV422/ProUI) |
+| Ender 3 V2/CrealityV427/CrealityUI | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV427/CrealityUI) |
+| Ender 3 V2/CrealityV427/MarlinUI | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV427/MarlinUI) |
+| Ender 3 V2/CrealityV427/ProUI | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3 V2/CrealityV427/ProUI) |
+| Ender 3/BigTreeTech E3 RRF | `BIGTREE_E3_RRF` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech E3 RRF) |
+| Ender 3/BigTreeTech Manta E3 EZ | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech Manta E3 EZ) |
+| Ender 3/BigTreeTech SKR E3 Turbo/2 into 1 Hotend | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR E3 Turbo/2-into-1 Hotend) |
+| Ender 3/BigTreeTech SKR E3 Turbo/Dual Z | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR E3 Turbo/Dual Z) |
+| Ender 3/BigTreeTech SKR E3 Turbo/Single Extruder | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR E3 Turbo/Single Extruder) |
+| Ender 3/BigTreeTech SKR E3 DIP V1.1 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR E3-DIP V1.1) |
+| Ender 3/BigTreeTech SKR Mini E3 1.0 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/BigTreeTech SKR Mini E3 1.0) |
+| Ender 3/Creality free runs | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/Creality free-runs) |
+| Ender 3/FYSETC Cheetah 1.2/BLTouch | `STM32F103RC_fysetc` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/FYSETC Cheetah 1.2/BLTouch) |
+| Ender 3/FYSETC Cheetah 1.2/base | `STM32F103RC_fysetc` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/FYSETC Cheetah 1.2/base) |
+| Ender 3/FYSETC Cheetah/BLTouch | `STM32F103RC_fysetc` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/FYSETC Cheetah/BLTouch) |
+| Ender 3/FYSETC Cheetah/base | `STM32F103RC_fysetc` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/FYSETC Cheetah/base) |
+| Ender 3/MEEB 3DP | `STM32F103RC_meeb_maple` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/MEEB-3DP) |
+| Ender 3/MKS Robin E3/V1.0 | `mks_robin_e3` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/MKS Robin E3/V1.0) |
+| Ender 3/MKS Robin E3/V1.1 | `mks_robin_e3` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/MKS Robin E3/V1.1) |
+| Ender 3/MKS Robin E3P | `mks_robin_e3p` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/MKS Robin E3P) |
+| Ender 3/TH3D EZBoard Lite V2 | `TH3D_EZBoard_V2_no_bootloader` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-3/TH3D EZBoard Lite V2) |
+| Ender 4 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-4) |
+| Ender 5 Plus/Creality 4.2.2 (RELOADED UI) | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Plus/Creality 4.2.2 (RELOADED UI)) |
+| Ender 5 Plus/CrealityV1 (ORIGIN UI) | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Plus/CrealityV1 (ORIGIN UI)) |
+| Ender 5 Plus/CrealityV1 (RELOADED UI) | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Plus/CrealityV1 (RELOADED UI)) |
+| Ender 5 Pro/BigTreeTech SKR Mini E3 3.0 with BLTouch HighTemp | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 Pro/BigTreeTech SKR Mini E3 3.0 with BLTouch-HighTemp) |
+| Ender 5 S1 | `STM32F401RC_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5 S1) |
+| Ender 5/BigTreeTech SKR E3 Turbo | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/BigTreeTech SKR E3 Turbo) |
+| Ender 5/BigTreeTech SKR E3 Turbo with BLTouch | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/BigTreeTech SKR E3 Turbo with BLTouch) |
+| Ender 5/BigTreeTech SKR Mini E3 3.0 with BLTouch | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/BigTreeTech SKR Mini E3 3.0 with BLTouch) |
+| Ender 5/Creality free runs | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/Creality free-runs) |
+| Ender 5/CrealityV427 with BLTouch | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-5/CrealityV427 with BLTouch) |
+| Ender 6 | `STM32F103RE_creality` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Creality/Ender-6) |
 
 ---
 
 ## ⏳ Dagoma
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Disco Ultimate | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Dagoma/Disco Ultimate) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Disco Ultimate | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Dagoma/Disco Ultimate) |
 
 ---
 
 ## ⏳ Daycom
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| 3DP 100 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Daycom/3DP-100) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| 3DP 100 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Daycom/3DP-100) |
 
 ---
 
 ## ⏳ E3D
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| BigBox Dual | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/E3D/BigBox Dual) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| BigBox Dual | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/E3D/BigBox Dual) |
 
 ---
 
 ## ⏳ EXP3D
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Imprimante multifonction | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/EXP3D/Imprimante multifonction) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Imprimante multifonction | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/EXP3D/Imprimante multifonction) |
 
 ---
 
 ## ⏳ EasyThreeD
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| ET4000PLUS | `mks_robin_lite` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/EasyThreeD/ET4000PLUS) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| ET4000PLUS | `mks_robin_lite` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/EasyThreeD/ET4000PLUS) |
 
 ---
 
 ## ⏳ Eazao
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Zero | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Eazao/Zero) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Zero | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Eazao/Zero) |
 
 ---
 
 ## ⏳ Einstart_S
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Einstart-S) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Einstart-S) |
 
 ---
 
-## ⏳ Elegoo
-*1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
+## ✅ Elegoo
+*1 boards — 1 ✅ / 0 ❌*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Neptune 2 | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Elegoo/Neptune 2) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Neptune 2 | `mks_robin_nano_v1v2` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Elegoo/Neptune_2/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Elegoo/Neptune_2/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Elegoo/Neptune 2) |
 
 ---
 
 ## ⏳ Eryone
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Thinker SE | `rambo` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Eryone/Thinker SE) |
-| Thinker V2 | `rambo` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Eryone/Thinker V2) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Thinker SE | `rambo` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Eryone/Thinker SE) |
+| Thinker V2 | `rambo` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Eryone/Thinker V2) |
 
 ---
 
 ## ⏳ FYSETC
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| AIO II | `STM32F103RC_fysetc` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FYSETC/AIO_II) |
-| F6 13 | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FYSETC/F6_13) |
-| S6 | `FYSETC_S6` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FYSETC/S6) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| AIO II | `STM32F103RC_fysetc` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FYSETC/AIO_II) |
+| F6 13 | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FYSETC/F6_13) |
+| S6 | `FYSETC_S6` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FYSETC/S6) |
 
 ---
 
 ## ⏳ Felix
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| DUAL | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Felix/DUAL) |
-| Single | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Felix/Single) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| DUAL | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Felix/DUAL) |
+| Single | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Felix/Single) |
 
 ---
 
 ## ⏳ FlashForge
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Creator 2X | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FlashForge/Creator 2X) |
-| CreatorPro | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FlashForge/CreatorPro) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Creator 2X | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FlashForge/Creator 2X) |
+| CreatorPro | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FlashForge/CreatorPro) |
 
 ---
 
 ## ⏳ FlyingBear
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| FlyingBearGhost v3 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FlyingBear/FlyingBearGhost_v3) |
-| P902 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FlyingBear/P902) |
-| P905H | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FlyingBear/P905H) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| FlyingBearGhost v3 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FlyingBear/FlyingBearGhost_v3) |
+| P902 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FlyingBear/P902) |
+| P905H | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FlyingBear/P905H) |
 
 ---
 
 ## ⏳ FoamCutter
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| generic | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FoamCutter/generic) |
-| rcKeith | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FoamCutter/rcKeith) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| generic | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FoamCutter/generic) |
+| rcKeith | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FoamCutter/rcKeith) |
 
 ---
 
 ## ⏳ FolgerTech
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| FT 5 R2 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FolgerTech/FT-5 R2) |
-| i3 2020 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FolgerTech/i3-2020) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| FT 5 R2 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FolgerTech/FT-5 R2) |
+| i3 2020 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/FolgerTech/i3-2020) |
 
 ---
 
 ## ⏳ Formbot
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Raptor | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Formbot/Raptor) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Raptor | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Formbot/Raptor) |
 
 ---
 
 ## ⏳ Geeetech
-*27 boards — 0 ✅ / 0 ❌ / 27 ⏳*
+*27 boards — 10 ✅ / 0 ❌ / 17 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| A10 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10) |
-| A10D | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10D) |
-| A10M/Stock LCD | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10M/Stock LCD) |
-| A10M/YHCB2004 V4.1 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10M/YHCB2004_V4.1) |
-| A10PRO | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10PRO) |
-| A10T/Stock LCD | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10T/Stock LCD) |
-| A10T/YHCB2004 V4.1 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10T/YHCB2004_V4.1) |
-| A20 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A20) |
-| A20M | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A20M) |
-| A20T | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A20T) |
-| A30 | `STM32F103VE` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A30) |
-| A30M | `STM32F103VE` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A30M) |
-| A30T | `STM32F103VE` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A30T) |
-| D200 | `STM32F103VE` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/D200) |
-| Duplicator5 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Duplicator5) |
-| E180 | `STM32F103VE` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/E180) |
-| GT2560 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/GT2560) |
-| I3 Pro X GT2560 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/I3_Pro_X-GT2560) |
-| M201 | `STM32F103VE` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/M201) |
-| MeCreator2 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/MeCreator2) |
-| Me creator | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Me_creator) |
-| Me ducer | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Me_ducer) |
-| PI3A PRO | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/PI3A PRO) |
-| Prusa i3 Pro B/bltouch | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Prusa i3 Pro B/bltouch) |
-| Prusa i3 Pro B/noprobe | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Prusa i3 Pro B/noprobe) |
-| Prusa i3 Pro C | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Prusa i3 Pro C) |
-| Prusa i3 Pro W | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Prusa i3 Pro W) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| A10 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10) |
+| A10D | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10D/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10D/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10D) |
+| A10M/Stock LCD | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10M/Stock_LCD/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10M/Stock_LCD/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10M/Stock LCD) |
+| A10M/YHCB2004 V4.1 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10M/YHCB2004_V4.1/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10M/YHCB2004_V4.1/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10M/YHCB2004_V4.1) |
+| A10PRO | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10PRO/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10PRO/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10PRO) |
+| A10T/Stock LCD | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10T/Stock_LCD/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10T/Stock_LCD/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10T/Stock LCD) |
+| A10T/YHCB2004 V4.1 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10T/YHCB2004_V4.1/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A10T/YHCB2004_V4.1/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A10T/YHCB2004_V4.1) |
+| A20 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A20/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A20/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A20) |
+| A20M | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A20M/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A20M/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A20M) |
+| A20T | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A20T/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Geeetech/A20T/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A20T) |
+| A30 | `STM32F103VE` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A30) |
+| A30M | `STM32F103VE` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A30M) |
+| A30T | `STM32F103VE` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/A30T) |
+| D200 | `STM32F103VE` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/D200) |
+| Duplicator5 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Duplicator5) |
+| E180 | `STM32F103VE` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/E180) |
+| GT2560 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/GT2560) |
+| I3 Pro X GT2560 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/I3_Pro_X-GT2560) |
+| M201 | `STM32F103VE` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/M201) |
+| MeCreator2 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/MeCreator2) |
+| Me creator | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Me_creator) |
+| Me ducer | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Me_ducer) |
+| PI3A PRO | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/PI3A PRO) |
+| Prusa i3 Pro B/bltouch | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Prusa i3 Pro B/bltouch) |
+| Prusa i3 Pro B/noprobe | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Prusa i3 Pro B/noprobe) |
+| Prusa i3 Pro C | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Prusa i3 Pro C) |
+| Prusa i3 Pro W | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Geeetech/Prusa i3 Pro W) |
 
 ---
 
 ## ⏳ HMS434
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/HMS434) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/HMS434) |
 
 ---
 
 ## ⏳ Hictop
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| 3DP 17 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Hictop/3DP-17) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| 3DP 17 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Hictop/3DP-17) |
 
 ---
 
 ## ⏳ Infitary
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| i3 M508 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Infitary/i3-M508) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| i3 M508 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Infitary/i3-M508) |
 
 ---
 
 ## ⏳ Intamsys
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| FunmatHT 4988 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Intamsys/FunmatHT 4988) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| FunmatHT 4988 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Intamsys/FunmatHT 4988) |
 
 ---
 
 ## ⏳ JGAurora
 *5 boards — 0 ✅ / 0 ❌ / 5 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| A1 | `jgaurora_a5s_a1` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/JGAurora/A1) |
-| A3 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/JGAurora/A3) |
-| A5 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/JGAurora/A5) |
-| A5S | `jgaurora_a5s_a1` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/JGAurora/A5S) |
-| Magic | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/JGAurora/Magic) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| A1 | `jgaurora_a5s_a1` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/JGAurora/A1) |
+| A3 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/JGAurora/A3) |
+| A5 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/JGAurora/A5) |
+| A5S | `jgaurora_a5s_a1` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/JGAurora/A5S) |
+| Magic | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/JGAurora/Magic) |
 
 ---
 
 ## ⏳ Kingroon
-*5 boards — 0 ✅ / 0 ❌ / 5 ⏳*
+*5 boards — 2 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| KP3 | `mks_robin_mini` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Kingroon/KP3) |
-| KP3S | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Kingroon/KP3S) |
-| KP5L | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Kingroon/KP5L) |
-| KP3S Pro | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Kingroon/KP3S_Pro) |
-| KP5L DIY | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Kingroon/KP5L-DIY) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| KP3 | `mks_robin_mini` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Kingroon/KP3/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Kingroon/KP3/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Kingroon/KP3) |
+| KP3S | `mks_robin_nano_v1v2` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Kingroon/KP3S/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Kingroon/KP3S/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Kingroon/KP3S) |
+| KP5L | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Kingroon/KP5L) |
+| KP3S Pro | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Kingroon/KP3S_Pro) |
+| KP5L DIY | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Kingroon/KP5L-DIY) |
 
 ---
 
 ## ⏳ Labists
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| ET4 | `Anet_ET4_no_bootloader` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Labists/ET4) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| ET4 | `Anet_ET4_no_bootloader` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Labists/ET4) |
 
 ---
 
 ## ⏳ Longer
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| LK5 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Longer/LK5) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| LK5 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Longer/LK5) |
 
 ---
 
 ## ⏳ LulzBot
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| TAZ4 | `rambo` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/LulzBot/TAZ4) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| TAZ4 | `rambo` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/LulzBot/TAZ4) |
 
 ---
 
 ## ⏳ MBot
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Cube | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MBot/Cube) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Cube | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MBot/Cube) |
 
 ---
 
 ## ⏳ MZ3D
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| 360 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MZ3D/360) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| 360 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MZ3D/360) |
 
 ---
 
 ## ⏳ MakerBot
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Replicator Dual | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerBot/Replicator Dual) |
-| Replicator Single | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerBot/Replicator Single) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Replicator Dual | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerBot/Replicator Dual) |
+| Replicator Single | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerBot/Replicator Single) |
 
 ---
 
 ## ⏳ MakerFarm
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Pegasus 12 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerFarm/Pegasus 12) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Pegasus 12 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerFarm/Pegasus 12) |
 
 ---
 
 ## ⏳ MakerGear
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| M2 Rev H | `rambo` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerGear/M2 Rev H) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| M2 Rev H | `rambo` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerGear/M2 Rev H) |
 
 ---
 
 ## ⏳ MakerParts
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `DUE` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerParts) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `DUE` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerParts) |
 
 ---
 
 ## ⏳ MakerTech3D
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Proforge2sDual | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerTech3D/Proforge2sDual) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Proforge2sDual | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/MakerTech3D/Proforge2sDual) |
 
 ---
 
 ## ⏳ Malyan
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| M150 | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Malyan/M150) |
-| M180 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Malyan/M180) |
-| M200 | `STM32F103CB_malyan` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Malyan/M200) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| M150 | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Malyan/M150) |
+| M180 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Malyan/M180) |
+| M200 | `STM32F103CB_malyan` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Malyan/M200) |
 
 ---
 
 ## ⏳ Materia101
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Materia101) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Materia101) |
 
 ---
 
 ## ⏳ Micromake
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| C1/basic | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Micromake/C1/basic) |
-| C1/enhanced | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Micromake/C1/enhanced) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| C1/basic | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Micromake/C1/basic) |
+| C1/enhanced | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Micromake/C1/enhanced) |
 
 ---
 
 ## ⏳ Mks
 *4 boards — 0 ✅ / 0 ❌ / 4 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Robin | `mks_robin` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Mks/Robin) |
-| Robin Lite3 | `mks_robin_lite3` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Mks/Robin_Lite3) |
-| Robin Pro | `mks_robin_pro` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Mks/Robin_Pro) |
-| Sbase | `LPC1768` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Mks/Sbase) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Robin | `mks_robin` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Mks/Robin) |
+| Robin Lite3 | `mks_robin_lite3` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Mks/Robin_Lite3) |
+| Robin Pro | `mks_robin_pro` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Mks/Robin_Pro) |
+| Sbase | `LPC1768` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Mks/Sbase) |
 
 ---
 
 ## ⏳ Modix
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Big60 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Modix/Big60) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Big60 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Modix/Big60) |
 
 ---
 
 ## ⏳ Nextion
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Nextion) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Nextion) |
 
 ---
 
 ## ⏳ ORD_Bot
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Hadron/Sanguinololu | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/ORD Bot/Hadron/Sanguinololu) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Hadron/Sanguinololu | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/ORD Bot/Hadron/Sanguinololu) |
 
 ---
 
 ## ⏳ Opulo
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Lumen REV3 | `Opulo_Lumen_REV3` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Opulo/Lumen_REV3) |
-| Lumen REV4 | `Opulo_Lumen_REV4` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Opulo/Lumen_REV4) |
-| Lumen REV5 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Opulo/Lumen_REV5) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Lumen REV3 | `Opulo_Lumen_REV3` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Opulo/Lumen_REV3) |
+| Lumen REV4 | `Opulo_Lumen_REV4` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Opulo/Lumen_REV4) |
+| Lumen REV5 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Opulo/Lumen_REV5) |
 
 ---
 
 ## ⏳ Ortur_4
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ortur 4) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ortur 4) |
 
 ---
 
 ## ⏳ Polargraph
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Polargraph) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Polargraph) |
 
 ---
 
 ## ⏳ Printrbot
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| PrintrboardG2 | `DUE_USB` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Printrbot/PrintrboardG2) |
-| Simple Metal RevD | `at90usb1286_dfu` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Printrbot/Simple Metal RevD) |
-| Simple Metal RevF6 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Printrbot/Simple_Metal_RevF6) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| PrintrboardG2 | `DUE_USB` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Printrbot/PrintrboardG2) |
+| Simple Metal RevD | `at90usb1286_dfu` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Printrbot/Simple Metal RevD) |
+| Simple Metal RevF6 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Printrbot/Simple_Metal_RevF6) |
 
 ---
 
-## ⏳ Prusa
-*2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
+## ✅ Prusa
+*2 boards — 2 ✅ / 0 ❌*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| MK3 | `rambo` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Prusa/MK3) |
-| MK3S-BigTreeTech-BTT002 | `BIGTREE_BTT002` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Prusa/MK3S-BigTreeTech-BTT002) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| MK3 | `rambo` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Prusa/MK3/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Prusa/MK3/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Prusa/MK3) |
+| MK3S-BigTreeTech-BTT002 | `BIGTREE_BTT002` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Prusa/MK3S-BigTreeTech-BTT002/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Prusa/MK3S-BigTreeTech-BTT002/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Prusa/MK3S-BigTreeTech-BTT002) |
 
 ---
 
 ## ⏳ Qidi
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Qidi 1 | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Qidi/Qidi 1) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Qidi 1 | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Qidi/Qidi 1) |
 
 ---
 
 ## ⏳ Raiscube
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| A8r | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Raiscube/A8r) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| A8r | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Raiscube/A8r) |
 
 ---
 
 ## ⏳ RapideLite
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| RL200 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RapideLite/RL200) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| RL200 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RapideLite/RL200) |
 
 ---
 
 ## ⏳ Renkforce
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| RF100 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Renkforce/RF100) |
-| RF100XL | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Renkforce/RF100XL) |
-| RF100v2 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Renkforce/RF100v2) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| RF100 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Renkforce/RF100) |
+| RF100XL | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Renkforce/RF100XL) |
+| RF100v2 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Renkforce/RF100v2) |
 
 ---
 
 ## ⏳ RepRapPro
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Huxley | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RepRapPro/Huxley) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Huxley | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RepRapPro/Huxley) |
 
 ---
 
 ## ⏳ RepRapWorld
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Megatronics | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RepRapWorld/Megatronics) |
-| Minitronics11 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RepRapWorld/Minitronics11) |
-| Minitronics20/CNC | `SAMD21_minitronics20` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RepRapWorld/Minitronics20/CNC) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Megatronics | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RepRapWorld/Megatronics) |
+| Minitronics11 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RepRapWorld/Minitronics11) |
+| Minitronics20/CNC | `SAMD21_minitronics20` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RepRapWorld/Minitronics20/CNC) |
 
 ---
 
 ## ⏳ RigidBot
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RigidBot) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/RigidBot) |
 
 ---
 
 ## ⏳ Robo3D
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| R1 Plus | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Robo3D/R1+) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| R1 Plus | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Robo3D/R1+) |
 
 ---
 
 ## ⏳ Rolohaun
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Rook MK1 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Rolohaun/Rook MK1) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Rook MK1 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Rolohaun/Rook MK1) |
 
 ---
 
 ## ⏳ SCARA
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| MP SCARA | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/SCARA/MP_SCARA) |
-| Morgan | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/SCARA/Morgan) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| MP SCARA | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/SCARA/MP_SCARA) |
+| Morgan | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/SCARA/Morgan) |
 
 ---
 
 ## ⏳ STM32
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Black STM32F407VET6 | `STM32F407VE_black` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/STM32/Black_STM32F407VET6) |
-| STM32F103RE | `STM32F103RE` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/STM32/STM32F103RE) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Black STM32F407VET6 | `STM32F407VE_black` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/STM32/Black_STM32F407VET6) |
+| STM32F103RE | `STM32F103RE` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/STM32/STM32F103RE) |
 
 ---
 
 ## ⏳ Simax
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Mi M200 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Simax/Mi-M200) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Mi M200 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Simax/Mi-M200) |
 
 ---
 
 ## ⏳ Simulator
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `linux_native` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Simulator) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `linux_native` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Simulator) |
 
 ---
 
 ## ⏳ Sovol
 *10 boards — 0 ✅ / 0 ❌ / 10 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| SV 01/BigTreeTech SKR E3 Turbo | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-01/BigTreeTech SKR E3 Turbo) |
-| SV 01/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-01/BigTreeTech SKR Mini E3 2.0) |
-| SV 01/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-01/BigTreeTech SKR Mini E3 3.0) |
-| SV 01/CrealityV22 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-01/CrealityV22) |
-| SV 01/CrealityV221 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-01/CrealityV221) |
-| SV 02 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-02) |
-| SV 03 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-03) |
-| SV 05 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-05) |
-| SV 06 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-06) |
-| SV 06 Plus | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-06 Plus) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| SV 01/BigTreeTech SKR E3 Turbo | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-01/BigTreeTech SKR E3 Turbo) |
+| SV 01/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-01/BigTreeTech SKR Mini E3 2.0) |
+| SV 01/BigTreeTech SKR Mini E3 3.0 | `STM32G0B1RE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-01/BigTreeTech SKR Mini E3 3.0) |
+| SV 01/CrealityV22 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-01/CrealityV22) |
+| SV 01/CrealityV221 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-01/CrealityV221) |
+| SV 02 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-02) |
+| SV 03 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-03) |
+| SV 05 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-05) |
+| SV 06 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-06) |
+| SV 06 Plus | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sovol/SV-06 Plus) |
 
 ---
 
 ## ⏳ Sunlu
-*2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
+*2 boards — 1 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| S8 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sunlu/S8) |
-| T3 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sunlu/T3) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| S8 | `mega2560` | ✅ | [⬇ EN](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Sunlu/S8/2_1_2_2/en/firmware.bin) | [⬇ ES](https://github.com/3dwork-io/marlin_auto_builder_3dwork/raw/master/Firmware/Builds/Sunlu/S8/2_1_2_2/es/firmware.bin) | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sunlu/S8) |
+| T3 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Sunlu/T3) |
 
 ---
 
 ## ⏳ TPARA
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| AXEL TPARA | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/TPARA/AXEL_TPARA) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| AXEL TPARA | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/TPARA/AXEL_TPARA) |
 
 ---
 
 ## ⏳ Tevo
 *6 boards — 0 ✅ / 0 ❌ / 6 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Michelangelo | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Michelangelo) |
-| Nereus | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Nereus) |
-| Tarantula Pro/MKS Gen L | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Tarantula Pro/MKS Gen_L) |
-| Tarantula Pro/MKS SGen L | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Tarantula Pro/MKS SGen_L) |
-| Tornado/V1 (MKS Base) | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Tornado/V1 (MKS Base)) |
-| Tornado/V2 (MKS Gen L) | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Tornado/V2 (MKS Gen_L)) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Michelangelo | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Michelangelo) |
+| Nereus | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Nereus) |
+| Tarantula Pro/MKS Gen L | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Tarantula Pro/MKS Gen_L) |
+| Tarantula Pro/MKS SGen L | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Tarantula Pro/MKS SGen_L) |
+| Tornado/V1 (MKS Base) | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Tornado/V1 (MKS Base)) |
+| Tornado/V2 (MKS Gen L) | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tevo/Tornado/V2 (MKS Gen_L)) |
 
 ---
 
 ## ⏳ Tinkerine
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Ditto Pro/RAMPS 1.4 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tinkerine/Ditto Pro/RAMPS 1.4) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Ditto Pro/RAMPS 1.4 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tinkerine/Ditto Pro/RAMPS 1.4) |
 
 ---
 
 ## ⏳ TinyBoy2
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/TinyBoy2) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/TinyBoy2) |
 
 ---
 
 ## ⏳ Tronxy
 *11 boards — 0 ✅ / 0 ❌ / 11 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| D01/CXY v6 191017 board | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/D01/CXY-v6-191017 board) |
-| X1 | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X1) |
-| X3A | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X3A) |
-| X5S | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5S) |
-| X5S 2E/Green Board (Chitu V5) | `chitu_f103` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5S-2E/Green Board (Chitu V5)) |
-| X5S 2E/Red Board (Tronxy 3.1.0) | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5S-2E/Red Board (Tronxy 3.1.0)) |
-| X5SA | `chitu_f103` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5SA) |
-| X5SA Pro | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5SA Pro) |
-| X5SA 2E | `chitu_f103` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5SA-2E) |
-| XY100 | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/XY100) |
-| XY2 Pro | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/XY2-Pro) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| D01/CXY v6 191017 board | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/D01/CXY-v6-191017 board) |
+| X1 | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X1) |
+| X3A | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X3A) |
+| X5S | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5S) |
+| X5S 2E/Green Board (Chitu V5) | `chitu_f103` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5S-2E/Green Board (Chitu V5)) |
+| X5S 2E/Red Board (Tronxy 3.1.0) | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5S-2E/Red Board (Tronxy 3.1.0)) |
+| X5SA | `chitu_f103` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5SA) |
+| X5SA Pro | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5SA Pro) |
+| X5SA 2E | `chitu_f103` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/X5SA-2E) |
+| XY100 | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/XY100) |
+| XY2 Pro | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Tronxy/XY2-Pro) |
 
 ---
 
 ## ⏳ Turnigy
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Fabrikator | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Turnigy/Fabrikator) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Fabrikator | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Turnigy/Fabrikator) |
 
 ---
 
 ## ⏳ Two_Trees
 *8 boards — 0 ✅ / 0 ❌ / 8 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| BlueR Plus | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/BlueR Plus) |
-| BlueR/BlueR V1 | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/BlueR/BlueR V1) |
-| BlueR/BlueR V2 | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/BlueR/BlueR V2) |
-| BlueR/BlueR V3 | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/BlueR/BlueR V3) |
-| SP 5 V3 | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/SP-5_V3) |
-| Sapphire Plus/Sapphire Plus V2 | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/Sapphire Plus/Sapphire Plus V2) |
-| Sapphire Plus/Sapphire Plus V2.1 | `mks_robin_nano_v1_3_f4` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/Sapphire Plus/Sapphire Plus V2.1) |
-| Sapphire Pro | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/Sapphire Pro) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| BlueR Plus | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/BlueR Plus) |
+| BlueR/BlueR V1 | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/BlueR/BlueR V1) |
+| BlueR/BlueR V2 | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/BlueR/BlueR V2) |
+| BlueR/BlueR V3 | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/BlueR/BlueR V3) |
+| SP 5 V3 | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/SP-5_V3) |
+| Sapphire Plus/Sapphire Plus V2 | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/Sapphire Plus/Sapphire Plus V2) |
+| Sapphire Plus/Sapphire Plus V2.1 | `mks_robin_nano_v1_3_f4` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/Sapphire Plus/Sapphire Plus V2.1) |
+| Sapphire Pro | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Two Trees/Sapphire Pro) |
 
 ---
 
 ## ⏳ UltiMachine
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Archim1 | `DUE_archim` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/UltiMachine/Archim1) |
-| Archim2 | `DUE_archim` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/UltiMachine/Archim2) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Archim1 | `DUE_archim` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/UltiMachine/Archim1) |
+| Archim2 | `DUE_archim` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/UltiMachine/Archim2) |
 
 ---
 
 ## ⏳ Ultimaker
 *5 boards — 0 ✅ / 0 ❌ / 5 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Ultimaker 2 | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ultimaker/Ultimaker 2) |
-| Ultimaker 2 Plus | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ultimaker/Ultimaker 2+) |
-| Ultimaker Original (1.5.7) | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ultimaker/Ultimaker Original (1.5.7)) |
-| Ultimaker Original Plus (2.1.1) | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ultimaker/Ultimaker Original Plus (2.1.1)) |
-| Ultimaker Original Plus DXU | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ultimaker/Ultimaker Original Plus DXU) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Ultimaker 2 | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ultimaker/Ultimaker 2) |
+| Ultimaker 2 Plus | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ultimaker/Ultimaker 2+) |
+| Ultimaker Original (1.5.7) | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ultimaker/Ultimaker Original (1.5.7)) |
+| Ultimaker Original Plus (2.1.1) | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ultimaker/Ultimaker Original Plus (2.1.1)) |
+| Ultimaker Original Plus DXU | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Ultimaker/Ultimaker Original Plus DXU) |
 
 ---
 
 ## ⏳ VORONDesign
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/VORONDesign) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/VORONDesign) |
 
 ---
 
 ## ⏳ Velleman
 *4 boards — 0 ✅ / 0 ❌ / 4 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| K8200 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Velleman/K8200) |
-| K8200 Upgraded | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Velleman/K8200 Upgraded) |
-| K8400/Dual head | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Velleman/K8400/Dual-head) |
-| K8400/Single head | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Velleman/K8400/Single-head) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| K8200 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Velleman/K8200) |
+| K8200 Upgraded | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Velleman/K8200 Upgraded) |
+| K8400/Dual head | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Velleman/K8400/Dual-head) |
+| K8400/Single head | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Velleman/K8400/Single-head) |
 
 ---
 
 ## ⏳ Voxelab
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Aquila/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Voxelab/Aquila/BigTreeTech SKR Mini E3 2.0) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Aquila/BigTreeTech SKR Mini E3 2.0 | `STM32F103RC_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Voxelab/Aquila/BigTreeTech SKR Mini E3 2.0) |
 
 ---
 
 ## ⏳ WASP
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| PowerWASP | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/WASP/PowerWASP) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| PowerWASP | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/WASP/PowerWASP) |
 
 ---
 
 ## ⏳ Wanhao
 *17 boards — 0 ✅ / 0 ❌ / 17 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Duplicator 4S | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 4S) |
-| Duplicator 6 | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 6) |
-| Duplicator 9/MK1/300 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1/300) |
-| Duplicator 9/MK1/400 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1/400) |
-| Duplicator 9/MK1/500 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1/500) |
-| Duplicator 9/MK1u2/300 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1u2/300) |
-| Duplicator 9/MK1u2/400 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1u2/400) |
-| Duplicator 9/MK1u2/500 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1u2/500) |
-| Duplicator 9/MK2/300 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK2/300) |
-| Duplicator 9/MK2/400 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK2/400) |
-| Duplicator 9/MK2/500 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK2/500) |
-| Duplicator 9/MK3/300 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK3/300) |
-| Duplicator 9/MK3/400 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK3/400) |
-| Duplicator 9/MK3/500 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK3/500) |
-| Duplicator i3 2.1 | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator i3 2.1) |
-| Duplicator i3 Mini | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator i3 Mini) |
-| Duplicator i3 Plus | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator i3 Plus) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Duplicator 4S | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 4S) |
+| Duplicator 6 | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 6) |
+| Duplicator 9/MK1/300 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1/300) |
+| Duplicator 9/MK1/400 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1/400) |
+| Duplicator 9/MK1/500 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1/500) |
+| Duplicator 9/MK1u2/300 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1u2/300) |
+| Duplicator 9/MK1u2/400 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1u2/400) |
+| Duplicator 9/MK1u2/500 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK1u2/500) |
+| Duplicator 9/MK2/300 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK2/300) |
+| Duplicator 9/MK2/400 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK2/400) |
+| Duplicator 9/MK2/500 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK2/500) |
+| Duplicator 9/MK3/300 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK3/300) |
+| Duplicator 9/MK3/400 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK3/400) |
+| Duplicator 9/MK3/500 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator 9/MK3/500) |
+| Duplicator i3 2.1 | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator i3 2.1) |
+| Duplicator i3 Mini | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator i3 Mini) |
+| Duplicator i3 Plus | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Wanhao/Duplicator i3 Plus) |
 
 ---
 
 ## ⏳ Weedo
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Tina2/V2 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Weedo/Tina2/V2) |
-| Tina2/V3 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Weedo/Tina2/V3) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Tina2/V2 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Weedo/Tina2/V2) |
+| Tina2/V3 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Weedo/Tina2/V3) |
 
 ---
 
 ## ⏳ Weistek
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| wt150 | `mega2560ext` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Weistek/wt150) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| wt150 | `mega2560ext` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Weistek/wt150) |
 
 ---
 
 ## ⏳ Zonestar
 *3 boards — 0 ✅ / 0 ❌ / 3 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| P802M | `sanguino1284p_optimized` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Zonestar/P802M) |
-| P802QR2/BigTreeTech SKR 1.4 Turbo (A4988) | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Zonestar/P802QR2/BigTreeTech SKR 1.4 Turbo (A4988)) |
-| P802QR2/BigTreeTech SKR 1.4 Turbo (TMC2209) | `LPC1769` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Zonestar/P802QR2/BigTreeTech SKR 1.4 Turbo (TMC2209)) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| P802M | `sanguino1284p_optimized` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Zonestar/P802M) |
+| P802QR2/BigTreeTech SKR 1.4 Turbo (A4988) | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Zonestar/P802QR2/BigTreeTech SKR 1.4 Turbo (A4988)) |
+| P802QR2/BigTreeTech SKR 1.4 Turbo (TMC2209) | `LPC1769` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/Zonestar/P802QR2/BigTreeTech SKR 1.4 Turbo (TMC2209)) |
 
 ---
 
 ## ⏳ delta
 *29 boards — 0 ✅ / 0 ❌ / 29 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Anycubic/Kossel | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Anycubic/Kossel) |
-| Anycubic/Kossel Linear Plus | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Anycubic/Kossel Linear Plus) |
-| Anycubic/Predator | `trigorilla_pro` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Anycubic/Predator) |
-| Dreammaker/Overlord | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Dreammaker/Overlord) |
-| Dreammaker/Overlord Pro | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Dreammaker/Overlord_Pro) |
-| FLSUN/Q5 nano v1 | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/Q5-nano_v1) |
-| FLSUN/Q5 nano v2 | `mks_robin_nano_v1v2` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/Q5-nano_v2) |
-| FLSUN/QQ S | `mks_robin_mini` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/QQ-S) |
-| FLSUN/QQS Pro | `flsun_hispeedv1` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/QQS-Pro) |
-| FLSUN/auto calibrate | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/auto_calibrate) |
-| FLSUN/kossel | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/kossel) |
-| FLSUN/kossel mini | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/kossel_mini) |
-| Geeetech/G2 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Geeetech/G2) |
-| Geeetech/G2Pro | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Geeetech/G2Pro) |
-| Geeetech/G2S | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Geeetech/G2S) |
-| Geeetech/G2SPro | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Geeetech/G2SPro) |
-| Geeetech/Rostock 301 | `STM32F103VE` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Geeetech/Rostock 301) |
-| Hatchbox Alpha | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Hatchbox_Alpha) |
-| MKS/SBASE | `LPC1768` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/MKS/SBASE) |
-| Malyan M300 | `malyan_M300` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Malyan M300) |
-| Micromake D1/MKS Gen L V2.1 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Micromake-D1/MKS-Gen-L-V2.1) |
-| Micromake D1/RAMPS 1.4 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Micromake-D1/RAMPS-1.4) |
-| Tevo Little Monster | `LPC1768` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Tevo Little Monster) |
-| Velleman/K8800 | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Velleman/K8800) |
-| generic | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/generic) |
-| kossel clear | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/kossel_clear) |
-| kossel mini | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/kossel_mini) |
-| kossel pro | `at90usb1286_cdc` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/kossel_pro) |
-| kossel xl | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/kossel_xl) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Anycubic/Kossel | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Anycubic/Kossel) |
+| Anycubic/Kossel Linear Plus | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Anycubic/Kossel Linear Plus) |
+| Anycubic/Predator | `trigorilla_pro` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Anycubic/Predator) |
+| Dreammaker/Overlord | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Dreammaker/Overlord) |
+| Dreammaker/Overlord Pro | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Dreammaker/Overlord_Pro) |
+| FLSUN/Q5 nano v1 | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/Q5-nano_v1) |
+| FLSUN/Q5 nano v2 | `mks_robin_nano_v1v2` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/Q5-nano_v2) |
+| FLSUN/QQ S | `mks_robin_mini` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/QQ-S) |
+| FLSUN/QQS Pro | `flsun_hispeedv1` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/QQS-Pro) |
+| FLSUN/auto calibrate | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/auto_calibrate) |
+| FLSUN/kossel | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/kossel) |
+| FLSUN/kossel mini | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/FLSUN/kossel_mini) |
+| Geeetech/G2 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Geeetech/G2) |
+| Geeetech/G2Pro | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Geeetech/G2Pro) |
+| Geeetech/G2S | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Geeetech/G2S) |
+| Geeetech/G2SPro | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Geeetech/G2SPro) |
+| Geeetech/Rostock 301 | `STM32F103VE` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Geeetech/Rostock 301) |
+| Hatchbox Alpha | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Hatchbox_Alpha) |
+| MKS/SBASE | `LPC1768` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/MKS/SBASE) |
+| Malyan M300 | `malyan_M300` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Malyan M300) |
+| Micromake D1/MKS Gen L V2.1 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Micromake-D1/MKS-Gen-L-V2.1) |
+| Micromake D1/RAMPS 1.4 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Micromake-D1/RAMPS-1.4) |
+| Tevo Little Monster | `LPC1768` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Tevo Little Monster) |
+| Velleman/K8800 | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/Velleman/K8800) |
+| generic | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/generic) |
+| kossel clear | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/kossel_clear) |
+| kossel mini | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/kossel_mini) |
+| kossel pro | `at90usb1286_cdc` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/kossel_pro) |
+| kossel xl | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/delta/kossel_xl) |
 
 ---
 
 ## ⏳ gCreate
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| gMax1.5 Plus | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/gCreate/gMax1.5+) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| gMax1.5 Plus | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/gCreate/gMax1.5+) |
 
 ---
 
 ## ⏳ linear_axes
 *2 boards — 0 ✅ / 0 ❌ / 2 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Octopus 8 LINEAR AXES | `STM32F446ZE_btt` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/linear_axes/Octopus 8 LINEAR_AXES) |
-| RAMPS 5 LINEAR AXES | `mega2560` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/linear_axes/RAMPS 5 LINEAR_AXES) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Octopus 8 LINEAR AXES | `STM32F446ZE_btt` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/linear_axes/Octopus 8 LINEAR_AXES) |
+| RAMPS 5 LINEAR AXES | `mega2560` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/linear_axes/RAMPS 5 LINEAR_AXES) |
 
 ---
 
 ## ⏳ makibox
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-|  | `at90usb1286_dfu` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/makibox) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+|  | `at90usb1286_dfu` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/makibox) |
 
 ---
 
 ## ⏳ tvrrug
 *1 boards — 0 ✅ / 0 ❌ / 1 ⏳*
 
-| Printer | Board Env | Status | Firmware | Config Source |
-|---------|-----------|--------|----------|---------------|
-| Round2 | `sanguino644p` | ⏳ | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/tvrrug/Round2) |
+| Printer | Board Env | Status | EN | ES | Config Source |
+|---------|-----------|--------|----|----|---------------|
+| Round2 | `sanguino644p` | ⏳ | — | — | [Marlin Configs](https://github.com/MarlinFirmware/Configurations/tree/release-2.1.2.7/tvrrug/Round2) |
 
 ---
 
@@ -1346,8 +1353,8 @@
 | ❌ | Firmware failed to compile |
 | ⏳ | Status unknown (not in latest run) |
 
-- **Firmware**: Direct link to compiled `firmware.bin`
+- **EN / ES**: Direct links to compiled firmware in English (`en/firmware.bin`) and Spanish (`es/firmware.bin`)
 - **Config Source**: Official Marlin Configuration files used
 - **[Marlin Configurations](https://github.com/MarlinFirmware/Configurations)** — official reference configs
 
-> Auto-generated from [workflow run #26528753693](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/runs/26528753693)
+> Auto-generated from [workflow run #26563558340](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/runs/26563558340)
