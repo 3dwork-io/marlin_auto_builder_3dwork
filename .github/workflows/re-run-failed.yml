@@ -122,7 +122,7 @@ jobs:
           else
             eval "python3 scripts/prepare-configs.py $OFFICIAL_ARGS"
           fi
-      - name: Compile firmware
+      - name: Compile firmware (EN+ES)
         run: |
           mkdir -p "$BUILD_DIR"
           docker run -u root:root -e BOARD -e USE_TAG="$VER" \
@@ -135,11 +135,21 @@ jobs:
             grep -q \"env:.*\$BOARD\" /Marlin/platformio.ini || { echo 'BOARD ENV NOT FOUND'; exit 1; }
             sed -i \"s/default_envs.*/default_envs = \${BOARD}/\" /Marlin/platformio.ini
             cd /Marlin
+            echo '=== Building EN ==='
             platformio run
-            mkdir -p /build_output
-            find /Marlin/.pio \( -name 'firmware.bin' -o -name 'firmware.hex' \) | while read f; do
-              cp -v \"\$f\" /build_output/
-              md5sum \"/build_output/\$(basename \"\$f\")\" > \"/build_output/\$(basename \"\$f\").md5\"
+            mkdir -p /build_output/en
+            find .pio \( -name 'firmware.bin' -o -name 'firmware.hex' \) | while read f; do
+              cp -v \"\$f\" /build_output/en/
+              md5sum \"/build_output/en/\$(basename \"\$f\")\" > \"/build_output/en/\$(basename \"\$f\").md5\"
+            done
+            echo '=== Building ES ==='
+            rm -rf .pio/build
+            sed -i 's/^#define LCD_LANGUAGE[[:space:]]*en/#define LCD_LANGUAGE es/' Marlin/Configuration.h
+            platformio run
+            mkdir -p /build_output/es
+            find .pio \( -name 'firmware.bin' -o -name 'firmware.hex' \) | while read f; do
+              cp -v \"\$f\" /build_output/es/
+              md5sum \"/build_output/es/\$(basename \"\$f\")\" > \"/build_output/es/\$(basename \"\$f\").md5\"
             done
           "; EXIT_CODE=$?
           docker rm marlin-build 2>/dev/null || true
@@ -151,7 +161,7 @@ jobs:
           git add "$CONFIG_DIR/Configuration.h" "$CONFIG_DIR/Configuration_adv.h" "$CONFIG_DIR/config.ini" 2>/dev/null || true
           find "$BUILD_DIR" -type f \( -name 'firmware.bin' -o -name 'firmware.hex' -o -name 'firmware.bin.md5' -o -name 'firmware.hex.md5' \) -exec git add {} \; 2>/dev/null || true
           if ! git diff --staged --quiet; then
-            git commit -m "build: ${{ matrix.label }} @ $VER"
+            git commit -m "build: ${{ matrix.label }} @ $VER (EN+ES)"
             for i in 1 2 3; do
               if git pull --rebase --autostash && git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:feat/auto-update-marlin; then break; fi
               sleep 5
