@@ -229,7 +229,7 @@ def main():
         elif v["fail"] == 0: icon = "✅"
         elif v["success"] > 0: icon = "⚠️"
         else: icon = "❌"
-        slug = gh_anchor(vendor)
+        slug = gh_anchor(f"{icon} {vendor}")
         parts.append(f"{icon} [{vendor}](#{slug}) ({v['count']})")
     lines.append(" · ".join(parts))
     lines.append("")
