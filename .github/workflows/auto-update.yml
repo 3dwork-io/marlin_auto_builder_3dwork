@@ -595,20 +595,20 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 << 'PYEOF'
-import json, os, urllib.request
-gist_id = "44473d94aa2f23dd2120cd54e39dd8d9"
-with open("BUILD_STATUS.md") as f:
-    content = f.read()
-data = json.dumps({"files": {"BUILD_STATUS.md": {"content": content}}}).encode()
-req = urllib.request.Request(
-    f"https://api.github.com/gists/{gist_id}",
-    data=data, method="PATCH",
-    headers={
-        "Authorization": f"token {os.environ['GH_TOKEN']}",
-        "Accept": "application/vnd.github.v3+json",
-        "Content-Type": "application/json"
-    })
-urllib.request.urlopen(req)
-print(f"Gist {gist_id} updated")
-PYEOF
+          import json, os, urllib.request
+          gist_id = "44473d94aa2f23dd2120cd54e39dd8d9"
+          with open("BUILD_STATUS.md") as f:
+              content = f.read()
+          data = json.dumps({"files": {"BUILD_STATUS.md": {"content": content}}}).encode()
+          req = urllib.request.Request(
+              f"https://api.github.com/gists/{gist_id}",
+              data=data, method="PATCH",
+              headers={
+                  "Authorization": f"token {os.environ['GH_TOKEN']}",
+                  "Accept": "application/vnd.github.v3+json",
+                  "Content-Type": "application/json"
+              })
+          urllib.request.urlopen(req)
+          print(f"Gist {gist_id} updated")
+          PYEOF
 
