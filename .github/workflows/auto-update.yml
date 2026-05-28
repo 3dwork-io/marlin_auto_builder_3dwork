@@ -590,3 +590,17 @@ jobs:
           git commit -m "docs: update build status after workflow run" || true
           git pull --rebase --autostash
           git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:master
+      - name: Update Gist
+        run: |
+          GIST_ID="44473d94aa2f23dd2120cd54e39dd8d9"
+          CONTENT=$(python3 -c "
+import json
+with open('BUILD_STATUS.md') as f:
+    content = f.read()
+print(json.dumps(content))
+")
+          curl -s -L -X PATCH "https://api.github.com/gists/$GIST_ID" \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -d "{\"files\": {\"BUILD_STATUS.md\": {\"content\": $CONTENT}}}"
+
