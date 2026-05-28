@@ -31,7 +31,7 @@ def api_get(path):
 def gh_anchor(text):
     """Match GitHub's heading anchor generation."""
     slug = text.lower()
-    slug = ''.join(c for c in slug if c.isalnum() or c in ' -')
+    slug = ''.join(c for c in slug if c.isalnum() or c in ' -_.')
     slug = '-'.join(slug.split())
     return slug
 
