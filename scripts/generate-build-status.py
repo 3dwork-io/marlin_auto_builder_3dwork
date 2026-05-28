@@ -145,9 +145,11 @@ def main():
             vendors[vendor]["unknown"] += 1
             total_unknown += 1
 
-        dl_link = ""
+        dl_link_en = ""
+        dl_link_es = ""
         if status == "success" and build_path:
-            dl_link = f"https://github.com/{REPO}/raw/master/{build_path}/firmware.bin"
+            dl_link_en = f"https://github.com/{REPO}/raw/master/{build_path}/en/firmware.bin"
+            dl_link_es = f"https://github.com/{REPO}/raw/master/{build_path}/es/firmware.bin"
 
         config_link = get_config_source_link(official_path, version)
 
@@ -155,7 +157,8 @@ def main():
             "printer": printer.replace("_", " "),
             "board_env": board_env,
             "status": status,
-            "dl_link": dl_link,
+            "dl_link_en": dl_link_en,
+            "dl_link_es": dl_link_es,
             "config_link": config_link,
             "board_link": job_url,
             "error_cause": error_cause,
@@ -217,21 +220,24 @@ def main():
         lines.append(f"## {e} {vendor}")
         lines.append(f"*{v['count']} boards — {summary}*")
         lines.append("")
-        lines.append("| Printer | Board Env | Status | Firmware | Config Source |")
-        lines.append("|---------|-----------|--------|----------|---------------|")
+        lines.append("| Printer | Board Env | Status | EN | ES | Config Source |")
+        lines.append("|---------|-----------|--------|----|----|---------------|")
         for b in v["boards"]:
             if b["status"] == "success":
                 badge = "✅"
-                fw = f"[⬇ firmware]({b['dl_link']})" if b["dl_link"] else "—"
+                fw_en = f"[⬇ EN]({b['dl_link_en']})" if b["dl_link_en"] else "—"
+                fw_es = f"[⬇ ES]({b['dl_link_es']})" if b["dl_link_es"] else "—"
             elif b["status"] == "failure":
                 badge = "❌"
-                fw = "—"
+                fw_en = "—"
+                fw_es = "—"
             else:
                 badge = "⏳"
-                fw = "—"
+                fw_en = "—"
+                fw_es = "—"
 
             cf = f"[Marlin Configs]({b['config_link']})" if b["config_link"] else "—"
-            lines.append(f"| {b['printer']} | `{b['board_env']}` | {badge} | {fw} | {cf} |")
+            lines.append(f"| {b['printer']} | `{b['board_env']}` | {badge} | {fw_en} | {fw_es} | {cf} |")
 
         # Failure details sub-table
         failures = [b for b in v["boards"] if b["status"] == "failure"]
@@ -254,7 +260,7 @@ def main():
     lines.append("| ❌ | Firmware failed to compile |")
     lines.append("| ⏳ | Status unknown (not in latest run) |")
     lines.append("")
-    lines.append("- **Firmware**: Direct link to compiled `firmware.bin`")
+    lines.append("- **EN / ES**: Direct links to compiled firmware in English (`en/firmware.bin`) and Spanish (`es/firmware.bin`)")
     lines.append("- **Config Source**: Official Marlin Configuration files used")
     lines.append("- **[Marlin Configurations](https://github.com/MarlinFirmware/Configurations)** — official reference configs")
     lines.append("")
