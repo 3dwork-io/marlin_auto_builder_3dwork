@@ -189,12 +189,25 @@ def main():
     badge_url = f"https://github.com/{REPO}/actions/workflows/auto-update.yml/badge.svg"
     actions_url = f"https://github.com/{REPO}/actions/workflows/auto-update.yml"
 
+    comp_guide_url = "https://marlin.3dwork.io/marlin/marlin-guia-compilacion"
+
     lines = []
     lines.append("# Marlin Auto Builder 3Dwork — Build Status")
     lines.append("")
     lines.append(f"**{total} boards** — {total_s} ✅ / {total_f} ❌ = **{rate:.1f}%**")
     if version:
         lines.append(f"**Marlin version:** `{version}`")
+    lines.append("")
+    lines.append("> [!WARNING]")
+    lines.append("> Marlin binaries are created from official Marlin pre-configuration repository, use at your own risk. Review the compilation badge for successful builds!")
+    lines.append(f"> We suggest to take the config files and compile yourself — [compilation guide]({comp_guide_url}).")
+    lines.append("")
+    lines.append("> [!TIP]")
+    lines.append("> From the next list of brands/printers/configurations:")
+    lines.append("> 1. **Status** — shows the compilation process status. Passing = OK, Failing = compilation had issues.")
+    lines.append("> 2. **CONFIG** — link to the configuration files used to compile the firmware, obtained from the Marlin Configurations repository and adjusted for any issues.")
+    lines.append("> 3. **FIRMWARE (EN/ES)** — link to the firmware binaries in English and Spanish. Usually organized by Marlin version folders.")
+    lines.append("> 4. **default_envs** — the PlatformIO environment name (HAL/MCU of the printer board). Useful if you want to compile your own firmware from the config files and Marlin sources.")
     lines.append("")
     lines.append(f"[![Auto Build]({badge_url})]({actions_url})")
     lines.append("")
@@ -238,8 +251,8 @@ def main():
         lines.append(f"## {e} {vendor}")
         lines.append(f"*{v['count']} boards — {summary}*")
         lines.append("")
-        lines.append("| Printer | Board Env | Status | EN | ES | Config Source |")
-        lines.append("|---------|-----------|--------|----|----|---------------|")
+        lines.append("| Printer | default_envs | Status | CONFIG | FIRMWARE (EN) | FIRMWARE (ES) |")
+        lines.append("|---------|-------------|--------|--------|---------------|---------------|")
         for b in v["boards"]:
             if b["status"] == "success":
                 badge = "✅"
