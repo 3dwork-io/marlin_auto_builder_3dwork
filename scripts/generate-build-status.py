@@ -206,17 +206,19 @@ def main():
     lines.append(f"| ⏳ Unknown | {sum(1 for v in vendors.values() if v['unknown']>0)} |")
     lines.append("")
 
-    # Vendor index
+    # Vendor index inline
     lines.append("## Vendor Index")
     lines.append("")
+    parts = []
     for vendor in sorted(vendors.keys()):
         v = vendors[vendor]
-        if v["unknown"] > 0: e = "⏳"
-        elif v["fail"] == 0: e = "✅"
-        elif v["success"] > 0: e = "⚠️"
-        else: e = "❌"
+        if v["unknown"] > 0: icon = "⏳"
+        elif v["fail"] == 0: icon = "✅"
+        elif v["success"] > 0: icon = "⚠️"
+        else: icon = "❌"
         slug = gh_anchor(vendor)
-        lines.append(f"- [{e} {vendor}](#{slug}) ({v['count']} boards)")
+        parts.append(f"{icon} [{vendor}](#{slug}) ({v['count']})")
+    lines.append(" · ".join(parts))
     lines.append("")
 
     # Per-vendor tables
