@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       force_version:
-        description: 'Force specific version (e.g., 2.1.2.7)'
+        description: 'Force specific version (e.g., 2.1.2.8)'
         required: false
         default: ''
 
@@ -591,6 +591,7 @@ jobs:
           git pull --rebase --autostash
           git push "https://${{ github.actor }}:${{ secrets.COMMIT_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:master
       - name: Update Gist
+        continue-on-error: true
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |

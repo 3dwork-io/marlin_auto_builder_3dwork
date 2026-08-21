@@ -1,6 +1,6 @@
 [![Auto-Update](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/auto-update.yml/badge.svg)](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/workflows/auto-update.yml) [![Boards](https://img.shields.io/badge/boards-421-blue)](board-matrix.json)
 
-**Marlin [2.1.2.7](https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.7) | 421 boards | 22 PlatformIO envs | 100 vendors**
+**Marlin [2.1.2.8](https://github.com/MarlinFirmware/Marlin/releases/tag/2.1.2.8) | 421 boards | 22 PlatformIO envs | 100 vendors**
 
 > [!TIP]
 > 📋 **[BUILD_STATUS.md](BUILD_STATUS.md)** — Check compiled firmwares per board with download links and official config sources.
