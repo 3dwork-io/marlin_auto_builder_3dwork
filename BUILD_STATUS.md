@@ -1462,4 +1462,4 @@
 - **Config Source**: Official Marlin Configuration files used
 - **[Marlin Configurations](https://github.com/MarlinFirmware/Configurations)** — official reference configs
 
-> Auto-generated from [workflow run #37199793057](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/runs/37199793057)
+> Auto-generated from [workflow run #38137857979](https://github.com/3dwork-io/marlin_auto_builder_3dwork/actions/runs/38137857979)
